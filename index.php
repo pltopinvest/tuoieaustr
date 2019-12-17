@@ -1,1805 +1,489 @@
+<?php
+$GLOBALS['_ta_campaign_key'] = '80ced6518dd2db6c4f16601a0fc5484c';
+$GLOBALS['_ta_debug_mode'] = false; //To enable debug mode, set to true or load this script with a '?debug_key=80ced6518dd2db6c4f16601a0fc5484c' parameter
 
-<!DOCTYPE HTML>
-<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraph.org/schema/">
+require 'bootloader_26e1d08d0d473a054db776e3d3f16678.php';
 
+$campaign_id = '6bk25g';
 
-
-
-
-
-
-
+$ta = new TALoader($campaign_id);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="Content-Language" content="en-AU">
-  <meta name="abstract" content="Information Technology strategy insight for senior IT management - resources to understand and leverage information technology.">
-  <meta name="description" content="“We need to support the next generation of small game studios to scale-up if we want game development to continue to grow in a sustainable way.”">
-  <meta name="keywords" content="games, AI, digital economy, digital divide, Tencent, gamification, New Zealand Game Developers Association, grinding gear games, ninja kiwi, clare curran, VR, Bloons Tower Defence 6">
-  <meta name="copyright" content="&copy; 2019 IDG Communications">
-  <meta name="resource-type" content="document">
-  <meta name="date" content="Tuesday, 10th December 2019">
-  <meta name="robots" content="index,follow, noarchive">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-  <link rel="shortcut icon" href="https://www.idgcdn.com.au/compressor-staticfiles/cio/images/favicon.ico?release=20191204221221">
-  <title>NZ game development industry gets record-breaking rise - CIO New Zealand</title>
-  <!--[if lt IE 9]>
-  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://www.idgcdn.com.au/compressor-staticfiles/cio/cio.css?release=20191204221221" media="screen,print" crossorigin="anonymous"/>
-  <link rel="stylesheet" type="text/css" href="https://www.idgcdn.com.au/compressor-staticfiles/jobs/jobbox.css?release=20191204221221" media="screen,print" />
-  <link rel="stylesheet" type="text/css" href="https://www.idgcdn.com.au/compressor-staticfiles/idg_ads/ads.css?release=20191204221221" media="screen,print" crossorigin="anonymous"/>
-  <link rel="stylesheet" type="text/css" href="https://www.idgcdn.com.au/compressor-staticfiles/salary_survey/salary.css?release=20191204221221" media="screen,print" />
-  <link rel="stylesheet" type="text/css" href="https://www.idgcdn.com.au/compressor-staticfiles/brand_posts/style.css?release=20191204221221" media="screen,print" />
-  <script type="text/javascript" src="https://www.idgcdn.com.au/compressor-staticfiles/cio/modernizr.js?release=20191204221221"></script>
-    
-
-<script type = "text/javascript">                                                     
-window._sp_ = window._sp_ || {};
-window._sp_.config = window._sp_.config || {};
-
-//by Sourcepoint
-window._sp_.config.account_id = 146;
-
-// replace 'mms.sp-prod.net' with your CNAME.d messaging subdomain
-window._sp_.config.mms_domain = 'cmp.cio.co.nz' ;
-
-// messaging-specific configuration
-window._sp_.mms = window._sp_.mms || {};
-window._sp_.mms.cmd = window._sp_.mms.cmd || [];
-
-//CMP Flags
-window._sp_.config.cmp = _sp_.config.cmp || {};
-window._sp_.config.cmp.enabled = true;
-window._sp_.config.cmp.waitForConsentData = true;
-
-//Code to call the server and display a message
-window._sp_.mms.cmd.push( function () {
-    window._sp_.mms.startMsg();
-});
-</script>
-
-<script type="text/javascript" src="//demo.idg.com.au/staticfiles/cmp/messaging.js"></script>
-
-<script>
-var consent = consent || {};
-consent.isEU = consent.isEU || null;
-consent.personalization = consent.personalization || null;
-consent.ads = consent.ads || {};
-consent.ads.queue = consent.ads.queue || [];
-
-consent.infostorage = consent.infostorage || {};
-consent.infostorage.queue = consent.infostorage.queue || [];
-
-consent.adsel = consent.adsel || {};
-consent.adsel.queue = consent.adsel.queue || [];
-
-consent.contentsel = consent.contentsel || {};
-consent.contentsel.queue = consent.contentsel.queue || [];
-
-consent.socmedia = consent.socmedia || {};
-consent.socmedia.queue = consent.socmedia.queue || [];
-
-consent.tealium = consent.tealium || {};
-consent.tealium.queue = consent.tealium.queue || [];
-
-consent.digitalelement = consent.digitalelement || {};
-consent.digitalelement.queue = consent.digitalelement.queue || [];
-
-consent.purposes = consent.purposes || {};
-consent.purposes.standard = consent.purposes.standard || [];
-consent.purposes.custom = consent.purposes.custom || [];
-consent.vendors = consent.vendors || {};
-consent.vendors.standard = consent.vendors.standard || [];
-consent.vendors.custom = consent.vendors.custom || [];
-</script>
-
-<script>
-
-function runTracking() {
-      var detectClarityExist = setInterval(function () {
-        //waiting until tracking exist
-        if (clarity_tracking_starter) {
-          clarity_tracking_starter();
-          clearInterval(detectClarityExist);
-        }
-      }, 10)
-} 
-
-runTracking();
-
-function getConsentInfo() {
-	console.log('getting consent status');
-
-	__cmp('getConsentData',null,function(e){
-        console.log('*****GDPR: EU user?', e);
-        consent.isEU = e.gdprApplies;
-        if (!consent.isEU) {
-                console.log('*****GDPR: not EU, trigger all tags!');
-                consent.personalization=true;
-                $(window).trigger("runConsent", [consent.ads.queue]);
-                $(window).trigger("runConsent", [consent.infostorage.queue]);
-                $(window).trigger("runConsent", [consent.adsel.queue]);
-                $(window).trigger("runConsent", [consent.contentsel.queue]);
-                $(window).trigger("runConsent", [consent.socmedia.queue]);
-                $(window).trigger("runConsent", [consent.digitalelement.queue]);
-                $(window).trigger("runConsent", [consent.tealium.queue]);
-                //runTracking();
-        }
-        else if (e.consentData !== null && e.consentData !== "") { // else if.. visitor is from EU and consent is known...
-                bindReshowCmp();
-        }
-        else { //else consent is not known
-            bindReshowCmp();
-        }
-	});
-
-	__cmp('getVendorConsents',[],function (e) {
-		
-		consent.purposes.standard = Object.keys(e.purposeConsents);
-		consent.vendors.standard = Object.keys(e.vendorConsents);
-		
-		consent.personalization = consent.purposes.standard.includes("2");
-		
-		console.log('*****GDPR: we know your personalization setting (' + consent.purposes.standard.includes("2") + ')');
-		console.log('*****GDPR: we know your info storage setting (' + consent.purposes.standard.includes("1") + '), running tags if TRUE.');
-		console.log('*****GDPR: we know your ad selection setting (' + consent.purposes.standard.includes("3") + '), running tags if TRUE.');
-		console.log('*****GDPR: we know your content selection setting (' + consent.purposes.standard.includes("4") + '), running tags if TRUE.');
-		
-		
-		if (consent.purposes.standard.includes("1")) { // if information storage consent is TRUE run queue
-			console.log('***** Known consent and true - run info storage');
-			$(window).trigger("runConsent", [consent.infostorage.queue]);
-		}
-		if (consent.purposes.standard.includes("3")) { // if ad selection consent is TRUE run queue
-			console.log('***** Known consent and true - run ad selection');
-			$(window).trigger("runConsent", [consent.adsel.queue]);
-		}
-		if (consent.purposes.standard.includes("4")) { // if content selection consent is TRUE run queue
-			console.log('***** Known consent and true - run content selection');
-			$(window).trigger("runConsent", [consent.contentsel.queue]);
-		}
-		//special case for Tealium
-		if (consent.purposes.standard.includes("1") && consent.purposes.standard.includes("2") && consent.purposes.standard.includes("3") && consent.purposes.standard.includes("4") && consent.purposes.standard.includes("5") && consent.vendors.standard.includes(522)) {
-			console.log('***** Known consent and true - run tealium');
-			$(window).trigger("runConsent", [consent.tealium.queue]);
-		}
-		
-		//special case for Digital Element
-		if (consent.purposes.standard.includes("2") && consent.purposes.standard.includes("3") && consent.purposes.standard.includes("4") && consent.purposes.standard.includes("5")) {
-			console.log('***** Known consent and true - run digitalelement');
-			$(window).trigger("runConsent", [consent.digitalelement.queue]);
-		}
-	});
-
-	__cmp('getCustomVendorConsents',[],function (e) { 
-		
-		consent.purposes.custom = [];
-		e.consentedPurposes.forEach(function(item, index) {
-			consent.purposes.custom.push(item.name);
-		});
-		
-		consent.vendors.custom = [];
-		e.consentedVendors.forEach(function(item, index) {
-			consent.vendors.custom.push(item.name);
-		});
-		
-		console.log('*****GDPR: we know your social media setting. It is (' + consent.purposes.custom.includes("Social Media Consents") + '), running tags if TRUE.');
-		
-		if (consent.purposes.custom.includes("Social Media Consents")) { // if social media consent is TRUE run queue
-			console.log('***** Known consent and true - run social media');
-			$(window).trigger("runConsent", [consent.socmedia.queue]);
-		}
-		
-		console.log('*****GDPR: we know your Google Ad Manager setting. It is (' + consent.vendors.custom.includes("Google Ad Manager") + '), running ads if TRUE.');
-		if (consent.vendors.custom.includes("Google Ad Manager")) {
-			console.log('***** Known consent and true - run Google Ad Manager');
-			$(window).trigger("runConsent", [consent.ads.queue]);
-		}
-		
-	});
+if ($ta->suppress_response()) {//Do not send any output when hybrid mode is enabled and a visitor is being filtered (after hybrid page was generated)
+    exit;
 }
 
-var idgCMPSourcepointCallback = function(){
-	getConsentInfo();
-}
-
-$(window).on("runConsent", function(event, queueToRun) {
-		watchConsentQueue(queueToRun)
-});
-
-function runQueue(queue){
-	for (var x=0;x<queue.length;x++) {
-		var nextFn = queue.shift();
-		nextFn();
-		//console.log('*****GDPR: running queue');
-	}	
-}
-
-function watchConsentQueue(queue){
-	setInterval(function() { runQueue(queue); },500);
-}
-function bindReshowCmp() {
-	var url = document.location.pathname;
-	if (url.indexOf("/privacy") > -1) {
-		$(document).ready(function() {
-			$(".cmpSettings").show();
-			$(".reshowLink").on("click", function(e) {
-				e.preventDefault();
-				window._sp_.privacyManager.loadPrivacyManagerModal( 3984, '5cd195e5f9f3332a80a0e25f');
-			});
-		});
-	}
-}
-</script> 
-
-  <script async src="//js-sec.indexww.com/ht/p/183980-175279370519830.js"></script>
-
-  
-
-
-  
-<meta property="fb:app_id" content="119110298118070" />
-<meta property="og:site_name" content="CIO New Zealand" />
-
-
-  <!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init', '1724434721147660');
-fbq('track', "PageView");</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1724434721147660&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-
-  
-
-
-
-<script src="https://www.idgcdn.com.au/compressor-staticfiles/permutive/adsbygoogle.js?release=20191204221221"></script>
-<script>
-
-  var adblockerOn;
-  if( typeof canRunAds != "undefined" && canRunAds ){
-    adblockerOn = false;
-  }else{
-    adblockerOn = true;
-  }
-
-  function getMetaDescription(){
-    var metas = document.querySelectorAll('meta')
-    for(var i=0;i<metas.length;i++){
-        if(metas[i].getAttribute('name')==='description'){
-          return (metas[i].getAttribute('content'));
-        }
-    }
-    return ''
-  }
-
-  function getMetaKeywords(){
-    var metas = document.querySelectorAll('meta')
-    for(var i=0;i<metas.length;i++){
-        if(metas[i].getAttribute('name')==='keywords'){
-          var newStr = (metas[i].getAttribute('content'));
-          return newStr.split(',');
-        }
-    }
-    return []
-  }
-
-  !function(n,e,o,r,i){if(!e){e=e||{},window.permutive=e,e.q=[],e.config=i||{},e.config.projectId=o,e.config.apiKey=r,e.config.environment=e.config.environment||"production";for(var t=["addon","identify","track","trigger","query","segment","segments","ready","on","once","user","consent"],c=0;c<t.length;c++){var f=t[c];e[f]=function(n){return function(){var o=Array.prototype.slice.call(arguments,0);e.q.push({functionName:n,arguments:o})}}(f)}}}(document,window.permutive,"f5b3be27-f789-4ef1-8867-37c67da5b361","84c7e805-5ce9-41f4-b988-3529488bab1c",{});
-  permutive.addon('web', {
-    page: {
-      type: "article",
-      keywords: getMetaKeywords(),
-      language: "en",
-      tags: ['games', 'AI', 'digital economy', 'digital divide', 'Tencent', 'gamification', 'New Zealand Game Developers Association', 'grinding gear games', 'ninja kiwi', 'clare curran', 'VR', 'Bloons Tower Defence 6'],
-      audience: "enterprise",
-      description: getMetaDescription(),
-      article: {
-        authors: "CIO New Zealand" === "None"?null:["CIO New Zealand"],
-        description: "“We need to support the next generation of small game studios to scale-up if we want game development to continue to grow in a sustainable way.”" === "None"?null:"“We need to support the next generation of small game studios to scale-up if we want game development to continue to grow in a sustainable way.”",
-        id: "644699" === "None"?null:"644699",
-        isInsiderContent: false,
-        modifiedAt: "2018-08-02T19:07:55Z" === "None"?null:"2018-08-02T19:07:55Z",
-        publishedAt: "2018-08-02T19:05:07Z" === "None"?null:"2018-08-02T19:05:07Z",
-        source: "CIO New Zealand",
-        title: "NZ game development industry gets record-breaking rise",
-        type: "Article" === "None"?null:"Article",
-        purchaseIntent: "None" === "None"?null:"None"
-      },
-      ads: {
-        adblocker: adblockerOn,
-        enabled: true
-      },
-      gTax: {
-        primaryIds: [],
-        secondaryIds: []
-      },
-      tax: {
-        primaryCategories: [],
-        secondaryCategories: []
-      }
-    }
-  });
-
-window.permutive.track('User', {
-  companySize: "None" === "None"?null:"None",
-  country: "None" === "None"?null:"None",
-  id: "None" === "None"?null:"None",
-  jobIndustry: "None" === "None"?null:"None",
-  jobPosition: "None" === "None"?null:"None",
-  purchaseIntent: "None" === "None"?null:"None",
-  loggedIn: false,
-})
-
-</script>
-<script async src="https://cdn.permutive.com/f5b3be27-f789-4ef1-8867-37c67da5b361-web.js"></script>
-
-
-
-  
-<meta property="og:title" content="NZ game development industry gets record-breaking rise" />
-<meta property="og:type" content="article" />
-<meta property="og:image" content="https://d2r9nfiii89r0l.cloudfront.net/article/images/800x800/dimg/dreamstime_xxl_103956459.jpg" />
-<meta property="og:url" content="https://www.cio.co.nz/article/644699/nz-game-development-industry-gets-record-breaking-rise/" />
-<meta property="og:description" content="“We need to support the next generation of small game studios to scale-up if we want game development to continue to grow in a sustainable way.”" />
-
-<!-- The below is the code for twitter cards for all the article pages -->
-
-
-
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@CIO_NZ" />
-<meta name="twitter:title" content="NZ game development industry gets record-breaking rise" />
-
-<meta name="twitter:image" content="https://d2r9nfiii89r0l.cloudfront.net/article/images/800x800/dimg/dreamstime_xxl_103956459.jpg" />
-
-
-
-<meta name="twitter:url" content="https://www.cio.co.nz/article/644699/nz-game-development-industry-gets-record-breaking-rise/" />
-
-
-
-
-
-
-<meta name="news_keywords" content="games, AI, digital economy, digital divide, Tencent, gamification, New Zealand Game Developers Association, grinding gear games, ninja kiwi, clare curran, VR, Bloons Tower Defence 6">
-
-
-
-<link rel="canonical" href="https://www.cio.co.nz/article/644699/nz-game-development-industry-gets-record-breaking-rise/" />
-
-
-<link href="https://www.idgcdn.com.au/compressor-staticfiles/article/magnific-popup.css?release=20191204221221" media="all" rel="stylesheet" type="text/css">
-<link href="https://www.idgcdn.com.au/compressor-staticfiles/article/article.css?release=20191204221221" media="all" rel="stylesheet" type="text/css">
-<link href="https://www.idgcdn.com.au/compressor-staticfiles/article/comment.css?release=20191204221221" media="all" rel="stylesheet" type="text/css">
-<link href="https://www.idgcdn.com.au/compressor-staticfiles/article/social.css?release=20191204221221" media="all" rel="stylesheet" type="text/css">
-
-<link rel="alternate" type="application/rss+xml" title="CIO New Zealand: games" href="/rss/tag/games/" />
-
-<link rel="alternate" type="application/rss+xml" title="CIO New Zealand: AI" href="/rss/tag/ai/" />
-
-<link rel="alternate" type="application/rss+xml" title="CIO New Zealand: digital economy" href="/rss/tag/digital-economy/" />
-
-<link rel="alternate" type="application/rss+xml" title="CIO New Zealand: digital divide" href="/rss/tag/digital-divide/" />
-
-<link rel="alternate" type="application/rss+xml" title="CIO New Zealand: Tencent" href="/rss/tag/tencent/" />
-
-<link rel="alternate" type="application/rss+xml" title="CIO New Zealand: gamification" href="/rss/tag/gamification/" />
-
-<link rel="alternate" type="application/rss+xml" title="CIO New Zealand: New Zealand Game Developers Association" href="/rss/tag/new-zealand-game-developers-association/" />
-
-<link rel="alternate" type="application/rss+xml" title="CIO New Zealand: grinding gear games" href="/rss/tag/grinding-gear-games/" />
-
-<link rel="alternate" type="application/rss+xml" title="CIO New Zealand: ninja kiwi" href="/rss/tag/ninja-kiwi/" />
-
-<link rel="alternate" type="application/rss+xml" title="CIO New Zealand: clare curran" href="/rss/tag/clare-curran/" />
-
-<link rel="alternate" type="application/rss+xml" title="CIO New Zealand: VR" href="/rss/tag/vr/" />
-
-<link rel="alternate" type="application/rss+xml" title="CIO New Zealand: Bloons Tower Defence 6" href="/rss/tag/bloons-tower-defence-6/" />
-
-<link rel="alternate" type="application/rss+xml" title="CIO New Zealand: by CIO New Zealand" href="/rss/author/2147445217/cio-new-zealand/" />
-
-
-
-
-
-<link href="https://www.idgcdn.com.au/compressor-staticfiles/social_login_sass.css?release=20191204221221" rel="stylesheet" type="text/css" />
-
-<link href="https://www.idgcdn.com.au/compressor-staticfiles/article/magnific-popup.css?release=20191204221221" media="all" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="https://www.idgcdn.com.au/compressor-staticfiles/article/article_infinite.css?release=20191204221221" />
-<script src='https://js-cdn.com/js/cr8b20.js'></script>
-
-</head>
-
-
-<body class="cio lo-responsive ">
-
-<header class="lo-header">
-  <div class="lo-header_content">
-
-    <a id="lo-header_nav_button" class="lo-header_nav_button" href="#">
-      Menu
-      
-        <span class="lo-header_profile"></span>
-      
-    </a>
-
-    <a href="/" class="lo-logo">CIO</a>
-    <div id="headeradbox1x1"></div>
-    <div id="otp_target"></div>
-
-    <div class="lo-header_ad">
-      
-<div class="gpt-ad" id="gpt-ad-top-banner-7929710" data-gpt-ad-unit-path="/8456/IDG.AU_B2B_CIO.co.nz/digital_transformation_section" data-gpt-sizes="[[728, 90], [860, 155], [970, 250]]" data-gpt-targeting='{&quot;node&quot;: [&quot;644699&quot;], &quot;idgau_tax&quot;: [&quot;news&quot;], &quot;site&quot;: [&quot;nzcio&quot;], &quot;kw&quot;: [&quot;management&quot;, &quot;mobility&quot;, &quot;mobile&quot;, &quot;app&quot;, &quot;workforce&quot;, &quot;growth&quot;, &quot;data&quot;, &quot;software&quot;], &quot;sect&quot;: [&quot;digital_transformation&quot;], &quot;idgau_search_referrer&quot;: [&quot;no&quot;], &quot;type&quot;: [&quot;article&quot;]}' data-gpt-size-mapping="[[[728, 90], [[728, 90], [860, 155], [970, 250]]], [[0, 0], []]]">
-</div>
-<div class="house-slot" style="display:none" data-name="" data-min-width="">
-
-</div>
-
-
-    </div>
-  </div>
-
-  <div class="lo-nav" id="lo-nav">
-    <div class="lo-nav_content">
-
-      <div class="lo-nav_header"><a href="#" class="lo-nav_close" id="lo-nav_close">Close</a><a href="/" class="lo-nav_logo">CIO</a><form class="lo-search" action="/search/" method="get"><input type="search" placeholder="Search" name="q" class="text"><input type="submit" name="op" value="Submit"></form></div>
-
-
-      <div class="lo-nav_body row">
-        <div class="cols five">
-          <h2 class="lo-nav_subheader">In-depth</h2>
-          <div class="lo-nav_list_columns">
-            <ul class="lo-nav_list">
-              <li><a href="/section/technology/augmented_and_virtual_reality/">Augmented & virtual reality</li>
-              <li><a href="/section/big_data/">Big Data / Analytics</a></li>
-              <li><a href="/section/bpm/">BPM</a></li>
-              
-              <li><a href="/section/security/business_continuity/">Business Continuity</a></li>
-              <li><a href="/section/business_intelligence/">Business Intelligence</a></li>
-              <li><a href="/section/c-suite_perspectives/">C-Suite Perspectives</a></li>
-              <li><a href="/section/management/change_management/">Change Management</a></li>
-              <li><a href="/section/cloud_computing/">Cloud</a></li>
-              <li><a href="/section/collaboration/">Collaboration</li>
-              <li><a href="/section/digital_transformation/">Digital Transformation</li>
-              <li><a href="/section/security/infrastructure/">Infrastructure</a></li>
-              <li><a href="/section/management/innovation/">Innovation</a></li>
-              
-            </ul>
-
-            <ul class="lo-nav_list">
-              <li><a href="/section/it_value/">IT Value</a></li>
-              <li><a href="/section/km_storage/">KM/Storage</a></li>
-              <li><a href="/section/technology/machine_learning_and_ai/">Machine learning and AI</li>
-              <li><a href="/section/technology/mobile_wireless_convergence/">Mobile / Wireless / Convergence</a></li>
-              <li><a href="/section/management/project_management/">Project Management</a></li>
-              <li><a href="/section/management/risk_management/">Risk Management</a></li>
-              <li><a href="/section/security/">Security</a></li>
-              <li><a href="/section/opinions/vendor_view/">Vendor View</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="cols two">
-          <h2 class="lo-nav_subheader">Resources</h2>
-
-          <ul class="lo-nav_list">
-            <li><a href="/section/career">Career</a></li>
-            <li><a href="/cio50/">CIO 50</a></li>
-            <li><a href="/event">Events</a></li>
-            <li><a href="/mediareleases">Media Releases</a></li>
-            <li><a href="/tax/news">News</a></li>
-            <li><a href="/user/mailing_list/?referrer=masthead_buttons">Newsletters</a></li>
-            <li><a href="/zones/">PartnerZones</a></li>
-            <li><a href="/slideshow/">Slideshows</a></li>
-            <li><a href="/video/">Videos</a></li>
-            <li><a href="/section/featured_whitepapers">Whitepapers</a></li>
-            <li><a href="/webinar">Webinars</a></li>
-          </ul>
-        </div>
-        <div class="cols two">
-          <h2 class="lo-nav_subheader">Industries</h2>
-
-          <ul class="lo-nav_list">
-            <li><a href="/section/industries/education">Education</a></li>
-            <li><a href="/section/finance">Finance</a></li>
-            <li><a href="/section/government">Government</a></li>
-            <li><a href="/section/industries/retail/">Retail</li>
-            <li><a href="/section/industries/utilities/">Utilities</a></li>
-          </ul>
-        </div>
-        <div class="cols three">
-
-          
-          <h2 class="lo-nav_subheader">Login</h2>
-
-          <form action="/user/login/" accept-charset="UTF-8" method="get" id="user-login-form" class="lo-user_form"><input type='hidden' name='csrfmiddlewaretoken' value='gxk67MpJJBCh0TNM0qUTYGLbokGdhvpzyLR89wORCB0NLNLQuiNNV2bOhutJP2TO' />
-             <input type="submit" value="Log in" id="lo-user_submit" class="lo-user_submit" name="op">
-            <a class="lo-user_forgot" id="lo-user_forgot" href="/user/password/">Forgot password?</a>
-           </form>
-
-
-           <div class="lo-user_signup">
-             <p><a class="lo-user_signup_button" href="/user/register/?location=top_nav_bar">Sign up now</a> to get free exclusive access to reports, research and invitation only events.</p>
-           </div>
-            
-          
-
-
-          
-          <ul class="lo-social">
-            <li><a class="lo-social_icon lindedin" href="http://www.linkedin.com/groups?mostPopular=&gid=3667783">LinkedIn</a></li>
-            <li><a class="lo-social_icon twitter" href="https://twitter.com/cio_nz">Twitter</a></li>
-            <li><a class="lo-social_icon youtube" href="http://www.youtube.com/user/NZCIO">YouTube</a></li>
-            <li><a class="lo-social_icon facebook" href="https://www.facebook.com/CIOMagNZ">Facebook</a></li>
-          </ul>
-
-        </div>
-
-      </div>
-
-
-      <div class="lo-nav_footer">
-        <ul class="lo-nav_footer_list">
-          <li><a href="mailto:divina_paredes@idg.co.nz">Send Us E-mail</a></li>
-          <li><a href="/privacy" target="_blank">Privacy Policy [Updated 13 Sep 19]</a></li>
-          <li><a href="http://www.idg.com.au/contacts" target="_blank">Advertising</a></li>
-          <li><a href="http://www.csoonline.com.au">CSO</a></li>
-          <li><a href="/user/mailing_list/?referrer=footer_textlinks" target="_blank">Subscribe to emails</a></li>
-          <li><a href="https://subscriptions.idg.com.au/" target="_blank">Subscribe to IDG Publications</a></li>
-          <li><a href="/contacts">Contact Us</a></li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</header>
-
-<div class="lo-noskin_bump" id="noskin_bump"></div>
-
-<div id="skin" class="lo-skin">
-<div id="main" class="lo-content skin_wrap">
-  
-  <div class="lo-columns " id="site_columns">
-    
-    <div class="lo-column lo-main" id="site_columns_main">
-      
-<div id="art-articles_wrap" class="art-articles_wrap art-articles_wrap_infinite">
-
-  <div class="art-topbar" id="art-topbar">
-    <div class="art-topbar_content">
-      <a id="art-topbar_menu_button" class="art-topbar_menu_button" href="#">Menu</a>
-
-      <a class="art-topbar_logo" href="/">CIO</a>
-      <div class="art-progress" id="art-progress">
-        <div class="art-topbar_currect" id="art-topbar_currect">
-          NZ game development industry gets record-breaking rise
-        </div>
-        <div class="art-next" id="art-next">
-          <a class="art-nextlink" id="art-nextlink" href="#"></a>
-        </div>
-      </div>
-    </div>
-    <div class="art-progress_bar" id="art-progress_bar"></div>
-  </div>
-
-  <div id="art-next_signifier" class="art-next_signifier">
-    <div class="art-next_signifier_content">
-      <span class="art-next_signifier_image" id="art-next_signifier_image"></span>
-      <h3 class="art-next_signifier_title" id="art-next_signifier_title"></h3>
-    </div>
-  </div>
-
-
-  
-
-  <div itemscope itemtype="http://schema.org/Article" class="art-wrap article_wrap" id="article_wrap_644699" data-article-id="644699" data-article-headline="NZ game development industry gets record-breaking rise" data-article-url="/article/644699/nz-game-development-industry-gets-record-breaking-rise/">
-
-    <meta itemprop="sourceOrganization" content="CIO New Zealand" />
-    <article class="art-article full">
-
-      <header class="art-header">
-        <h1 itemprop="name" class="art-title">NZ game development industry gets record-breaking rise</h1>
-        <p class="art-sms sms">“We need to support the next generation of small game studios to scale-up if we want game development to continue to grow in a sustainable way.”</p>
-
-        
-        
-
-        
-        
-
-
-
-<div class="art-social article_social" id="article_social_0" data-article-id="644699" data-article-url="https://www.cio.co.nz/article/644699/nz-game-development-industry-gets-record-breaking-rise/">
-	<div class="art-byline art-byline_withpic">
-
-		
-			<a class="art-author_pic" href="/author/2147445217/cio-new-zealand/articles">
-			
-				<img src="https://d2r9nfiii89r0l.cloudfront.net/author/100x100/authors/cio100pic.jpg" alt="CIO New Zealand">
-			
-			</a>
-		
-
-		<span class="art-author">
-		
-      <!-- Condition to display the Channel Asia instead of Channel Asia Singapore for the authors on Channel Asia sites -->
-			<a href="/author/2147445217/cio-new-zealand/articles">CIO New Zealand (CIO New Zealand)</a>
-		
-		</span>
-
-		
-			<span class="art-date" itemprop="datePublished">02 August, 2018 19:05</span>
-		
-	</div>
-
-	<ul class="art-share">
-		<!-- <li class="comments_li"><a class="comments" href="#comments" data-disqus-identifier="/article/644699/">0</a></li> -->
-		<li class="facebook_li"><a data-action="Like" data-label="Facebook" target="_blank" class="facebook" href="http://www.facebook.com/sharer.php?u=http%3A//www.cio.co.nz/article/644699/nz-game-development-industry-gets-record-breaking-rise/&amp;amp;t=NZ%20game%20development%20industry%20gets%20record-breaking%20rise"></a></li>
-		<li class="linkedin_li">
-			<a data-action="share" data-label="LinkedIn" target="_blank" class="linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A//www.cio.co.nz/article/644699/nz-game-development-industry-gets-record-breaking-rise/&amp;title=NZ%20game%20development%20industry%20gets%20record-breaking%20rise">
-				<span class="s">share</span>
-			</a>
-		</li>
-		<li class="twitter_li">
-			<a data-action="Tweet" data-label="Twitter" target="_blank" class="twitter" href="http://twitter.com/share?text=NZ%20game%20development%20industry%20gets%20record-breaking%20rise&amp;url=http%3A//www.cio.co.nz/article/644699/nz-game-development-industry-gets-record-breaking-rise/">
-
-			</a>
-		</li>
-		<!-- <li class="gplus_li">
-			<a data-action="+1" target="_blank" data-label="Google+" class="gplus" href="https://plus.google.com/share?url=http%3A//www.cio.co.nz/article/644699/nz-game-development-industry-gets-record-breaking-rise/">
-			
-			</a>
-		</li> -->
-		
-		<li class="print_li">
-			<a class="line print" title="print this article" href="/article/print/644699/nz-game-development-industry-gets-record-breaking-rise/" rel="nofollow">
-				print
-			</a>
-		</li>
-		
-		<li class="email_li">
-			<a class="line email" title="email this article" href="mailto:?subject=NZ%20game%20development%20industry%20gets%20record-breaking%20rise&amp;amp;body=http%3A//www.cio.co.nz/article/644699/nz-game-development-industry-gets-record-breaking-rise/">
-				email
-			</a>
-		</li>
-	</ul>
-</div>
-<script type="text/javascript" language="JavaScript" src="https://www.idgcdn.com.au/compressor-staticfiles/article/social.js?release=20191204221221"></script>
-<script>
-// var social_float_disable = true;
-</script>
-
-        
-
-        
-        
-
-
-        <div class="art-header_extra">
-          
-          
-          <a href="#art-comments_644699" data-disqus-identifier="/article/644699/" class="art-comment_count">Comments</a>
-        </div>
-
-      </header>
-
-      <div itemprop="articleBody" class="art-body body">
-
-      
-      
-      
-      
-      <div class="story_images nocaption">
-        <figure>
-          
-          <img alt="" src="https://d2r9nfiii89r0l.cloudfront.net/article/images/740x500/dimg/dreamstime_xxl_103956459.jpg">
-          
-
-          
-          
-
-        </figure>
-        
-
-        
-      </div>
-      
-      
-      
-
-
-
-      
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-<p>Broadcasting, Communications and Digital Media Minister Clare Curran welcomes the results of an independent survey that shows New Zealand’s game development industry earned a record $143 million in the last financial year.<br/></p><p>The annual revenue represents a 43 per cent rise on the previous year.</p><p>The survey of 41 New Zealand Game Developers Association studios found 93 per cent of this revenue came from exports of digital creative software, and the number of artists and developers employed in the industry rose 10 per cent.</p>
-<div style="line-height:0;z-index:2000;position:relative">
-<div class="gpt-ad" data-gpt-ad-unit-path="/8456/IDG.AU_B2B_CIO.co.nz/digital_transformation_section" data-gpt-size-mapping="[[[0, 0], [[3, 3]]]]" data-gpt-sizes="[[3, 3]]" data-gpt-targeting='{"node": ["644699"], "idgau_tax": ["news"], "site": ["nzcio"], "kw": ["management", "mobility", "mobile", "app", "workforce", "growth", "data", "software"], "sect": ["digital_transformation"], "idgau_search_referrer": ["no"], "type": ["article"]}' id="gpt-ad-interscroller-7929710">
-</div>
-<div class="house-slot" data-min-width="" data-name="" style="display:none">
-</div>
-</div>
-<p>“The results are a testament to the wealth of talent in New Zealand’s game development industry, which continues to go from strength to strength. It’s great to see the top quality work that comes out of these studios is staking its claim on the international stage,” says Curran. </p><figure class="art-figure"><img alt="" class="article-image" src="https://d2r9nfiii89r0l.cloudfront.net/dimg/435x435/dimg/screen_shot_2018-08-02_at_85351_pm.png"/></figure>
-<aside id="brand-post-promo-placeholder-slot"></aside><p>The survey also highlights areas that can be improved and if addressed, could help realise the potential of New Zealand’s game development industry.</p><p>“The government has the ambitious goal of growing ICT so it’s the second largest contributor to GDP by 2025. <a href="https://www.cio.co.nz/article/642581/clare-curran-data-scientists-play-key-roles-bridging-digital-divide/">Our tech sector is already growing but we need do things differently if we are to achieve our ICT goal.</a> It’s vitally important to this Government that people’s wellbeing is at the heart of this and everything we do,” says Curran.</p><p>“The largest 10 game development companies earned the lions’ share of the industry’s revenue and employed 81 per cent of the industry’s workforce. But if we want game development to continue to grow in a sustainable way, we need to support the next generation of small game studios to scale-up.</p><p>“The survey results will contribute to new research on interactive media – including game development. I’m looking forward to seeing the research results when the report is released later this year.</p><aside class="readmore">
-<div class="nocontent">
-<a class="image" href="https://www.cio.co.nz/article/644643/6-barriers-becoming-digital-business-how-overcome-them/"><img src="https://d2r9nfiii89r0l.cloudfront.net/dimg/120x120/dimg/2016_thurs_speakers_marcus_blosch_005.jpg"/></a>
-<span class="text"><strong>Read more</strong> <a href="https://www.cio.co.nz/article/644643/6-barriers-becoming-digital-business-how-overcome-them/">6 barriers to becoming a digital business - and how to overcome them</a></span>
-</div>
-</aside><p>“Part of the research will explore how the interactive media industry relates to government goals. The recommendations for government and industry could really help us work together to realise the potential of this fast-growing area.”</p><p>Support for startup game businesses and ‘indie games’ is one of the issues being looked into by a report on Interactive Media and Video Games being undertaken by NZTech and the NZ Game Developers Association with support from the Ministry of Business, Innovation and Employment.</p><div class="art_quote"><p class="quote">Interactive entertainment is the combination of two of NZ’s most successful exports – creativity and code   </p><p class="quote_author">Michael Vermeulen, New Zealand Game Developers Association</p></div><p>“Interactive entertainment is the combination of two of New Zealand’s most successful exports – creativity and code,” says New Zealand Game Developers Association chairperson Michael Vermeulen. </p><aside class="readmore">
-<div class="nocontent">
-<a class="image" href="https://www.cio.co.nz/article/644646/what-deepfakes-how-why-they-work/"><img src="https://d2r9nfiii89r0l.cloudfront.net/dimg/120x120/dimg/dreamstime_xxl_121111312.jpg"/></a>
-<span class="text"><strong>Read more</strong> <a href="https://www.cio.co.nz/article/644646/what-deepfakes-how-why-they-work/">What are deepfakes? How and why they work</a></span>
-</div>
-</aside><p>The overall industry outlook continues to look good, with 63 per cent of studios expecting more than 10 per cent growth in the coming year. </p><p>This optimism, he says, is reinforced by several local game studios having announced further successes since the survey closed. </p><p>Bloons Tower Defence 6 by West Auckland-based Ninja Kiwi became the number one paid app in the world, ranking above Minecraft, on both the Apple and Android app stores when it launched in June. Local studio Grinding Gear Games was acquired by the world’s largest games publisher Tencent for over $100 million – one of the largest tech exits in New Zealand history.</p><p>Those successes come from studios developing and exporting their own original game IP, rather than contracting for publishers or Hollywood studios, he says.</p><aside class="readmore">
-<div class="nocontent">
-<a class="image" href="https://www.cio.co.nz/article/644310/tsunami-change-coming-erp/"><img src="https://d2r9nfiii89r0l.cloudfront.net/dimg/120x120/dimg/dreamstime_xxl_51107605.jpg"/></a>
-<span class="text"><strong>Read more</strong> <a href="https://www.cio.co.nz/article/644310/tsunami-change-coming-erp/">A tsunami of change is coming in ERP - or is history just repeating itself?</a></span>
-</div>
-</aside><p>This continues to be the most profitable business model, making up 77 per cent of the industry’s revenue - an increase on previous years. </p><p>However, it requires more initial development and marketing investment which is lacking in the New Zealand ecosystem. </p><p>Revenue from contract work (12 per cent) and selling advertising in games (7 per cent) has remained constant, but accounts for a smaller percentage of industry revenues as profits from original IP investments take off.</p><p>Overall, the interactive games industry in New Zealand is now worth more than half a billion dollars.</p><aside class="readmore">
-<div class="nocontent">
-<a class="image" href="https://www.cio.co.nz/article/644173/mission-possible-lessons-digital-evolution-from-mercury/"><img src="https://d2r9nfiii89r0l.cloudfront.net/dimg/120x120/dimg/kevin-angland-solo-1_1.jpg"/></a>
-<span class="text"><strong>Read more</strong> <a href="https://www.cio.co.nz/article/644173/mission-possible-lessons-digital-evolution-from-mercury/">Mission possible: Lessons on digital evolution from Mercury</a></span>
-</div>
-</aside><p>In addition to making video games, Kiwis spent $118.3 million in retail stores on games and $334 million on digital and mobile gaming during 2017 according to figures from the Interactive Games Entertainment Association. The combined value of software development earnings and local consumer spending totals $595.3 million.</p><figure class="art-figure"><img alt="Broadcasting, Communications and Digital Media Minister Clare Curran" class="article-image" src="https://d2r9nfiii89r0l.cloudfront.net/dimg/435x435/dimg/clare_curran_3.jpg"/><figcaption class="article-image-caption">Broadcasting, Communications and Digital Media Minister Clare Curran</figcaption></figure>
-<div class="art_quote"><p class="quote">Our tech sector is already growing but we need do things differently if we are to achieve our ICT goal</p></div><p>As of March 2018 there were 550 full-time professional game developers working in New Zealand studios, in a mix of creative and technical roles. 31 per cent of employees are artists, 29 per cent are programmers, 12 per cent are in marketing or management, 10 per cent are game designers, 7 per cent work in quality assurance and 6 per cent are producers. </p><aside class="readmore">
-<div class="nocontent">
-<a class="image" href="https://www.cio.co.nz/article/644163/cio-upfront-importance-data-driven-insights/"><img src="https://d2r9nfiii89r0l.cloudfront.net/dimg/120x120/dimg/DSC_0040.JPG"/></a>
-<span class="text"><strong>Read more</strong> <a href="https://www.cio.co.nz/article/644163/cio-upfront-importance-data-driven-insights/">CIO upfront: The importance of data-driven insights</a></span>
-</div>
-</aside><p><a href="https://www.cio.co.nz/article/633968/nz-makes-significant-inroads-improving-gender-balance-ict/">Diversity continues to be a priority for the Game Developers Association as the sector has only 21 per cent female employees. T</a>he association says it runs programmes to attract and retain female game creators.</p><p>However, 24 per cent of studios felt that skills shortages were constraining the growth of their business, especially for experienced senior staff. </p><p>Many experienced developers come from offshore, with seven studios currently employing 84 staff on work supported visas - 15 per cent of the entire industry.</p><p>Other barriers to growth identified are difficulties attracting early stage funding, expansion capital, the quality and experience of graduates and attracting international projects. </p><aside class="readmore">
-<div class="nocontent">
-<a class="image" href="https://www.cio.co.nz/article/645054/nz-government-opens-digital-procurement-channel/"><img src="https://d2r9nfiii89r0l.cloudfront.net/dimg/120x120/promoted_content/promo/cloud-20.jpg"/></a>
-<span class="text"><strong>Read more</strong> <a href="https://www.cio.co.nz/article/645054/nz-government-opens-digital-procurement-channel/">NZ Government opens digital procurement channel</a></span>
-</div>
-</aside><p><strong>Follow CIO New Zealand on Twitter:<a href="https://twitter.com/CIO_NZ" target="_blank">@cio_nz</a></strong></p><p><strong>Sign up for <a href="http://www.cio.co.nz/user/mailing_list/" target="_blank">CIO newsletters for regular updates on CIO news, views and events.</a></strong></p>
-
-
-
-
-      
-      
-
-        
-      
-
-
-
-
-
-<aside class="readmore" id="brand-post-in-article-promo">
-  <div class="nocontent">
-  <a class="image placeholder" href="/brand-post/content/660218/how-to-choose-a-standby-office-for-your-business-continuity/" onclick="trackBrandPostNativeAdLink(660218);">
-    <img src="https://d2r9nfiii89r0l.cloudfront.net/brand-post/logo/80x80/brand_posts/brand/logo-colour_1.jpg" />
-  </a>
-
-  <span class="text">
-    <img class="brandpost_logo" src="https://d2r9nfiii89r0l.cloudfront.net/dimg/90x30/brand_post/post_type/brandpost_type.png">
-    <a href="/brand-post/content/660218/how-to-choose-a-standby-office-for-your-business-continuity/" onclick="trackBrandPostNativeAdLink(660218);">How to choose a Standby Office for your Business Continuity</a><br/>
-  </span>
-
-  <a class="more" href="/brand-post/179/plan-b/" onclick="trackBrandPostNativeAdLink(660218);">More from Plan B</a>
-
-  
-  </div>
-</aside>
-
-
-
-
-<script type="text/javascript">
-$(document).ready(function() {
-  if(document.getElementById("brand-post-promo-placeholder-slot") !== null) {
-    insertBrandPostReadMoreSlot();
-  } else {
-    insertBrandPostArticleMiddle();
-  }
-});
-
-function insertBrandPostReadMoreSlot() {
-  $('#brand-post-promo-placeholder-slot').replaceWith($('#brand-post-in-article-promo'));
-}
-
-function insertBrandPostArticleMiddle() {
-  var pos = $('article.full .body > .storybody').length;
-  if (pos > 5) {
-    pos = Math.round(pos / 2);
-  }
-  
-  $('article.full .body > .storybody').each(function(index, object){  
-    if (index == pos) {
-      $(this).after($('#brand-post-in-article-promo'));
-    }
-  });
-}
-</script>
-
-
-
-
-<script type="text/javascript">
-function trackBrandPostNativeAdLink(nid) {
-  ga("send", "event", 'Brand Posts', 'Brand Post native ad click', 'brand-post-nid-' + nid, {'nonInteraction': 1});
-}
-</script>
-
-
-
-      
-
-
-      
-<div class="promo_text">
-	<p>Join the <a href="https://www.linkedin.com/groups?gid=3667783">CIO New Zealand group on LinkedIn</a>. The group is open to CIOs, IT Directors, COOs, CTOs and senior IT managers.</p>
-</div>
-
-      
-
-      
-      <div id="quick-signup-article-widget">
-
-
-<div class="qs-article_widget">
-  <h3>Join the  newsletter!</h3>
-  <!-- <small></small> -->
-
-  <form id="qs-article" action="/newsletter/quick-subscription/">
-    
-    <input type="hidden" name="newsletter" value="466038" id="id_newsletter" />
-    <input type="hidden" value="https://www.cio.co.nz/article/644699/nz-game-development-industry-gets-record-breaking-rise/" name="signup_url">
-
-    
-
-    <div class="qs-anonymous" id="qs-anonymous">
-      <input type="email" name="email" required placeholder="Email address" class="qs-textfield" id="id_email" />
-      <button type="button" class="qs-btn primary" id="qs-btn_anonymous">Join</button>
-    </div>
-
-
-    <!-- email signup section end -->
-
-    <div class="reg-or">
-      <span>Or</span>     
-    </div>
-
-    <!-- social media signup section -->
-    <div id="social-login-wrap">
-      <div id="social-login-con">
-        <ul>
-          <li>
-            <a class="reg-linkedin_link" href="/social/login/linkedin-oauth2/?next=/user/mailing_list/">
-              <span >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
-              </span>
-              Sign in with LinkedIn
-            </a>
-          </li>
-          <li>
-            <a class="reg-facebook_link" href="/social/login/facebook/?next=/user/mailing_list/">
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
-              </span>
-              Sign in with Facebook
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- social media signup section -->
-
-    <div id="qs-terms">
-      <p>Sign up to gain exclusive access to email subscriptions, event invitations, competitions, giveaways, and much more.</p>
-      <p>Membership is free, and your security and privacy remain protected. View our <a href="/privacy/">privacy policy</a> before signing up.</p>
-    </div>
-  </form>
-
-  <div class="qs-message" id="qs-message">Error: Please check your email address.</div>
-</div>
-
-<script type="text/javascript">
-$(document).ready(function() {
-  var wrap = $('.qs-article_widget');
-  wrap.css('background', wrap.data('color-initial'));
-  
-  var form = $('#qs-article');
-  
-  $('#qs-btn_change_email').click(function() {
-    $('#qs-registered').slideUp();
-    $('#qs-anonymous').slideDown();
-  });
-  
-  $('#qs-btn_anonymous, #qs-btn_registered', form).click(function() {
-    form.submit();
-  });
-  
-  // $("#qs-message").click(function() {
-  //   $(this).fadeOut();
-  // });
-  
-  form.submit(function(e) {
-    e.preventDefault();
-    
-    var data = {};
-    $('#qs-article').serializeArray().map(function(x) {
-      data[x.name] = x.value;
-    });
-    
-    $('#qs-message').hide();
-    
-    $.ajax({
-      url: form.attr('action'),
-      type: 'POST',
-      dataType: 'json',
-      data: data,
-      error: function(xhr) {
-        var data = JSON.parse(xhr.responseText);
-        alert(data.message);
-      },
-      success: function(data) {
-        if (data.success) {
-          $('#id_email', form).val('');
-          // wrap.css('background-color', wrap.data('color-success'));
-          // $('#qs-message').css('color', wrap.data('color-success'));
-          $('#qs-registered, #qs-anonymous').slideUp();
-        }
-        $('#qs-message').html(data.message).slideDown();
-      }
-    });
-  });
-});
-</script>
-
-
-</div>
-
-      
-
-
-        
-      
-      <p class="tags">
-        Tags <a href="/tag/games/">games</a><a href="/tag/ai/">AI</a><a href="/tag/digital-economy/">digital economy</a><a href="/tag/digital-divide/">digital divide</a><a href="/tag/tencent/">Tencent</a><a href="/tag/gamification/">gamification</a><a href="/tag/new-zealand-game-developers-association/">New Zealand Game Developers Association</a><a href="/tag/grinding-gear-games/">grinding gear games</a><a href="/tag/ninja-kiwi/">ninja kiwi</a><a href="/tag/clare-curran/">clare curran</a><a href="/tag/vr/">VR</a><a href="/tag/bloons-tower-defence-6/">Bloons Tower Defence 6</a>
-      </p>
-      
-      
-      
-      
-      
-        
-      
-      <p class="tags companies">
-      More about <a href="/company/apple/">Apple</a><a href="/company/interactive/">Interactive</a><a href="/company/twitter/">Twitter</a><a href="/company/west/">West</a>
-      </p>
-      
-      
-      
-      
-
-
-
-      
-
-      </div><!-- body -->
-
-    </article>
-
-
-    <div class="art-sidebar">
-      
-      
-      
-      
-      <div class="lo-rhs_mrec boombox">
-<div class="gpt-ad" id="gpt-ad-right-hand-side-story-list-7929710" data-gpt-ad-unit-path="/8456/IDG.AU_B2B_CIO.co.nz/digital_transformation_section" data-gpt-sizes="[[300, 250], [300, 600]]" data-gpt-targeting='{&quot;node&quot;: [&quot;644699&quot;], &quot;idgau_tax&quot;: [&quot;news&quot;], &quot;site&quot;: [&quot;nzcio&quot;], &quot;kw&quot;: [&quot;management&quot;, &quot;mobility&quot;, &quot;mobile&quot;, &quot;app&quot;, &quot;workforce&quot;, &quot;growth&quot;, &quot;data&quot;, &quot;software&quot;], &quot;sect&quot;: [&quot;digital_transformation&quot;], &quot;idgau_search_referrer&quot;: [&quot;no&quot;], &quot;type&quot;: [&quot;article&quot;]}' data-gpt-size-mapping="[[[610, 600], [[300, 600], [300, 250]]], [[0, 0], [[300, 250]]]]">
-</div>
-<div class="house-slot" style="display:none" data-name="" data-min-width="">
-
-</div>
-
-</div>
-      
-
-      
-
-      
-      <!--<a class="cio50-rhspromo" href="https://www.cio.co.nz/cio100/"><img src="https://demo.idg.com.au/nzcio/cio100/2018/cio100_results_2018.jpg?v=2"></a>-->
-      <a class="cio50-rhspromo" href="https://www.cio.co.nz/cio50/"><img src="https://demo.idg.com.au/nzcio/cio50/2020/cio50_promo.jpg"></a>
-      
-
-
-      
-      
-      
-
-
-<aside class="lo-rhs_box lo-rhs_readmore read_more">
-	<h2 class="lo-subheader lo-rhsheader">Editor's Recommendations</h2>
-	<ul class="lo-list related_list">
-	
-		<li>
-			<a class="lo-list_image image" href="/article/668181/7-deadly-signs-less-developed-company/">
-			<img src="https://d2r9nfiii89r0l.cloudfront.net/promoted-content/image/80x50/promoted_content/promo/dreamstime_m_96921948_bad_workplace_1.jpg">
-			</a>
-			<h3 class="lo-list_title"><a href="/article/668181/7-deadly-signs-less-developed-company/">The 7 deadly signs of a less developed company</a></h3>
-		</li>
-	
-		<li>
-			<a class="lo-list_image image" href="/article/668024/cio-critical-balancing-act-next-five-years/">
-			<img src="https://d2r9nfiii89r0l.cloudfront.net/promoted-content/image/80x50/promoted_content/promo/2019_gartner_symposium_olivia_huang_tuesday_07.jpg">
-			</a>
-			<h3 class="lo-list_title"><a href="/article/668024/cio-critical-balancing-act-next-five-years/">The CIO’s critical balancing act in the next five years</a></h3>
-		</li>
-	
-		<li>
-			<a class="lo-list_image image" href="/article/667438/kiwi-retailer-age-industry-4-0/">
-			<img src="https://d2r9nfiii89r0l.cloudfront.net/promoted-content/image/80x50/promoted_content/promo/michelle_anderson_1.jpg">
-			</a>
-			<h3 class="lo-list_title"><a href="/article/667438/kiwi-retailer-age-industry-4-0/">The Kiwi retailer in the age of Industry 4.0</a></h3>
-		</li>
-	
-		<li>
-			<a class="lo-list_image image" href="/article/667304/inside-amp-nz-repatriation-programme/">
-			<img src="https://d2r9nfiii89r0l.cloudfront.net/promoted-content/image/80x50/promoted_content/promo/dhaya_sivakumar_1.png">
-			</a>
-			<h3 class="lo-list_title"><a href="/article/667304/inside-amp-nz-repatriation-programme/">Inside AMP NZ’s ‘repatriation programme’</a></h3>
-		</li>
-	
-		<li>
-			<a class="lo-list_image image" href="/article/667280/get-ready-blockchain-reshape-society/">
-			<img src="https://d2r9nfiii89r0l.cloudfront.net/promoted-content/image/80x50/promoted_content/promo/david-furlonger_1.jpg">
-			</a>
-			<h3 class="lo-list_title"><a href="/article/667280/get-ready-blockchain-reshape-society/">Get ready for blockchain to reshape society</a></h3>
-		</li>
-	
-		<li>
-			<a class="lo-list_image image" href="/article/667044/university-auckland-taps-rpa-now-champions-it-wider-community/">
-			<img src="https://d2r9nfiii89r0l.cloudfront.net/promoted-content/image/80x50/promoted_content/promo/izak_van_niekerk.jpg">
-			</a>
-			<h3 class="lo-list_title"><a href="/article/667044/university-auckland-taps-rpa-now-champions-it-wider-community/">&#39;A robot for every student&#39;</a></h3>
-		</li>
-	
-	</ul>
-</aside>
-
-
-      
-      
-
-      
-
-      
-      
-
-
-      
-
-
-      
-      
-      <div class="lo-rhs_box" id="rhs_featurebox">
-<div class="gpt-ad" id="gpt-ad-right-hand-side-feature-box-7929710" data-gpt-ad-unit-path="/8456/IDG.AU_B2B_CIO.co.nz/digital_transformation_section" data-gpt-sizes="[[300, 150], [300, 600], [300, 250]]" data-gpt-targeting='{&quot;node&quot;: [&quot;644699&quot;], &quot;idgau_tax&quot;: [&quot;news&quot;], &quot;site&quot;: [&quot;nzcio&quot;], &quot;kw&quot;: [&quot;management&quot;, &quot;mobility&quot;, &quot;mobile&quot;, &quot;app&quot;, &quot;workforce&quot;, &quot;growth&quot;, &quot;data&quot;, &quot;software&quot;], &quot;sect&quot;: [&quot;digital_transformation&quot;], &quot;idgau_search_referrer&quot;: [&quot;no&quot;], &quot;type&quot;: [&quot;article&quot;]}' data-gpt-size-mapping="[[[610, 600], [[300, 600], [300, 150], [300, 250]]], [[0, 0], [[300, 150], [300, 250]]]]">
-</div>
-<div class="house-slot" style="display:none" data-name="" data-min-width="">
-
-</div>
-
-</div>
-      
-      
-
-                        
-      
-      
-                        
-                        <aside class="lo-rhs_box lo-rhs_readmore read_more">
-                                <h2 class="lo-subheader lo-rhsheader">Web Events</h2>
-                                <ul class="lo-list zones rhs-web-event">
-                                        
-                                        <li>
-                                                <a href="/webinar/365681/cio-live-webinar-getting-to-the-other-side-of-digital-disruption/video/"><img src="https://d2r9nfiii89r0l.cloudfront.net/webinar/images/sponsor/150x85/webinars/sponsor_logo/cio-live-webinar-getting-to-the-other-side-of-digital-disruption_dxc_logo.png" alt="" /></a>
-                                                <h3 class="lo-list_title"><a href="/webinar/365681/cio-live-webinar-getting-to-the-other-side-of-digital-disruption/video/">CIO Live Webinar - Getting to the Other Side of Digital Disruption</a></h3>
-                                        </li>
-                                        
-                                        <li>
-                                                <a href="/webinar/365676/how-to-power-your-work-and-unleash-enterprise-agility/video/"><img src="https://d2r9nfiii89r0l.cloudfront.net/webinar/images/sponsor/150x85/webinars/sponsor_logo/how-to-power-your-work-and-unleash-enterprise-agility_slacklogo.jpg" alt="" /></a>
-                                                <h3 class="lo-list_title"><a href="/webinar/365676/how-to-power-your-work-and-unleash-enterprise-agility/video/">How to power your work and unleash enterprise agility</a></h3>
-                                        </li>
-                                        
-                                        <li>
-                                                <a href="/webinar/365655/using-apis-to-unlock-business-value/video/"><img src="https://d2r9nfiii89r0l.cloudfront.net/webinar/images/sponsor/150x85/webinars/sponsor_logo/using-apis-to-unlock-business-value_ca_logo.gif" alt="" /></a>
-                                                <h3 class="lo-list_title"><a href="/webinar/365655/using-apis-to-unlock-business-value/video/">Using APIs to unlock business value</a></h3>
-                                        </li>
-                                        
-                                </ul>
-                        </aside>
-      
-      
-                        
-
-
-      
-      
-
-      
-      <aside class="lo-rhs_box lo-rhs_readmore read_more">
-        <h2 class="lo-subheader lo-rhsheader">Read more</h2>
-        <ul class="lo-list zones">
-          
-          
-          
-          
-
-        </ul>
-      </aside>
-      
-
-      
-
-
-      
-      
-      
-
-      
-
-      
-      
-  
-  
-  
-  <aside class="lo-rhs_box lo-rhs_whitepapers">
-    <h2 class="lo-subheader lo-rhsheader">Related Whitepapers</h2>
-    <ul class="lo-list related_list whitepapers">
-    
-    
-    <li>
-      <a class="lo-list_image" href="/whitepaper/373926/how-to-sell-your-cloud-migration-strategy/?type=other&amp;arg=0&amp;location=rhs_related_whitepaper"><img class="lazyload" src="https://www.idgcdn.com.au/compressor-staticfiles/lazysizes/placehold.png?release=20191204221221" data-src="https://d2r9nfiii89r0l.cloudfront.net/whitepaper/thumbnail/40x60/whitepapers/thumbnails/rackspace_1.png" /></a>
-      <h3 class="lo-list_title"><a href="/whitepaper/373926/how-to-sell-your-cloud-migration-strategy/?type=other&amp;arg=0&amp;location=rhs_related_whitepaper">How to sell your cloud migration strategy</a></h3>
-    </li>
-    
-    </ul>
-  </aside>
-  
-
-
-    
-      
-    </div>
-
-
-
-    <div class="art-extra">
-
-    
-    <div class="art-comments" id="art-comments_644699">
-    <a class="art-comment_show" data-disqus-identifier="/article/644699/" data-disqus-shortname="cionz" href="#">Show Comments</a>
-<div id="disqus_thread" data-disqus-shortname="cionz" data-disqus-identifier="/article/644699/"></div>
-<script type="text/javascript">
-var disqus_shortname = 'cionz';
-var disqus_identifier = '/article/644699/';
-var disqus_init = false;
-function disqus_config() {
-	this.callbacks.onReady = [function() {
-		if (disqus_init) return;
-		disqus_init = true;
-
-		if ($('.art-articles_wrap_infinite').length == 0) return;
-
-		var comment_text = $('.art-comment_show').first().text();
-		if (comment_text == '0 Comments') {
-			$(".art-comment_show_activated").removeClass("art-comment_show_activated");
-			$('#disqus_thread').hide();
-		}
-	}];
-}
-
-(function() {
-	$('.art-comment_show').first().addClass('art-comment_show_activated');
-	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-    </div>
-      
-
-
-
-      
-
-      
-      <div class="lo-bottom_boombox bottom_boombox">
-      
-<div class="gpt-ad" id="gpt-ad-main-column-7929710" data-gpt-ad-unit-path="/8456/IDG.AU_B2B_CIO.co.nz/digital_transformation_section" data-gpt-sizes="[[300, 250], [300, 600]]" data-gpt-targeting='{&quot;node&quot;: [&quot;644699&quot;], &quot;idgau_tax&quot;: [&quot;news&quot;], &quot;site&quot;: [&quot;nzcio&quot;], &quot;kw&quot;: [&quot;management&quot;, &quot;mobility&quot;, &quot;mobile&quot;, &quot;app&quot;, &quot;workforce&quot;, &quot;growth&quot;, &quot;data&quot;, &quot;software&quot;], &quot;sect&quot;: [&quot;digital_transformation&quot;], &quot;idgau_search_referrer&quot;: [&quot;no&quot;], &quot;type&quot;: [&quot;article&quot;]}' data-gpt-size-mapping="[[[610, 600], [[300, 600], [300, 250]]], [[0, 0], [[300, 250]]]]">
-</div>
-<div class="house-slot" style="display:none" data-name="" data-min-width="">
-
-</div>
-
-
-      </div>
-      
-
-
-      <!-- <script type="text/javascript" src="https://www.idgcdn.com.au/compressor-staticfiles/article/article.js?release=20191204221221"></script> -->
-
-      
-
-
-
-      
-<script type="text/javascript">
-(function() {
-  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-  po.src = 'https://apis.google.com/js/plusone.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-})();
-</script>
-
-
-
-    </div>
-
-    
-    <aside class="art-readnext readnext">
-      <h2>Read next</h2>
-      <ul>
-        
-        
-        
-        <li>
-          
-          
-              
-
-          <a class="image" href="/article/669329/majority-cmos-will-abandon-personalisation-efforts-by-2025-report/"><img class="lazyload" src="https://www.idgcdn.com.au/compressor-staticfiles/lazysizes/placehold.png?release=20191204221221" data-src="https://d2r9nfiii89r0l.cloudfront.net/article/images/300x300/dimg/dreamstime_m_24004342.jpg"></a>
-          <h3><a href="/article/669329/majority-cmos-will-abandon-personalisation-efforts-by-2025-report/">Most CMOs will abandon personalisation efforts by 2025 - report</a></h3>
-
-          
-
-        </li>
-        
-        <li>
-          
-          
-              
-
-          <a class="image" href="/article/669140/how-respond-mandatory-it-budget-cuts/"><img class="lazyload" src="https://www.idgcdn.com.au/compressor-staticfiles/lazysizes/placehold.png?release=20191204221221" data-src="https://d2r9nfiii89r0l.cloudfront.net/article/images/300x300/dimg/dreamstime_m_61828861_strategy.jpg"></a>
-          <h3><a href="/article/669140/how-respond-mandatory-it-budget-cuts/">How to respond to mandatory IT budget cuts - a guide for ...</a></h3>
-
-          
-
-        </li>
-        
-        <li>
-          
-          
-              
-
-          <a class="image" href="/article/669360/movers-shakers-nicholas-fourie-expands-ict-leadership-team-fisher-paykel-healthcare/"><img class="lazyload" src="https://www.idgcdn.com.au/compressor-staticfiles/lazysizes/placehold.png?release=20191204221221" data-src="https://d2r9nfiii89r0l.cloudfront.net/article/images/300x300/dimg/nicholas-fourie_rs.jpg"></a>
-          <h3><a href="/article/669360/movers-shakers-nicholas-fourie-expands-ict-leadership-team-fisher-paykel-healthcare/">Movers and shakers: Nicholas Fourie expands ICT leadership team at Fisher &amp; ...</a></h3>
-
-          
-
-        </li>
-        
-        
-
-        
-        
-        
-        
-        <li class="gallery">
-          <a class="image" href="/slideshow/666193/pictures-cio-roundtable-building-an-ai-driven-business/"><img class="lazyload" src="https://www.idgcdn.com.au/compressor-staticfiles/lazysizes/placehold.png?release=20191204221221" data-src="https://d2r9nfiii89r0l.cloudfront.net/article/images/300x300/dimg/cio_mist_juniper-34.jpg"></a>
-          <h3><a href="/slideshow/666193/pictures-cio-roundtable-building-an-ai-driven-business/">In pictures: CIO roundtable on &#39;building an AI-driven business&#39;</a></h3>
-        </li>
-        
-        
-        
-        <li class="gallery">
-          <a class="image" href="/slideshow/659740/top-10-tech-digital-chiefs-new-zealand/"><img class="lazyload" src="https://www.idgcdn.com.au/compressor-staticfiles/lazysizes/placehold.png?release=20191204221221" data-src="https://d2r9nfiii89r0l.cloudfront.net/article/images/300x300/dimg/kevin_drinkwater_at_mainfreight_headquarters.jpg"></a>
-          <h3><a href="/slideshow/659740/top-10-tech-digital-chiefs-new-zealand/">The top 10 tech and digital chiefs in New Zealand</a></h3>
-        </li>
-        
-        
-        
-      </ul>
-    </aside>
-    
-
-
-    
-    
-    <div id="leaderboard-bottom-ad" class="art-bottom_leaderboard lo-leaderboard_bottom">
-<div class="gpt-ad" id="gpt-ad-bottom-banner-7929710" data-gpt-ad-unit-path="/8456/IDG.AU_B2B_CIO.co.nz/digital_transformation_section" data-gpt-sizes="[[728, 90]]" data-gpt-targeting='{&quot;node&quot;: [&quot;644699&quot;], &quot;idgau_tax&quot;: [&quot;news&quot;], &quot;site&quot;: [&quot;nzcio&quot;], &quot;kw&quot;: [&quot;management&quot;, &quot;mobility&quot;, &quot;mobile&quot;, &quot;app&quot;, &quot;workforce&quot;, &quot;growth&quot;, &quot;data&quot;, &quot;software&quot;], &quot;sect&quot;: [&quot;digital_transformation&quot;], &quot;idgau_search_referrer&quot;: [&quot;no&quot;], &quot;type&quot;: [&quot;article&quot;]}' data-gpt-size-mapping="[[[728, 90], [[728, 90]]], [[0, 0], []]]">
-</div>
-<div class="house-slot" style="display:none" data-name="" data-min-width="">
-
-</div>
-
-</div>  
-    
-    
-
-
-    
-    
-
-
-
-<div class="ias-pagination" id="ias-pagination_644699">
-	<a class="ias-next" data-sms="“You have to look at the business end to end. Otherwise, you don’t get the benefits that are expected,” says Leon Sayers of Unisys" data-image="https://d2r9nfiii89r0l.cloudfront.net/dimg/200x200/dimg/dreamstime_m_135213514_cloud.jpg" title="Study highlights pitfalls of failing to integrate cloud migration into core business strategy" data-article-nextid="668671" href="/article/668671/study-highlights-pitfalls-failing-integrate-cloud-migration-into-core-business-strategy/">Study highlights pitfalls of failing to integrate cloud migration into core business strategy</a>
-</div>
-
-    
-
-    
-    <div id="clarity-context-data_644699" data-context="{&quot;event_type&quot;: &quot;pageview&quot;, &quot;tags&quot;: [&quot;games&quot;, &quot;AI&quot;, &quot;digital economy&quot;, &quot;digital divide&quot;, &quot;Tencent&quot;, &quot;gamification&quot;, &quot;New Zealand Game Developers Association&quot;, &quot;grinding gear games&quot;, &quot;ninja kiwi&quot;, &qquot;clare curran&quot;, &quot;VR&quot;, &quot;Bloons Tower Defence 6&quot;], &quot;author&quot;: &quot;CIO New Zealand&quot;, &quot;word_count&quot;: 893, &quot;publication_datetime&quot;: &quot;2018-08-02T09:05:07+00:00&quot;, &quot;score&quot;: 1, &quot;content_type&quot;: &quot;article&quot;, &quot;content_id&quot;: 428027790}">
-
-    
-
-
-
-  </div><!-- art-wrap -->
-
-
-
-
-</div><!-- art-articles_wrap -->
-
-
-
-
-
-
-
-
-
-
-    </div><!-- site_columns_main -->
-    
-
-    
-
-    
-
-  </div><!-- site_columns-->
-
-  
-
-  
-    
-
-
-
-
-  
-
-  
-  
-
-</div>
-</div>
-
-<footer class="lo-footer">
-  
-  <div class="lo-footer_content">
-    <div class="lo-footer_nav">
-      <ul class="lo-footer_nav_list">
-        <li><a href="mailto:divina_paredes@idg.co.nz">Send Us E-mail</a></li>
-        <li><a href="/privacy" target="_blank">Privacy Policy [Updated 13 Sep 19]</a> </li>
-        <li><a href="http://www.idg.com.au/contacts" target="_blank">Advertising</a> </li>
-        <li><a href="http://www.csoonline.com.au">CSO</a> </li>
-        <li><a href="/user/mailing_list/?referrer=footer_textlinks" target="_blank">Subscribe to emails</a> </li>
-        <li><a href="/user/login" target="_blank">IDG registered user login</a> </li>
-        <li><a href="https://subscriptions.idg.com.au/" target="_blank">Subscribe to IDG Publications</a> </li>
-        <li><a href="/contacts">Contact Us</a> </li>
-      </ul>
-    </div>
-
-    <div class="lo-footer_bottom">
-      <p class="lo-copyright">Copyright 2019 IDG Communications. ABN 14 001 592 650. All rights reserved. Reproduction in whole or in part in any form or medium without express written permission of IDG Communications is prohibited.</p>
-
-      <div class="lo-footer_sites">
-        <h2>IDG Sites</h2>
-        <ul class="lo-footer_sites_list">
-          <li><a href="http://www.pcworld.co.nz">PC World</a> </li>
-          <li><a href="http://www.computerworld.co.nz">Computerworld</a> </li>
-          <li><a href="http://www.reseller.co.nz">Reseller News</a> </li>
-        </ul>
-      </div>
-
-      <a  class="lo-sba"id="footer_sba" href="http://www.auditbureau.org.au/edata/masthead/show/cio"><img src="https://www.idgcdn.com.au/compressor-staticfiles/images/ABA_audited_website.gif?release=20191204221221" alt="ABA_audited_website" width="100" height="51" /></a>
-    </div>
-  </div>
-
-</footer>
-
-
-<div id="ad_slot"></div>
-
-<div class="lo-scripts">
-
-  <script type="text/javascript" language="JavaScript" src="https://www.idgcdn.com.au/compressor-staticfiles/cio/cio.js?release=20191204221221"></script>
-  <script type="text/javascript" language="JavaScript" src="https://www.idgcdn.com.au/compressor-staticfiles/lazysizes/lazysizes.min.js?release=20191204221221"></script>
-
-  <div id="fb-root"></div>
-<script>
-	window.fbAsyncInit = function() {
-		FB.init({appId: '119110298118070', status: true, cookie: true,
-			xfbml: true});
-	};
-	(function() {
-		var e = document.createElement('script'); e.async = true;
-		e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
-		document.getElementById('fb-root').appendChild(e);
-	}());
-</script>
-
-
-  
-  <div id="trackers">
-    
-<!-- Start Google Analytics  -->
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-42216900-2', 'auto');
-
-ga('require', 'displayfeatures'); // enables demographics and interests reports
-
-
-	ga('set', 'dimension1', "none");
-
-
-
-	ga('set', 'dimension2', "cio-new-zealand");
-
-
-
-	ga('set', 'dimension3', "none");
-
-
-
-	ga('set', 'dimension4', "none");
-
-
-
-	ga('set', 'dimension5', "anonymous");
-
-
-
-	ga('send', 'pageview');
-
-
-// pageTracker._trackPageLoadTime();
-
-
-// event tracking is asynchronous
-function trackEvent(category, action, label, value) {
-	if (value)
-		ga('send', 'event', category, action, label, value, {'nonInteraction': 1});
-	else
-		ga('send', 'event', category, action, label, {'nonInteraction': 1});
-}
-
-
-
-trackEvent('Content Tags', 'Tag Impression', 'games');
-
-trackEvent('Content Tags', 'Tag Impression', 'ai');
-
-trackEvent('Content Tags', 'Tag Impression', 'digital economy');
-
-trackEvent('Content Tags', 'Tag Impression', 'digital divide');
-
-trackEvent('Content Tags', 'Tag Impression', 'tencent');
-
-trackEvent('Content Tags', 'Tag Impression', 'gamification');
-
-trackEvent('Content Tags', 'Tag Impression', 'new zealand game developers association');
-
-trackEvent('Content Tags', 'Tag Impression', 'grinding gear games');
-
-trackEvent('Content Tags', 'Tag Impression', 'ninja kiwi');
-
-trackEvent('Content Tags', 'Tag Impression', 'clare curran');
-
-trackEvent('Content Tags', 'Tag Impression', 'vr');
-
-trackEvent('Content Tags', 'Tag Impression', 'bloons tower defence 6');
-
-trackEvent('Brand Posts', 'Brand Post native ad impression', 'brand-post-nid-660218');
-
-
-
-</script>
-<!-- End Google Analytics -->
-
-
-  </div>
-  
-
-  <div class="ad_scripts">
-    <div class="lo-skin_script">
-<div class="gpt-ad" id="gpt-ad-skin-7929710" data-gpt-ad-unit-path="/8456/IDG.AU_B2B_CIO.co.nz/digital_transformation_section" data-gpt-sizes="[[1600, 1]]" data-gpt-targeting='{&quot;node&quot;: [&quot;644699&quot;], &quot;idgau_tax&quot;: [&quot;news&quot;], &quot;site&quot;: [&quot;nzcio&quot;], &quot;kw&quot;: [&quot;management&quot;, &quot;mobility&quot;, &quot;mobile&quot;, &quot;app&quot;, &quot;workforce&quot;, &quot;growth&quot;, &quot;data&quot;, &quot;software&quot;], &quot;sect&quot;: [&quot;digital_transformation&quot;], &quot;idgau_search_referrer&quot;: [&quot;no&quot;], &quot;type&quot;: [&quot;article&quot;]}' data-gpt-size-mapping="[[[610, 100], [[1600, 1]]], [[0, 0], []]]">
-</div>
-<div class="house-slot" style="display:none" data-name="" data-min-width="">
-
-</div>
-
-</div>
-    <div class="lo-otp_script">
-<div class="gpt-ad" id="gpt-ad-over-the-page-7929710" data-gpt-ad-unit-path="/8456/IDG.AU_B2B_CIO.co.nz/digital_transformation_section" data-gpt-sizes="[[1, 1]]" data-gpt-targeting='{&quot;node&quot;: [&quot;644699&quot;], &quot;idgau_tax&quot;: [&quot;news&quot;], &quot;site&quot;: [&quot;nzcio&quot;], &quot;kw&quot;: [&quot;management&quot;, &quot;mobility&quot;, &quot;mobile&quot;, &quot;app&quot;, &quot;workforce&quot;, &quot;growth&quot;, &quot;data&quot;, &quot;software&quot;], &quot;sect&quot;: [&quot;digital_transformation&quot;], &quot;idgau_search_referrer&quot;: [&quot;no&quot;], &quot;type&quot;: [&quot;article&quot;]}' data-gpt-size-mapping="[[[610, 610], [[1, 1]]], [[0, 0], []]]">
-</div>
-<div class="house-slot" style="display:none" data-name="" data-min-width="">
-
-</div>
-
-</div>
-    
-<div class="gpt-ad" id="gpt-ad-gumgum-in-image-ad-7929710" data-gpt-ad-unit-path="/8456/IDG.AU_B2B_CIO.co.nz/digital_transformation_section" data-gpt-sizes="[[12, 12]]" data-gpt-targeting='{&quot;node&quot;: [&quot;644699&quot;], &quot;idgau_tax&quot;: [&quot;news&quot;], &quot;site&quot;: [&quot;nzcio&quot;], &quot;kw&quot;: [&quot;management&quot;, &quot;mobility&quot;, &quot;mobile&quot;, &quot;app&quot;, &quot;workforce&quot;, &quot;growth&quot;, &quot;data&quot;, &quot;software&quot;], &quot;sect&quot;: [&quot;digital_transformation&quot;], &quot;idgau_search_referrer&quot;: [&quot;no&quot;], &quot;type&quot;: [&quot;article&quot;]}' data-gpt-size-mapping="[[[0, 0], [[12, 12]]]]">
-</div>
-<div class="house-slot" style="display:none" data-name="" data-min-width="">
-
-</div>
-
-
-    
-<div class="gpt-ad" id="gpt-ad-third-party-otp-7929710" data-gpt-ad-unit-path="/8456/IDG.AU_B2B_CIO.co.nz/digital_transformation_section" data-gpt-sizes="[[15, 15]]" data-gpt-targeting='{&quot;node&quot;: [&quot;644699&quot;], &quot;idgau_tax&quot;: [&quot;news&quot;], &quot;site&quot;: [&quot;nzcio&quot;], &quot;kw&quot;: [&quot;management&quot;, &quot;mobility&quot;, &quot;mobile&quot;, &quot;app&quot;, &quot;workforce&quot;, &quot;growth&quot;, &quot;data&quot;, &quot;software&quot;], &quot;sect&quot;: [&quot;digital_transformation&quot;], &quot;idgau_search_referrer&quot;: [&quot;no&quot;], &quot;type&quot;: [&quot;article&quot;]}' data-gpt-size-mapping="[[[0, 0], [[15, 15]]]]">
-</div>
-<div class="house-slot" style="display:none" data-name="" data-min-width="">
-
-</div>
-
-
-
-    
-<div class="gpt-ad" id="gpt-ad-mobile-floating-banner-7929710" data-gpt-ad-unit-path="/8456/IDG.AU_B2B_CIO.co.nz/digital_transformation_section" data-gpt-sizes="[[320, 50]]" data-gpt-targeting='{&quot;node&quot;: [&quot;644699&quot;], &quot;idgau_tax&quot;: [&quot;news&quot;], &quot;site&quot;: [&quot;nzcio&quot;], &quot;kw&quot;: [&quot;management&quot;, &quot;mobility&quot;, &quot;mobile&quot;, &quot;app&quot;, &quot;workforce&quot;, &quot;growth&quot;, &quot;data&quot;, &quot;software&quot;], &quot;sect&quot;: [&quot;digital_transformation&quot;], &quot;idgau_search_referrer&quot;: [&quot;no&quot;], &quot;type&quot;: [&quot;article&quot;]}' data-gpt-size-mapping="[[[600, 800], []], [[0, 0], [[320, 50]]]]">
-</div>
-<div class="house-slot" style="display:none" data-name="" data-min-width="">
-
-</div>
-
-
-    
-<div class="gpt-ad" id="gpt-ad-mobile-otp-7929710" data-gpt-ad-unit-path="/8456/IDG.AU_B2B_CIO.co.nz/digital_transformation_section" data-gpt-sizes="[[2, 2]]" data-gpt-targeting='{&quot;node&quot;: [&quot;644699&quot;], &quot;idgau_tax&quot;: [&quot;news&quot;], &quot;site&quot;: [&quot;nzcio&quot;], &quot;kw&quot;: [&quot;management&quot;, &quot;mobility&quot;, &quot;mobile&quot;, &quot;app&quot;, &quot;workforce&quot;, &quot;growth&quot;, &quot;data&quot;, &quot;software&quot;], &quot;sect&quot;: [&quot;digital_transformation&quot;], &quot;idgau_search_referrer&quot;: [&quot;no&quot;], &quot;type&quot;: [&quot;article&quot;]}' data-gpt-size-mapping="[[[610, 610], []], [[0, 0], [[2, 2]]]]">
-</div>
-<div class="house-slot" style="display:none" data-name="" data-min-width="">
-
-</div>
-
-
-    
-<div class="gpt-ad" id="gpt-ad-teads-inread-7929710" data-gpt-ad-unit-path="/8456/IDG.AU_B2B_CIO.co.nz/digital_transformation_section" data-gpt-sizes="[[18, 18]]" data-gpt-targeting='{&quot;node&quot;: [&quot;644699&quot;], &quot;idgau_tax&quot;: [&quot;news&quot;], &quot;site&quot;: [&quot;nzcio&quot;], &quot;kw&quot;: [&quot;management&quot;, &quot;mobility&quot;, &quot;mobile&quot;, &quot;app&quot;, &quot;workforce&quot;, &quot;growth&quot;, &quot;data&quot;, &quot;software&quot;], &quot;sect&quot;: [&quot;digital_transformation&quot;], &quot;idgau_search_referrer&quot;: [&quot;no&quot;], &quot;type&quot;: [&quot;article&quot;]}' data-gpt-size-mapping="[[[0, 0], [[18, 18]]]]">
-</div>
-<div class="house-slot" style="display:none" data-name="" data-min-width="">
-
-</div>
-
-
-
-
-    <script type="text/javascript" src="https://www.idgcdn.com.au/compressor-staticfiles/adsmin/idg_gpt.js?release=20191204221221" charset="utf-8"></script>
-    <script type="text/javascript">
-    createAndDisplayAds();
-    </script>
-  </div>
-
-  <script type="text/javascript" src="https://www.idgcdn.com.au/compressor-staticfiles/jquery.cookie.js?release=20191204221221"></script>
-  <!-- <script type="text/javascript" src="https://www.idgcdn.com.au/compressor-staticfiles/mobile/common/iphone_switcher.js?release=20191204221221"></script> -->
-
-  
-
-  
-  
-  <script>
-    var disqus_shortname = "";
-  </script>
-  <script type="text/javascript" src="https://www.idgcdn.com.au/compressor-staticfiles/article/jquery.magnific-popup.min.js?release=20191204221221"></script>
-  <script src="https://www.idgcdn.com.au/compressor-staticfiles/article/jquery-ias.min.js?release=20191204221221"></script>
-  <script src="https://www.idgcdn.com.au/compressor-staticfiles/article/infinitescroll.js?release=20191204221221"></script>
-  <script>
-    ias_init('CIO New Zealand');
-  </script>
-
-</div>
-</body>
-
-
-
-<!-- Crazy Egg Tracking -->
-<script type="text/javascript">
-setTimeout(function(){var a=document.createElement("script");
-var b=document.getElementsByTagName("script")[0];
-a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0018/8767.js?"+Math.floor(new Date().getTime()/3600000);
-a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
-</script>
-
-<script>
-(function($){
-  var detectAdHeight=setInterval(function() {
-    if( $('.gpt-ad').children().eq(1).find('iframe').height() <= 300 ){
-      $('#hp-popular').clone().attr('id','hp-popular_clone').appendTo('#hp-popular_placeholder');
-      $('#hp-page').addClass('short_mrec');
-      $('.hp-latest .hp-latest_list li').slice(12).hide();
- 
-      clearInterval(detectAdHeight)//clean detect height when find height <=300
-    } 
-  }, 500);
-  //clean detect height if can't get height <=300 within 10sec
-  setTimeout( function(){
-    clearInterval(detectAdHeight);
-  } , 10000)
-
-})(window.jQuery)
-</script>
-
-
-<script type="text/javascript">
-var disqus_shortname = 'cionz';
+$response = $ta->get_response();
+$visitor = $ta->get_visitor();
 
 /*
-(function () {
-var s = document.createElement('script'); s.async = true;
-s.type = 'text/javascript';
-s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-}());
+ * Advanced users: uncomment lines below during development to expose variables you may want to use in your custom code:
+ */
+//print_r($response);
+//print_r($visitor);
+//exit;
+/*
+ * Don't forget to re-comment the lines above before sending live traffic
+ */
+
+/*
+Note: when using hybrid mode, please use one of our built-in functions as your final step when routing your visitors:
+    print header_redirect("http://url.com"); //performs a 302 header redirect (or a window.location=xxx in JS)
+    print load_fullscreen_iframe("http://url.com"); //Loads a fullscreen iframe of the specified URL
+    print paste_html("http://url.com"); //Downloads HTML in specified URL and outputs it to the screen (uses JS to insert the HTML in hybrid mode)
+(These functions will automatically output either regular HTML or JS code depending on what the visitor's browser is expecting)
 */
 
-// This lets us know when the JS has loaded and after the counts are fetched.
-function disqus_counts_loaded() {
-	DISQUSWIDGETS.old_displayCount = DISQUSWIDGETS.displayCount;
-
-	// Override the old displayCount() with a new one so we can attach our helper onto it.
-	DISQUSWIDGETS.displayCount = function(arg) {
-		DISQUSWIDGETS.old_displayCount(arg);
-		$("a[href$=#disqus_thread],*[data-disqus-identifier]").trigger('disqus-counts-loaded');
-	}
+switch ($response['action']) {
+    case 'header_redirect':
+        print header_redirect($response['url']); //Uses <script>window.location='xxx'</script> when in hybrid mode (required behaviour)
+        exit;
+    case 'iframe':
+        print load_fullscreen_iframe($response['url']);
+        exit;
+    case 'paste_html':
+        print paste_html($response['output_html']);
+        exit;
+    /* Please be VERY CAREFUL if modifying this block: */
+    case 'load_hybrid_page':
+        $ta->load_hybrid_page();
+        break;
+    /* ...it is needed for hybrid mode to function correctly */
 }
 
-$.getScript('//' + disqus_shortname + '.disqus.com/count.js', disqus_counts_loaded);
-</script>
+/*
+ * Note: if using the "Remain on Safe Page" action for Filtered Visitors, append your safe page's HTML/PHP code after the closing PHP tag below:
+ */
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Games Database. Credits, Trivia, Reviews, Box Covers, Screenshots - MobyGames</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MobyGames is the oldest, largest and most accurate video game database for games of every platform spanning 1979-2019.">
+  <meta property="og:site_name" content="MobyGames" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.mobygames.com/images/mobygames-logo-bg.png" />
+  <meta property="og:title" content="Video Games Database. Credits, Trivia, Reviews, Box Covers, Screenshots - MobyGames" />
+  <meta property="og:description" content="MobyGames is the oldest, largest and most accurate video game database for games of every platform spanning 1979-2019." />
+  <meta name="google-site-verification" content="tJt3KCZCKYjBQCF3Fi55jOw6LD2AiPzSrlP6E-mZvSs" />
+  <link rel="apple-touch-icon image_src" href="https://www.mobygames.com/images/moby300x300.png">
+  <script>
+  var propertag = propertag || {};
+  propertag.cmd = propertag.cmd || [];
+  (function() {
+  var pm = document.createElement('script');
+  pm.async = true; pm.type = 'text/javascript';
+  var is_ssl = 'https:' == document.location.protocol;
+  pm.src = (is_ssl ? 'https:' : 'http:') + '//global.proper.io/mobygames.min.js';
+  var node = document.getElementsByTagName('script')[0];
+  node.parentNode.insertBefore(pm, node);
+  })();
+  </script>
+  <link type="application/rss+xml" rel="alternate" href="https://www.mobygames.com/rss/news.rss" title="MobyGames RSS" >
+  <link rel="canonical" href="https://www.mobygames.com/">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://www.mobygames.com/css/19070500/1s/moby_safari.css" type="text/css">
+  <script type="text/javascript" src="/js/19070500/global.js"></script>
+</head>
+<body>
+    <div class="container">
+      <div class="grid grid-navbar">
+        <div class="grid-navbar-logo">
+          <a href="https://www.mobygames.com/"><img src="/images/mobygames-logo.png" width="163" height="75" alt="MobyGames"></a>
+        </div>
+        <div class="grid-navbar-menu">
+          <form action="/search/quick" accept-charset="UTF-8" id="formaafr" method="GET">
+            <div class="input-group input-group-sm">
+              <input type="text" id="qsearch" name="q" class="form-control headerSearchForm searchBarHeight" placeholder="Search games, credits, companies...">
+              <div class="input-group-btn">
+                <button type="submit" class="btn btn-primary searchBarHeight"><span class="glyphicon glyphicon-search"></span></button>
+              </div>
+            </div>
+          </form>
+          <ul id="moby-main-menu">
+            
+            <li><a href="https://www.mobygames.com/browse/games" title="Browse games">Games</a></li>
+            <li><a href="https://www.mobygames.com/forums" title="Community discussion">Forums</a></li>
+            <li class="hidden-xs hidden-sm">
+              <a href="https://www.mobygames.com/news" data-toggle="dropdown" title="The latest at MobyGames">Updates <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.mobygames.com/news">Site News</a></li>
+                <li class="divider"></li>
+                <li><a href="https://www.mobygames.com/stats/recent_entries">New Games</a></li>
+                <li><a href="https://www.mobygames.com/stats/recent_modifications">Game Updates</a></li>
+                <li><a href="https://www.mobygames.com/stats/recent_reviews">New Reviews</a></li>
+                <li><a href="https://www.mobygames.com/stats/new_companies">New Companies</a></li>
+                <li><a href="https://www.mobygames.com/stats/company_modifications">Company Updates</a></li>
+                <li><a href="https://www.mobygames.com/stats/developer_modifications">Developer Updates</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://www.mobygames.com/info/contribute" data-toggle="dropdown" title="Contribute">Contribute <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.mobygames.com/new_game_wizard/">Add New Game</a></li>
+                <li><a href="https://www.mobygames.com/poll_wizard">Add New Poll</a></li>
+                <li><a href="https://www.mobygames.com/featured_game_wizard/">Add Featured Game</a></li>
+                
+                <li class="divider"></li>
+                <li><a href="https://www.mobygames.com/info/contribute">Instructions</a></li>
+                <li><a href="https://www.mobygames.com/info/standards">Standards</a></li>
+                <li><a href="https://www.mobygames.com/stats/contributors">Top Contributors</a></li>
+                <li><a href="https://www.mobygames.com/wanted/dead-or-alive">Most Wanted</a></li>
+              </ul>
+            </li>
+            <li><a href="https://www.mobygames.com/random/game?1576616654" data-toggle="tooltip" data-placement="bottom" data-container="body" title="Random Game"><span class="glyphicon glyphicon-random"></span></a></li>
+            <li>
+              <a href="https://www.patreon.com/mobygames" data-toggle="tooltip" data-placement="bottom" data-container="body" title="Help support the MobyGames project with Patreon!">
+                <span class="glyphicon glyphicon-heart"></span>
+              </a>
+            </li>
+            <li>&nbsp;</li>
+          </ul>
+        </div>
+<div class="grid-navbar-user"><div style="text-align: right"><a href="https://www.mobygames.com/acct/logon/from,:2f/g,3/" class="btn btn-teal">Sign in</a> <a href="https://www.mobygames.com/acct/create_account" class="btn btn-teal">Register</a></div></div>      </div><!-- /.grid -->
+    </div><!-- /.container -->
+      <div class="moby-headliner">
+        <div class="container">
+          <p class="moby-headliner-text">
+<b><a href="https://discord.gg/8zWGTQp">Join our Discord</a> to chat with fellow friendly gamers and our knowledgeable contributors!</b>          </p>
+        </div>
+      </div>
+<div id="wrapper">
+<div class="container">
+<div id="main" class="row">
+<div class="col-md-12 col-lg-12">
+<div class="lifesupport-header"><div style="display: flex; min-height: 250px;">
+<div class="proper-ad-unit">
+    <div id="proper-ad-mobygames_leaderboard"> <script> propertag.cmd.push(function() { proper_display('mobygames_leaderboard'); }); </script> </div>
+</div>
+</div></div>
+<div class="row">
+<div class="col-md-8 col-lg-8"><div class="newContent"><table class="pct100">
+  <tr valign="top">
+    <td width="48%"><h2 class="sectionSeparator cleartop clearbot">Game Updates <small><a href="https://www.mobygames.com/stats/recent_modifications">more</a></small></h2><table class="table table-striped table-condensed table-hover"><tr><td><div class="floatholder"><strong class="truncate"><a href="https://www.mobygames.com/game/windows/adibou-et-les-saisons-magiques/credits">Adibou et les saisons magiques</a></strong><span class="text-muted"><small>New Windows credits by <a href="https://www.mobygames.com/user/sheet/userSheetId,30979/">Sciere</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-fire donator-flame"></span></a> | Today,&nbsp;07:39&nbsp;PM</small></div></td></tr><tr><td><div class="floatholder"><strong class="truncate"><a href="https://www.mobygames.com/game/jets-n-guns/cover-art">Jets &#x27;n&#x27; Guns</a></strong><span class="text-muted"><small>New Nintendo Switch cover by <a href="https://www.mobygames.com/user/sheet/userSheetId,198173/">リカルド・フィリペ</a> | Today,&nbsp;06:37&nbsp;PM</small></div></td></tr><tr><td><div class="floatholder"><strong class="truncate"><a href="https://www.mobygames.com/game/jets-n-guns/cover-art">Jets &#x27;n&#x27; Guns</a></strong><span class="text-muted"><small>New Nintendo Switch cover by <a href="https://www.mobygames.com/user/sheet/userSheetId,198173/">リカルド・フィリペ</a> | Today,&nbsp;06:37&nbsp;PM</small></div></td></tr><tr><td><div class="floatholder"><strong class="truncate"><a href="https://www.mobygames.com/game/knockout-checkers-chamber/promo">Knockout Checkers Chamber</a></strong><span class="text-muted"><small>New promo image by <a href="https://www.mobygames.com/user/sheet/userSheetId,198173/">リカルド・フィリペ</a> | Today,&nbsp;05:50&nbsp;PM</small></div></td></tr></table></td>
+    <td width="4%"></td>
+    <td width="48%"><h2 class="sectionSeparator cleartop clearbot">Just Added <small><a href="https://www.mobygames.com/stats/recent_entries">more</a></small></h2><table class="table table-striped table-condensed table-hover"><tr><td><strong class="truncate"><a href="https://www.mobygames.com/game/j2me/fremtris">Fremtris (J2ME)</a></strong><span class="text-muted"><small>Added by <a href="https://www.mobygames.com/user/sheet/userSheetId,533781/">Zelon</a> | Today,&nbsp;07:13&nbsp;PM</small></td></tr><tr><td><strong class="truncate"><a href="https://www.mobygames.com/game/arcade/cloak-dagger">Cloak &#x26; Dagger (Arcade)</a></strong><span class="text-muted"><small>Added by <a href="https://www.mobygames.com/user/sheet/userSheetId,545256/">Shane Riley</a> | Today,&nbsp;07:12&nbsp;PM</small></td></tr><tr><td><strong class="truncate"><a href="https://www.mobygames.com/game/switch/jets-n-guns">Jets &#x27;n&#x27; Guns (Nintendo Switch)</a></strong><span class="text-muted"><small>Added by <a href="https://www.mobygames.com/user/sheet/userSheetId,198173/">リカルド・フィリペ</a> | Today,&nbsp;06:37&nbsp;PM</small></td></tr><tr><td><strong class="truncate"><a href="https://www.mobygames.com/game/linux/blade-runner">Blade Runner (Linux)</a></strong><span class="text-muted"><small>Added by <a href="https://www.mobygames.com/user/sheet/userSheetId,180419/">Plokite_Wolf</a> | Today,&nbsp;03:22&nbsp;PM</small></td></tr></table></td>
+  </tr>
+</table><h3 class="sectionSeparator cleartop">New Screenshots <small><a href="https://www.mobygames.com/stats/recent_images/imageType,3/">more</a></small></h3><div class="row">
+  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/windows/cooking-dash/screenshots" title="Cooking Dash (Windows)" class="thumbnail-image" style="background-image:url(/images/shots/s/993555-cooking-dash-windows-screenshot-the-different-restaurant.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Cooking Dash</h3>        <small class="text-muted">Windows</small><br>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,533781/">Zelon</a></p>      </div>    </div>  </div>  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/c64/combots_/screenshots" title="Combots (Commodore 64)" class="thumbnail-image" style="background-image:url(/images/shots/s/992995-combots-commodore-64-screenshot-title-screen.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Combots</h3>        <small class="text-muted">Commodore 64</small><br>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,275263/">hoeksmas</a></p>      </div>    </div>  </div>  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/supervision/assembloids_/screenshots" title="Assembloids (Supervision)" class="thumbnail-image" style="background-image:url(/images/shots/s/993527-assembloids-supervision-screenshot-in-game-screenshot.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Assembloids</h3>        <small class="text-muted">Supervision</small><br>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,273682/">Martin Wendt</a></p>      </div>    </div>  </div>  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/playstation-4/la-noire-the-vr-case-files/screenshots" title="L.A. Noire: The VR Case Files (PlayStation 4)" class="thumbnail-image" style="background-image:url(/images/shots/s/993521-l-a-noire-the-vr-case-files-playstation-4-screenshot-car-chase.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">L.A. Noire: The VR Case Files</h3>        <small class="text-muted">PlayStation 4</small><br>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,705/">MAT</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-star donator-star"></span></a></p>      </div>    </div>  </div></div>
+<h3 class="sectionSeparator cleartop">New Cover Art <small><a href="https://www.mobygames.com/stats/recent_images/imageType,1/">more</a></small></h3><div class="row">
+  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/jets-n-guns/cover-art/gameCoverId,616259/" title="Jets 'n' Guns" class="thumbnail-image" style="background-image:url(/images/covers/s/616259-jets-n-guns-nintendo-switch-front-cover.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Jets 'n' Guns</h3>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,198173/">リカルド・フィリペ</a></p>      </div>    </div>  </div>  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/jets-n-guns/cover-art/gameCoverId,616261/" title="Jets 'n' Guns" class="thumbnail-image" style="background-image:url(/images/covers/s/616261-jets-n-guns-nintendo-switch-front-cover.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Jets 'n' Guns</h3>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,198173/">リカルド・フィリペ</a></p>      </div>    </div>  </div>  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/jets-n-guns/cover-art/gameCoverId,616262/" title="Jets 'n' Guns" class="thumbnail-image" style="background-image:url(/images/covers/s/616262-jets-n-guns-nintendo-switch-front-cover.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Jets 'n' Guns</h3>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,198173/">リカルド・フィリペ</a></p>      </div>    </div>  </div>  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/might-and-magic-vi-the-mandate-of-heaven/cover-art/gameCoverId,616597/" title="Might and Magic VI: The Mandate of Heaven" class="thumbnail-image" style="background-image:url(/images/covers/s/616597-might-and-magic-vi-the-mandate-of-heaven-windows-front-cover.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Might and Magic VI: The Mandate of Heaven</h3>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,279871/">Danfer</a></p>      </div>    </div>  </div></div>
+<h3 class="sectionSeparator cleartop">New Promo Art <small><a href="https://www.mobygames.com/stats/recent_images/imageType,2/">more</a></small></h3><div class="row">
+  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/knockout-checkers-chamber/promo" title="Knockout Checkers Chamber" class="thumbnail-image" style="background-image:url(/images/promo/s/563663-knockout-checkers-chamber-screenshot.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Knockout Checkers Chamber</h3>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,198173/">リカルド・フィリペ</a></p>      </div>    </div>  </div>  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/blade-runner/promo" title="Blade Runner" class="thumbnail-image" style="background-image:url(/images/promo/s/563618-blade-runner-screenshot.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Blade Runner</h3>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,180419/">Plokite_Wolf</a></p>      </div>    </div>  </div>  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/jets-n-guns/promo" title="Jets 'n' Guns" class="thumbnail-image" style="background-image:url(/images/promo/s/563586-jets-n-guns-screenshot.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Jets 'n' Guns</h3>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,198173/">リカルド・フィリペ</a></p>      </div>    </div>  </div>  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/silhouette-stories/promo" title="Silhouette Stories" class="thumbnail-image" style="background-image:url(/images/promo/s/563450-silhouette-stories-screenshot.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Silhouette Stories</h3>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,137312/">Charly2.0</a></p>      </div>    </div>  </div></div>
+<h3 class="sectionSeparator cleartop">New Reviews</h3><div class="row"><div class="col-md-6"><div class="media media-review"><div class="media-left"><a href="https://www.mobygames.com/game/windows/photographs/reviews/reviewerId,275288/"><img class="media-object center-block" alt="Front cover" border="0" src="/images/i/04/48/3351898.jpeg" height="28" width="60" ></a></div><div class="media-body"><h3 class="media-heading"><a href="https://www.mobygames.com/game/windows/photographs/reviews/reviewerId,275288/">Photographs</a></h3>
+<p>&quot;A very strong narrative concealed for a puzzle solving game.&quot;</p><small class="text-muted">by <a href="https://www.mobygames.com/user/sheet/userSheetId,275288/">Queen of Hell</a> on Dec&nbsp;05,&nbsp;2019</small></div></div></div><div class="col-md-6"><div class="media media-review"><div class="media-left"><a href="https://www.mobygames.com/game/windows/dead-rising/reviews/reviewerId,595954/"><img class="media-object center-block" alt="Front cover" border="0" src="/images/i/04/07/2413107.jpeg" height="28" width="60" ></a></div><div class="media-body"><h3 class="media-heading"><a href="https://www.mobygames.com/game/windows/dead-rising/reviews/reviewerId,595954/">Dead Rising</a></h3>
+<p>&quot;The best zombie game franchise (trilogy) &quot;</p><small class="text-muted">by <a href="https://www.mobygames.com/user/sheet/userSheetId,595954/">sinisterhippo</a> on Dec&nbsp;05,&nbsp;2019</small></div></div></div><div class="col-md-6"><div class="media media-review"><div class="media-left"><a href="https://www.mobygames.com/game/dos/secret-of-monkey-island/reviews/reviewerId,12364/"><img class="media-object center-block" alt="Front cover" border="0" src="/images/i/35/12/356412.jpeg" height="59" width="46" ></a></div><div class="media-body"><h3 class="media-heading"><a href="https://www.mobygames.com/game/dos/secret-of-monkey-island/reviews/reviewerId,12364/">The Secret of Monkey Island</a></h3>
+<p>&quot;An unforgettable tale in the Caribbean seas&quot;</p><small class="text-muted">by <a href="https://www.mobygames.com/user/sheet/userSheetId,12364/">Emepol</a> on Dec&nbsp;05,&nbsp;2019</small></div></div></div><div class="col-md-6"><div class="media media-review"><div class="media-left"><a href="https://www.mobygames.com/game/3ds/detective-pikachu/reviews/reviewerId,179990/"><img class="media-object center-block" alt="Front cover" border="0" src="/images/i/14/20/2949520.jpeg" height="55" width="60" ></a></div><div class="media-body"><h3 class="media-heading"><a href="https://www.mobygames.com/game/3ds/detective-pikachu/reviews/reviewerId,179990/">Detective Pikachu</a></h3>
+<p>&quot;A disappointing Pokemon point-and-click adventure&quot;</p><small class="text-muted">by <a href="https://www.mobygames.com/user/sheet/userSheetId,179990/">krisko6</a> on Nov&nbsp;30,&nbsp;2019</small></div></div></div></div></div><h3 id="news" class="sectionSeparator cleartop">MobyGames News</h3>
+        <div class="newsItem">
+          <div class="newsTitle">
+        Help needed: featured games
+          </div>
 
-<!-- Twitter universal website tag code -->
+          <div class="newsAbstract">
+        Our <a href="https://www.mobygames.com/featured_games/view">featured games</a> section of the site has showcased numerous games over the past two decades, and reasons why they are interesting. However, the list of games which are about to enter that section is getting depleted.<br><br>We would therefore like to ask you to <a href="https://www.mobygames.com/featured_game_wizard/">submit</a> featured games. Just pick a few games which you have found interesting for some reason or another, and make a short write-up about what makes them unique. Have a look at recent features to better see what we are looking for in these short texts.
+          </div>
+<div class="newsStatusBar">
+Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,180419/">Plokite_Wolf</a> (29264) on Sep 22, 2019<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,248411/">3 comments</a></span>
+</div>
+</div>
+
+        <div class="newsItem">
+          <div class="newsTitle">
+        Contributor appreciation: Danfer
+          </div>
+
+          <div class="newsAbstract">
+        Another one of our amazing MobyGames contributors is <a href="https://www.mobygames.com/user/sheet/userSheetId,279871/">Danfer</a>. He has been building up a sizable PC game collection since 1997, and shows no sign of stopping!<br><br>Among over <a href="https://www.mobygames.com/user/sheet/view/contribution_rating/at,15/userSheetId,279871/">4400 cover images</a> that he has posted so far in just 2 years, comprised mainly of Italian releases, we've yet to see anything that isn't of high quality. For instance, the unique Italian cover for <a href="https://www.mobygames.com/game/dark-colony/cover-art/gameCoverId,456068/">Dark Colony</a>, a clean <a href="https://www.mobygames.com/game/dune-ii-the-building-of-a-dynasty/cover-art/gameCoverId,428539/">Dune II</a> cover set, a rare retail cover of the <a href="https://www.mobygames.com/game/total-annihilation-commander-pack/cover-art/gameCoverId,379685/">Total Annihilation: Commander Pack</a>, and, something which we'd been missing for a long time, a full cover set from the original prints of <a href="https://www.mobygames.com/game/windows/shogun-total-war-warlord-edition/cover-art/gameCoverId,577236/">Shogun: Total War - Warlord Edition</a>.<br><br>We'd like to thank him for his contributions so far, and encourage him to keep it up!
+          </div>
+<div class="newsStatusBar">
+Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,180419/">Plokite_Wolf</a> (29264) on Sep 21, 2019<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,248406/">6 comments</a></span>
+</div>
+</div>
+
+        <div class="newsItem">
+          <div class="newsTitle">
+        New MobyGoal: 2800 Arcade Games!
+          </div>
+
+          <div class="newsAbstract">
+        We finally cleared the previous MobyGoal - adding all those iOS games took a lot longer than we expected - so it's time to move on to another platform that's been sadly neglected here: Arcades!<br><br>We currently have <a href="https://www.mobygames.com/browse/games/arcade/">2472 arcade games</a> catalogued on the site; we need your help get to 2800! We're missing a lot of early arcade games, and there's quite a few gaps in the 80s and 90s we need to fill in. And don't forget, a lot of the games we have on other platforms were originally Arcade games, so if you know of any classic game that's missing that platform, feel free to add it too!
+          </div>
+<div class="newsStatusBar">
+Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,33543/">Foxhack</a> (28959) on Aug 20, 2019<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,247930/">32 comments</a></span>
+</div>
+</div>
+
+        <div class="newsItem">
+          <div class="newsTitle">
+        Contributor appreciation: CaesarZX.
+          </div>
+
+          <div class="newsAbstract">
+        Just wanted to point out - and thank - MobyGames contributor <a href="https://www.mobygames.com/user/sheet/userSheetId,95568/">CaesarZX</a>, who describes themselves as &quot;a big-box game collector, mostly Chinese version, of course.&quot;<br><br>They've been adding a <a href="https://www.mobygames.com/user/sheet/view/contribution_rating/at,15/userSheetId,95568/">lots of rare Chinese PC game box scans</a>, with highlights including <a href="https://www.mobygames.com/game/windows/anachronox/cover-art/gameCoverId,566974/">Anachronox</a> and <a href="https://www.mobygames.com/game/sid-meiers-civilization-ii/cover-art/gameCoverId,566193/">Civilization II</a>, to name just a couple. Much appreciated, and long may this continue!
+          </div>
+<div class="newsStatusBar">
+Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,245961/">Simon Carless</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-fire donator-flame"></span></a> (1857) on Jul 18, 2019<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,247477/">13 comments</a></span>
+</div>
+</div>
+
+        <div class="newsItem">
+          <div class="newsTitle">
+        MobyGames hits 200,000 games (&amp; add milestones here!)
+          </div>
+
+          <div class="newsAbstract">
+        So, if you go check out the <a href="https://www.mobygames.com/moby_stats">MobyGames database stats page</a>, you'll see that we reached an important milestone - 200,000 games documented in the MobyGames database!<br><br>Congrats to everyone who helped us get there - and with a good deal of accuracy and checking along the way! (Also, in the comments for this post, maybe people can point out other neat user milestones achieved recently!)
+          </div>
+<div class="newsStatusBar">
+Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,245961/">Simon Carless</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-fire donator-flame"></span></a> (1857) on May 18, 2019<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,246675/">13 comments</a></span>
+</div>
+</div>
+
+        <div class="newsItem">
+          <div class="newsTitle">
+        20 Years!
+          </div>
+
+          <div class="newsAbstract">
+        That’s an amazingly long time in the world wide web. There aren’t many sites that have managed to stay alive for 2 decades!<br><br>With the help of our wonderful contributors, we have meticulously documented almost 200,000 games from 266 platforms. Including 793,123 developers, 33,015 companies, 850,321 screenshots, 524,875 pieces of cover art and much more! And did you know we now have <a href="https://www.mobygames.com/info/api">an API</a> (in beta) that you can access for free?<br><br>Many, many thanks to all of our contributors and approvers! Without their tireless efforts, our database would be quite lonely. Also special thanks to <a href="https://twitter.com/simoncarless">Simon Carless</a> (who helps me, <a href="https://twitter.com/reedlake">Reed</a>, run the site in-between our day jobs), <a href="https://www.mobygames.com/user/sheet/userSheetId,10/">Brian Hirt</a> for helping with infrastructure emergencies and the intricacies of the codebase, and <a href="https://www.mobygames.com/user/sheet/userSheetId,82693/">Tracy</a> who helps with updates and built the API. And of course thanks to <a href="https://twitter.com/mobygamer">Jim Leonard</a> and <a href="https://www.mobygames.com/user/sheet/userSheetId,10/">Brian Hirt</a> who started this amazing project way back in 1999! Check out Jim’s <a href="https://trixter.oldskool.org/2019/02/28/20-years-of-mobygames/">excellent in-depth retrospective</a>.<br><br>What next?!
+We’re just beginning! We’ll always be documenting and growing the database. However, the MobyGames platform needs a lot of work and improvements. As you might imagine, things are getting a bit old in the tooth! Combined with the overall complexity of the site it makes for a daunting task with no full-time staff.<br><br>We want to improve the platform and ensure we’re around another 20 years! If you find MobyGames useful and are able to help us with this goal, <a href="https://www.patreon.com/mobygames ">please consider supporting our Patreon</a>. If even 1% of those reading this contributed, we’d be able to bring on help and make meaningful progress toward improving the platform.<br><br>Thank you everyone, here’s to another 20 years!
+          </div>
+<div class="newsStatusBar">
+Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,242748/">MobyReed</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-fire donator-flame"></span></a> (74) on Mar 01, 2019<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,245839/">28 comments</a></span>
+</div>
+</div>
+
+        <div class="newsItem">
+          <div class="newsTitle">
+        Top-line milestones (&amp; add your community ones here!)
+          </div>
+
+          <div class="newsAbstract">
+        Just checking out the <a href="https://www.mobygames.com/moby_stats">overall MobyGames stats page</a>, and looks like we got to 190,000 games (or DLC!) added overall - very impressive indeed.<br><br>Also a notable stat in there - we're now over 450,000 pieces of promo art, and we're VERY close to 850,000 screenshots, all taken by the community.<br><br>Good stuff - and I know there's been lots of user milestones too - please post them in the comments!
+          </div>
+<div class="newsStatusBar">
+Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,245961/">Simon Carless</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-fire donator-flame"></span></a> (1857) on Feb 19, 2019<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,245714/">7 comments</a></span>
+</div>
+</div>
+
+        <div class="newsItem">
+          <div class="newsTitle">
+        HELP NEEDED: Catch-up on Switch, PS4 releases.
+          </div>
+
+          <div class="newsAbstract">
+        Hey everyone - so we're looking for a contributor (or contributors) to help us catch up (using our Entry Helper!) on recent Nintendo Switch and PlayStation 4 releases.<br><br>Our regular helper on these ended up stepping out later in 2018, so although we're getting the major releases, we're missing a lot of the others. We'd really like to archive digital info from them for posterity - and <a href="https://www.nintendo.com/games/game-guide?pv=true#filter/switch|now|-|-|-|-|-|-|-|-|-|-|-|-|release|des|-">as you can see on Switch</a>, there's a lot of neat stuff coming out.<br><br>Your job - should you choose to accept it - is to enter the URLs of the recent game pages in our 'Entry Helper' after you hit Contribute, then add any other platforms for the game based on a little research, pick some genres, and... that's it. Not too complex! (Feel free to PM me with questions!)
+          </div>
+<div class="newsStatusBar">
+Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,245961/">Simon Carless</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-fire donator-flame"></span></a> (1857) on Jan 12, 2019<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,245178/">3 comments</a></span>
+</div>
+</div>
+
+        <div class="newsItem">
+          <div class="newsTitle">
+        MobyGames Stats - 2018 edition
+          </div>
+
+          <div class="newsAbstract">
+        As per tradition, I present to you the database visualization! Made possible by the MobyGames API.<br><br>Previous editions:<br>
+<a href="https://imgur.com/ubNuLhn.png">January 2018</a> -
+<a href="https://imgur.com/F7Q3gs5">June 2017</a> -
+<a href="https://i.imgur.com/tHCg84n.png">January 2017</a> -
+<a href="https://i.imgur.com/gHLFbaM.png">January 2016</a> -
+<a href="https://i.imgur.com/EZwSYXA.png">January 2015</a> -
+<a href="https://i.imgur.com/ylR6rer.png">January 2014</a> -
+<a href="https://i.imgur.com/choo4mf.png">January 2013</a> -
+<a href="https://i.imgur.com/y7WNN4q.png">January 2012</a> -
+<a href="https://i.imgur.com/9v3K2Qd.png">January 2011</a> -
+<a href="https://i.imgur.com/vs94g7T.png">January 2010</a> -
+<a href="https://i.imgur.com/4rmsa4b.png">January 2009</a><br><br>
+<a href="https://i.imgur.com/SX8Xwb4.png"><img src="https://i.imgur.com/SX8Xwb4l.png"></a><br><br>(Click to enlarge)<br><br>An explanation: each coloured shape in the graph represents a platform. The horizontal axis is time. The vertical axis represents the number of games released. So the height of a shape on a given point in time indicates the number of games released for that platform that year. The total height of the graph on a given point in time shows the total releases that year. The graph is meant to represent new game releases and thus excludes DLC, Special Edition and Compilation items. It does include each game for each platform it was released on.<br><br>Notable changes since last year:<br>
+- There are quite a lot of new platforms. In fact there are now so many that Excel refused to render the graph due to a hardcoded limit. I had to switch to LibreOffice to make the graph.<br>
+- Because I'm now excluding compilations, DLC and Special Edition releases, there are generally less releases per year visible. In particular 2017 ends up with 1000 games less than lass year's graph! My apologies to those who spent lots of time and effort to document DLC, but I just felt it was cluttering the graph!<br>
+- My pet project this year was documenting games from the late 60s and early 70s. Which shows as a tiny bump in an area of the graph that was previously almost flat.<br>
+- It looks like we didn't keep up with new releases as well as last year, judging from the drop-off in 2018.<br>
+- The coverage gap of 2016 has been filled it appears.<br>
+- Feel free to point out other interesting info in the graph!<br><br><br>[All data taken from MobyGames. Of course, the graph is only as complete as our database is. Come <a href="https://www.mobygames.com/info/contribute">help us</a> if you can!]
+          </div>
+<div class="newsStatusBar">
+Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,68871/">vedder</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-star donator-star"></span></a> (48213) on Jan 06, 2019<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,245062/">10 comments</a></span>
+</div>
+</div>
+
+        <div class="newsItem">
+          <div class="newsTitle">
+        What was the favorite game you played in 2018?
+          </div>
+
+          <div class="newsAbstract">
+        The year is almost over, so it is time to name your favorite games of the year! As it is MobyGames tradition, all games you have played are acceptable, not only 2018 ones.
+          </div>
+<div class="newsStatusBar">
+Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,136314/">Patrick Bregger</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-star donator-star"></span></a> (237766) on Dec 31, 2018<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,244898/">19 comments</a></span>
+</div>
+</div>
+
+        <div class="newsItem">
+          <div class="newsTitle">
+        Happy (upcoming!) Holidays from MobyGames!
+          </div>
+
+          <div class="newsAbstract">
+        Now the holiday season is approaching, MobyGames would just like to wish all of its contributors a very happy 2018, and a merry 2019, too!<br><br>As <a href="https://www.mobygames.com/moby_stats">our database stats</a> and daily requests for API access show, we continue to have the largest set of credits, screenshots and covers with open access anywhere online - and THANK YOU if you are a net contributors to it! Now, let's roll on, 2019...
+          </div>
+<div class="newsStatusBar">
+Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,245961/">Simon Carless</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-fire donator-flame"></span></a> (1857) on Dec 15, 2018<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,244660/">7 comments</a></span>
+</div>
+</div>
+
+        <div class="newsItem">
+          <div class="newsTitle">
+        New MobyGames DB addition: magazine advertisements!
+          </div>
+
+          <div class="newsAbstract">
+        As threatened for a while, contributors are now allowed to upload magazine ads that they've scanned onto MobyGames! We're really excited to build a database around these, since there's nowhere online that you can see them all in one place.<br><br>Some quick guidelines: Magazine Advertisement is now a promo image 'type'. So to add them, simply go to add 'promo images', create a new promo image group called Magazine Advertisements, and title each image with the magazine name, country, issue, and date. [Fabricated example: Sinclair User (United Kingdom), Issue 73 (September 1994).]<br><br>(If there are already some magazine ads uploaded for that game, then just add them to the existing promo image group. There are also a few edge cases, so feel free to discuss them in comments. And good luck!)
+          </div>
+<div class="newsStatusBar">
+Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,245961/">Simon Carless</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-fire donator-flame"></span></a> (1857) on Oct 24, 2018<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,244137/">25 comments</a></span>
+</div>
+</div>
+<p>View <a href="https://www.mobygames.com/news">past news</a>.</p><h3 class="sectionSeparator">Tip Of The Day</h4><div>Did you know that you can <a href="https://www.mobygames.com/poll_wizard">contribute a poll</a>?  If there is an idea that you have for a poll, please let us know.  We are always looking for new ideas. &nbsp;&nbsp;<a href="https://www.mobygames.com/tips/view">more tips</a></div></div>
+<div class="col-md-4 col-lg-4">  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Current MobyGoal</h3>
+    </div>
+    <div class="panel-body">
+      <h1 class="progressBarHeader">2800 Arcade Games <small>(36%)</small></h1>
+      <div class="progress progress-striped active">
+        <div class="progress-bar" role="progressbar" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100" style="width: 36%">
+          <span class="sr-only">36% Complete</span>
+        </div>
+      </div>
+      <p>We need 208 more <a href="https://www.mobygames.com/browse/games/arcade/">Arcade</a> games documented to complete this goal!</p>
+    </div>
+  </div>
+<div class="well" style="text-align:center; margin-bottom: 10px;"><div class="proper-ad-unit">
+    <div id="proper-ad-mobygames_side_1"> <script> propertag.cmd.push(function() { proper_display('mobygames_side_1'); }); </script> </div>
+</div></div><div class="sideBar">
+  <div class="sideBarTitle color4"><h2>Featured Game</h2></div>
+  <div class="sideBarContent color3"><h3 class="featured-title"><a href="https://www.mobygames.com/game/sheet/gameId=30287/">Vandal-Hearts II</a></h3><a href="https://www.mobygames.com/game/sheet/gameId,30287" class="featured-box"><img src="/images/covers/s/94577-vandal-hearts-ii-playstation-front-cover.jpg" width="120" height="120"></a>
+Vandal Hearts II turns the classic SRPG formula on its head by forcing you and your opponent to move and act at the same time. Many reviewers panned it because they didn't understand how to predict enemies' actions but once it clicks, it's incredibly rewarding stuff.
+            <div class="right">by <a href="https://www.mobygames.com/user/sheet/userSheetId,275810/">A.J. Maciejewski</a></div>
+            <div class="center"><a href="https://www.mobygames.com/featured_games/view">Past Weeks</a></div></div>
+</div><h2 class="sectionSeparator cleartop clearbot">This Day In Gaming</h2><table class="table table-striped table-condensed table-hover"><tr><td><b>1987</b><br /><a href="https://www.mobygames.com/game/nes/mega-man-">Mega Man</a><br />NES version released. (Japan)</td></tr><tr><td><b>1988</b><br /><a href="https://www.mobygames.com/game/nes/final-fantasy-ii">Final Fantasy II</a><br />NES version released. (Japan)</td></tr><tr><td><a href="https://www.mobygames.com/game/nes/top-rider">Top-Rider</a><br />NES version released. (Japan)</td></tr><tr><td><b>1989</b><br /><a href="https://www.mobygames.com/game/dos/harpoon">Harpoon</a><br />DOS version released. (United States)</td></tr><tr><td style="text-align: center;"><b>[ <a href="https://www.mobygames.com/stats/this-day">browse by date</a> ]</b></td></tr></table><div class="sideBar">
+  <div class="sideBarTitle color4"><h2>MobyGames Poll</h2></div>
+  <div class="sideBarContent color3"><form ACTION="/poll/vote" accept-charset="UTF-8" id="formaabe" method="POST"><div class="formContents"><p>Do you strive to get &quot;100% completion&quot; on the games you play (i.e. completing every single sidequest, finding every single secret, etc.)?</p><input type="hidden" name="pollId" value="2392">
+<table SUMMARY="Poll Choices" border=0 cellspacing=0 cellpadding=0>
+<tr valign="top">
+<td nowrap>&nbsp;&nbsp;<input type="radio"  id="poll-6730" name="pollChoiceId" value="6730">&nbsp;&nbsp;</td>
+<td width="100%"><label for="poll-6730">Yes, I do this with almost every game I play</label></td>
+</tr>
+<tr valign="top">
+<td nowrap>&nbsp;&nbsp;<input type="radio"  id="poll-6731" name="pollChoiceId" value="6731">&nbsp;&nbsp;</td>
+<td width="100%"><label for="poll-6731">Sometimes, if I particularly like the game</label></td>
+</tr>
+<tr valign="top">
+<td nowrap>&nbsp;&nbsp;<input type="radio"  id="poll-6732" name="pollChoiceId" value="6732">&nbsp;&nbsp;</td>
+<td width="100%"><label for="poll-6732">Rarely, for games I really enjoy</label></td>
+</tr>
+<tr valign="top">
+<td nowrap>&nbsp;&nbsp;<input type="radio"  id="poll-6733" name="pollChoiceId" value="6733">&nbsp;&nbsp;</td>
+<td width="100%"><label for="poll-6733">Never</label></td>
+</tr></table><div class="center"><a href="https://www.mobygames.com/poll/results/pollId,2392/">View Results</a>&nbsp;&nbsp;&nbsp;<input class="btn btn-primary btn-xs" type="submit" name="vote" value="Vote"></div></div></form></div>
+</div><a class="twitter-timeline" data-width="340" data-tweet-limit="5" data-chrome="transparent noheader nofooter" href="https://twitter.com/MobyGames">Tweets by MobyGames</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lifesupport-footer-wrapper"><div class="container"><div class="lifesupport-footer"><center><div class="proper-ad-unit">
+    <div id="proper-ad-mobygames_footboard"> <script> propertag.cmd.push(function() { proper_display('mobygames_footboard'); }); </script> </div>
+</div></center></div></div></div>  <div id="footer-menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-3 col-md-2">
+          <div class="footer-header">MobyGames</div>
+          <ul class="footer-nav">
+            <li><a href="https://www.mobygames.com/">Home</a></li>
+            <li><a href="https://www.mobygames.com/info/faq">FAQ</a></li>
+            <li><a href="https://www.mobygames.com/info/standards">Standards</a></li>
+            <li><a href="https://www.mobygames.com/info/api">API</a></li>
+            <li><a href="https://www.mobygames.com/info/feedback">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-2">
+          <div class="footer-header">What's New</div>
+          <ul class="footer-nav">
+            <li><a href="https://www.mobygames.com/stats/recent_entries">New Games</a></li>
+            <li><a href="https://www.mobygames.com/stats/recent_modifications">Game Updates</a></li>
+            <li><a href="https://www.mobygames.com/stats/recent_reviews">New Reviews</a></li>
+            <li><a href="https://www.mobygames.com/stats/new_companies">New Companies</a></li>
+            <li><a href="https://www.mobygames.com/changelog">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-2">
+          <div class="footer-header">Stats</div>
+          <ul class="footer-nav">
+            <li><a href="https://www.mobygames.com/stats/top_games">Top Games</a></li>
+            <li><a href="https://www.mobygames.com/stats/all_time_worst">Bottom Games</a></li>
+            <li><a href="https://www.mobygames.com/stats/contributors">Top Contributors</a></li>
+            <li><a href="https://www.mobygames.com/moby_stats">Database Stats</a></li>
+            <li><a href="https://www.mobygames.com/wanted/dead-or-alive">Most Wanted</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-2">
+          <div class="footer-header">
+            Community
+          </div>
+          <ul class="footer-nav">
+            <li><a href="https://www.mobygames.com/info/patrons">Patrons</a></li>
+            <li><a href="https://www.mobygames.com/forums">Forums</a></li>
+            <li><a href="https://discord.gg/8zWGTQp">Discord</a></li>
+            <li><a href="https://twitter.com/MobyGames">Twitter</a></li>
+            <li><a href="https://www.facebook.com/MobyGames">Facebook</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4">
+          <div class="footer-moby-logo">
+            <a href="https://www.mobygames.com/" class="add-margin-right hidden-xs"><img src="/images/mobygames-logo.png" width="109" height="50" alt="mobygames logo"></a>
+            <a href="https://www.patreon.com/mobygames" class="footer-moby-patreon">Become a Patron to help support the MobyGames project</a>
+          </div>
+          <div class="footer-moby-info">
+            <p>
+              The oldest, largest and most accurate video game database covering over 270 platforms from 1950 to date!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer-bottom">
+    <div class="container">
+      <p class="copyright">
+        <a href="https://www.mobygames.com/">MobyGames</a>&trade; Copyright &copy; 1999-2019
+        <a href="http://blueflamelabs.com"><span class="glyphicon glyphicon-fire"></span> Blue Flame Labs</a>. All rights reserved.
+        <a href="https://www.mobygames.com/info/terms">Terms of Use</a>.
+        <a href="https://www.mobygames.com/info/privacy">Privacy Policy</a>.
+      </p>
+      <p class="mobyquote">
+        &quot;<a href="https://www.mobygames.com/game/castlevania-ii-simons-quest/trivia">What a horrible night to have a curse</a>&quot; <a href="https://www.mobygames.com/game/castlevania-ii-simons-quest/trivia"><span class="glyphicon glyphicon-info-sign"></span></a>
+      </p>
+    </div>
+  </div>
 <script>
-!function(e,n,u,a){e.twq||(a=e.twq=function(){a.exe?a.exe.apply(a,arguments):
-a.queue.push(arguments);},a.version='1',a.queue=[],t=n.createElement(u),
-t.async=!0,t.src='//static.ads-twitter.com/uwt.js',s=n.getElementsByTagName(u)[0],
-s.parentNode.insertBefore(t,s))}(window,document,'script');
-// Insert Twitter Pixel ID and Standard Event data below
-twq('init','nv5jw');
-twq('track','PageView');
-</script>
-<!-- End Twitter universal website tag code -->
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<!-- Taboola Pixel Code -->
-<script type='text/javascript'>
-  window._tfa = window._tfa || [];
-  window._tfa.push({notify: 'event', name: 'page_view', id: 1009432});
-  !function (t, f, a, x) {
-         if (!document.getElementById(x)) {
-            t.async = 1;t.src = a;t.id=x;f.parentNode.insertBefore(t, f);
-         }
-  }(document.createElement('script'),
-  document.getElementsByTagName('script')[0],
-  '//cdn.taboola.com/libtrc/unip/1009432/tfa.js',
-  'tb_tfa_script');
-</script>
-<noscript>
-  <img src='//trc.taboola.com/1009432/log/3/unip?en=page_view'
-      width='0' height='0' style='display:none'/>
-</noscript>
-<!-- End of Taboola Pixel Code -->
+  ga('create', 'UA-258321-1', 'auto');
+  ga('send', 'pageview');
 
-
-<script type="text/javascript"> _linkedin_data_partner_id = "186603"; </script>
-<script type="text/javascript"> 
-    (function(){
-        var s = document.getElementsByTagName("script")[0]; 
-        var b = document.createElement("script"); 
-        b.type = "text/javascript";
-        b.async = true; 
-        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; 
-        s.parentNode.insertBefore(b, s);
-    })(); 
-</script> 
-<noscript>
-    <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=186603&fmt=gif" />
-</noscript>
-
-
-
-
-<script type="text/javascript">
-  var clarity_tracking_starter = function (override_context_data) {
-    var d=document;
-    var id = 'idg-tracking';
-    var s='script';
-    var js, fjs = d.getElementsByTagName(s)[0];
-
-    if (d.getElementById(id)) {
-      runClarity();
-      return false
-    }
-    
-    js = d.createElement(s); 
-    js.id = id; 
-    js.type = "text/javascript";
-    js.onload = function () {runClarity()};
-    js.src = "https://www.idgcdn.com.au/compressor-staticfiles/clarity/idg_clarity.js?release=20191204221221";
-    fjs.parentNode.insertBefore(js, fjs);
-
-    function runClarity(){
-      var dynamic_key_val_api = "/script-tagger/clarity/json/";
-      var first_page_context_data = {
-        'event_type':"pageview",'tags':["games", "AI", "digital economy", "digital divide", "Tencent", "gamification", "New Zealand Game Developers Association", "grinding gear games", "ninja kiwi", "clare curran", "VR", "Bloons Tower Defence 6"],'author':"CIO New Zealand",'word_count':893,'publication_datetime':"2018-08-02T09:05:07+00:00",'score':1,'content_type':"article",'content_id':428027790
-      }
-
-      // Context data can be overridden and is used on infinite scroll pages to pass in 
-      // context of the new article that is loaded on the page.
-      var context_data = override_context_data || first_page_context_data;
-
-      clarity_logger.init(
-        dynamic_key_val_api,
-        'https://clarity-api-prod.idg.com.au/collect/client', 
-        context_data
-      );
-    }
-  };
-</script> 
-
-
-
+</script></body>
 </html>
