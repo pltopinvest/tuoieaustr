@@ -55,435 +55,204 @@ switch ($response['action']) {
  * Note: if using the "Remain on Safe Page" action for Filtered Visitors, append your safe page's HTML/PHP code after the closing PHP tag below:
  */
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Video Games Database. Credits, Trivia, Reviews, Box Covers, Screenshots - MobyGames</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="MobyGames is the oldest, largest and most accurate video game database for games of every platform spanning 1979-2019.">
-  <meta property="og:site_name" content="MobyGames" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://www.mobygames.com/images/mobygames-logo-bg.png" />
-  <meta property="og:title" content="Video Games Database. Credits, Trivia, Reviews, Box Covers, Screenshots - MobyGames" />
-  <meta property="og:description" content="MobyGames is the oldest, largest and most accurate video game database for games of every platform spanning 1979-2019." />
-  <meta name="google-site-verification" content="tJt3KCZCKYjBQCF3Fi55jOw6LD2AiPzSrlP6E-mZvSs" />
-  <link rel="apple-touch-icon image_src" href="https://www.mobygames.com/images/moby300x300.png">
-  <script>
-  var propertag = propertag || {};
-  propertag.cmd = propertag.cmd || [];
-  (function() {
-  var pm = document.createElement('script');
-  pm.async = true; pm.type = 'text/javascript';
-  var is_ssl = 'https:' == document.location.protocol;
-  pm.src = (is_ssl ? 'https:' : 'http:') + '//global.proper.io/mobygames.min.js';
-  var node = document.getElementsByTagName('script')[0];
-  node.parentNode.insertBefore(pm, node);
-  })();
-  </script>
-  <link type="application/rss+xml" rel="alternate" href="https://www.mobygames.com/rss/news.rss" title="MobyGames RSS" >
-  <link rel="canonical" href="https://www.mobygames.com/">
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://www.mobygames.com/css/19070500/1s/moby_safari.css" type="text/css">
-  <script type="text/javascript" src="/js/19070500/global.js"></script>
-</head>
-<body>
-    <div class="container">
-      <div class="grid grid-navbar">
-        <div class="grid-navbar-logo">
-          <a href="https://www.mobygames.com/"><img src="/images/mobygames-logo.png" width="163" height="75" alt="MobyGames"></a>
-        </div>
-        <div class="grid-navbar-menu">
-          <form action="/search/quick" accept-charset="UTF-8" id="formaafr" method="GET">
-            <div class="input-group input-group-sm">
-              <input type="text" id="qsearch" name="q" class="form-control headerSearchForm searchBarHeight" placeholder="Search games, credits, companies...">
-              <div class="input-group-btn">
-                <button type="submit" class="btn btn-primary searchBarHeight"><span class="glyphicon glyphicon-search"></span></button>
-              </div>
-            </div>
-          </form>
-          <ul id="moby-main-menu">
-            
-            <li><a href="https://www.mobygames.com/browse/games" title="Browse games">Games</a></li>
-            <li><a href="https://www.mobygames.com/forums" title="Community discussion">Forums</a></li>
-            <li class="hidden-xs hidden-sm">
-              <a href="https://www.mobygames.com/news" data-toggle="dropdown" title="The latest at MobyGames">Updates <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="https://www.mobygames.com/news">Site News</a></li>
-                <li class="divider"></li>
-                <li><a href="https://www.mobygames.com/stats/recent_entries">New Games</a></li>
-                <li><a href="https://www.mobygames.com/stats/recent_modifications">Game Updates</a></li>
-                <li><a href="https://www.mobygames.com/stats/recent_reviews">New Reviews</a></li>
-                <li><a href="https://www.mobygames.com/stats/new_companies">New Companies</a></li>
-                <li><a href="https://www.mobygames.com/stats/company_modifications">Company Updates</a></li>
-                <li><a href="https://www.mobygames.com/stats/developer_modifications">Developer Updates</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="https://www.mobygames.com/info/contribute" data-toggle="dropdown" title="Contribute">Contribute <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="https://www.mobygames.com/new_game_wizard/">Add New Game</a></li>
-                <li><a href="https://www.mobygames.com/poll_wizard">Add New Poll</a></li>
-                <li><a href="https://www.mobygames.com/featured_game_wizard/">Add Featured Game</a></li>
-                
-                <li class="divider"></li>
-                <li><a href="https://www.mobygames.com/info/contribute">Instructions</a></li>
-                <li><a href="https://www.mobygames.com/info/standards">Standards</a></li>
-                <li><a href="https://www.mobygames.com/stats/contributors">Top Contributors</a></li>
-                <li><a href="https://www.mobygames.com/wanted/dead-or-alive">Most Wanted</a></li>
-              </ul>
-            </li>
-            <li><a href="https://www.mobygames.com/random/game?1576616654" data-toggle="tooltip" data-placement="bottom" data-container="body" title="Random Game"><span class="glyphicon glyphicon-random"></span></a></li>
-            <li>
-              <a href="https://www.patreon.com/mobygames" data-toggle="tooltip" data-placement="bottom" data-container="body" title="Help support the MobyGames project with Patreon!">
-                <span class="glyphicon glyphicon-heart"></span>
-              </a>
-            </li>
-            <li>&nbsp;</li>
-          </ul>
-        </div>
-<div class="grid-navbar-user"><div style="text-align: right"><a href="https://www.mobygames.com/acct/logon/from,:2f/g,3/" class="btn btn-teal">Sign in</a> <a href="https://www.mobygames.com/acct/create_account" class="btn btn-teal">Register</a></div></div>      </div><!-- /.grid -->
-    </div><!-- /.container -->
-      <div class="moby-headliner">
-        <div class="container">
-          <p class="moby-headliner-text">
-<b><a href="https://discord.gg/8zWGTQp">Join our Discord</a> to chat with fellow friendly gamers and our knowledgeable contributors!</b>          </p>
-        </div>
-      </div>
-<div id="wrapper">
-<div class="container">
-<div id="main" class="row">
-<div class="col-md-12 col-lg-12">
-<div class="lifesupport-header"><div style="display: flex; min-height: 250px;">
-<div class="proper-ad-unit">
-    <div id="proper-ad-mobygames_leaderboard"> <script> propertag.cmd.push(function() { proper_display('mobygames_leaderboard'); }); </script> </div>
-</div>
-</div></div>
-<div class="row">
-<div class="col-md-8 col-lg-8"><div class="newContent"><table class="pct100">
-  <tr valign="top">
-    <td width="48%"><h2 class="sectionSeparator cleartop clearbot">Game Updates <small><a href="https://www.mobygames.com/stats/recent_modifications">more</a></small></h2><table class="table table-striped table-condensed table-hover"><tr><td><div class="floatholder"><strong class="truncate"><a href="https://www.mobygames.com/game/windows/adibou-et-les-saisons-magiques/credits">Adibou et les saisons magiques</a></strong><span class="text-muted"><small>New Windows credits by <a href="https://www.mobygames.com/user/sheet/userSheetId,30979/">Sciere</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-fire donator-flame"></span></a> | Today,&nbsp;07:39&nbsp;PM</small></div></td></tr><tr><td><div class="floatholder"><strong class="truncate"><a href="https://www.mobygames.com/game/jets-n-guns/cover-art">Jets &#x27;n&#x27; Guns</a></strong><span class="text-muted"><small>New Nintendo Switch cover by <a href="https://www.mobygames.com/user/sheet/userSheetId,198173/">リカルド・フィリペ</a> | Today,&nbsp;06:37&nbsp;PM</small></div></td></tr><tr><td><div class="floatholder"><strong class="truncate"><a href="https://www.mobygames.com/game/jets-n-guns/cover-art">Jets &#x27;n&#x27; Guns</a></strong><span class="text-muted"><small>New Nintendo Switch cover by <a href="https://www.mobygames.com/user/sheet/userSheetId,198173/">リカルド・フィリペ</a> | Today,&nbsp;06:37&nbsp;PM</small></div></td></tr><tr><td><div class="floatholder"><strong class="truncate"><a href="https://www.mobygames.com/game/knockout-checkers-chamber/promo">Knockout Checkers Chamber</a></strong><span class="text-muted"><small>New promo image by <a href="https://www.mobygames.com/user/sheet/userSheetId,198173/">リカルド・フィリペ</a> | Today,&nbsp;05:50&nbsp;PM</small></div></td></tr></table></td>
-    <td width="4%"></td>
-    <td width="48%"><h2 class="sectionSeparator cleartop clearbot">Just Added <small><a href="https://www.mobygames.com/stats/recent_entries">more</a></small></h2><table class="table table-striped table-condensed table-hover"><tr><td><strong class="truncate"><a href="https://www.mobygames.com/game/j2me/fremtris">Fremtris (J2ME)</a></strong><span class="text-muted"><small>Added by <a href="https://www.mobygames.com/user/sheet/userSheetId,533781/">Zelon</a> | Today,&nbsp;07:13&nbsp;PM</small></td></tr><tr><td><strong class="truncate"><a href="https://www.mobygames.com/game/arcade/cloak-dagger">Cloak &#x26; Dagger (Arcade)</a></strong><span class="text-muted"><small>Added by <a href="https://www.mobygames.com/user/sheet/userSheetId,545256/">Shane Riley</a> | Today,&nbsp;07:12&nbsp;PM</small></td></tr><tr><td><strong class="truncate"><a href="https://www.mobygames.com/game/switch/jets-n-guns">Jets &#x27;n&#x27; Guns (Nintendo Switch)</a></strong><span class="text-muted"><small>Added by <a href="https://www.mobygames.com/user/sheet/userSheetId,198173/">リカルド・フィリペ</a> | Today,&nbsp;06:37&nbsp;PM</small></td></tr><tr><td><strong class="truncate"><a href="https://www.mobygames.com/game/linux/blade-runner">Blade Runner (Linux)</a></strong><span class="text-muted"><small>Added by <a href="https://www.mobygames.com/user/sheet/userSheetId,180419/">Plokite_Wolf</a> | Today,&nbsp;03:22&nbsp;PM</small></td></tr></table></td>
-  </tr>
-</table><h3 class="sectionSeparator cleartop">New Screenshots <small><a href="https://www.mobygames.com/stats/recent_images/imageType,3/">more</a></small></h3><div class="row">
-  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/windows/cooking-dash/screenshots" title="Cooking Dash (Windows)" class="thumbnail-image" style="background-image:url(/images/shots/s/993555-cooking-dash-windows-screenshot-the-different-restaurant.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Cooking Dash</h3>        <small class="text-muted">Windows</small><br>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,533781/">Zelon</a></p>      </div>    </div>  </div>  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/c64/combots_/screenshots" title="Combots (Commodore 64)" class="thumbnail-image" style="background-image:url(/images/shots/s/992995-combots-commodore-64-screenshot-title-screen.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Combots</h3>        <small class="text-muted">Commodore 64</small><br>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,275263/">hoeksmas</a></p>      </div>    </div>  </div>  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/supervision/assembloids_/screenshots" title="Assembloids (Supervision)" class="thumbnail-image" style="background-image:url(/images/shots/s/993527-assembloids-supervision-screenshot-in-game-screenshot.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Assembloids</h3>        <small class="text-muted">Supervision</small><br>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,273682/">Martin Wendt</a></p>      </div>    </div>  </div>  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/playstation-4/la-noire-the-vr-case-files/screenshots" title="L.A. Noire: The VR Case Files (PlayStation 4)" class="thumbnail-image" style="background-image:url(/images/shots/s/993521-l-a-noire-the-vr-case-files-playstation-4-screenshot-car-chase.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">L.A. Noire: The VR Case Files</h3>        <small class="text-muted">PlayStation 4</small><br>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,705/">MAT</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-star donator-star"></span></a></p>      </div>    </div>  </div></div>
-<h3 class="sectionSeparator cleartop">New Cover Art <small><a href="https://www.mobygames.com/stats/recent_images/imageType,1/">more</a></small></h3><div class="row">
-  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/jets-n-guns/cover-art/gameCoverId,616259/" title="Jets 'n' Guns" class="thumbnail-image" style="background-image:url(/images/covers/s/616259-jets-n-guns-nintendo-switch-front-cover.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Jets 'n' Guns</h3>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,198173/">リカルド・フィリペ</a></p>      </div>    </div>  </div>  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/jets-n-guns/cover-art/gameCoverId,616261/" title="Jets 'n' Guns" class="thumbnail-image" style="background-image:url(/images/covers/s/616261-jets-n-guns-nintendo-switch-front-cover.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Jets 'n' Guns</h3>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,198173/">リカルド・フィリペ</a></p>      </div>    </div>  </div>  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/jets-n-guns/cover-art/gameCoverId,616262/" title="Jets 'n' Guns" class="thumbnail-image" style="background-image:url(/images/covers/s/616262-jets-n-guns-nintendo-switch-front-cover.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Jets 'n' Guns</h3>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,198173/">リカルド・フィリペ</a></p>      </div>    </div>  </div>  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/might-and-magic-vi-the-mandate-of-heaven/cover-art/gameCoverId,616597/" title="Might and Magic VI: The Mandate of Heaven" class="thumbnail-image" style="background-image:url(/images/covers/s/616597-might-and-magic-vi-the-mandate-of-heaven-windows-front-cover.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Might and Magic VI: The Mandate of Heaven</h3>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,279871/">Danfer</a></p>      </div>    </div>  </div></div>
-<h3 class="sectionSeparator cleartop">New Promo Art <small><a href="https://www.mobygames.com/stats/recent_images/imageType,2/">more</a></small></h3><div class="row">
-  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/knockout-checkers-chamber/promo" title="Knockout Checkers Chamber" class="thumbnail-image" style="background-image:url(/images/promo/s/563663-knockout-checkers-chamber-screenshot.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Knockout Checkers Chamber</h3>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,198173/">リカルド・フィリペ</a></p>      </div>    </div>  </div>  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/blade-runner/promo" title="Blade Runner" class="thumbnail-image" style="background-image:url(/images/promo/s/563618-blade-runner-screenshot.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Blade Runner</h3>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,180419/">Plokite_Wolf</a></p>      </div>    </div>  </div>  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/jets-n-guns/promo" title="Jets 'n' Guns" class="thumbnail-image" style="background-image:url(/images/promo/s/563586-jets-n-guns-screenshot.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Jets 'n' Guns</h3>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,198173/">リカルド・フィリペ</a></p>      </div>    </div>  </div>  <div class="col-xs-6 col-sm-6 col-md-3">    <div class="thumbnail">      <div class="thumbnail-image-wrapper">       <a href="https://www.mobygames.com/game/silhouette-stories/promo" title="Silhouette Stories" class="thumbnail-image" style="background-image:url(/images/promo/s/563450-silhouette-stories-screenshot.jpg);"></a>      </div>      <div class="caption">        <h3 class="thumbnail-title">Silhouette Stories</h3>        <p class="thumbnail-submitter">by <a href="https://www.mobygames.com/user/sheet/userSheetId,137312/">Charly2.0</a></p>      </div>    </div>  </div></div>
-<h3 class="sectionSeparator cleartop">New Reviews</h3><div class="row"><div class="col-md-6"><div class="media media-review"><div class="media-left"><a href="https://www.mobygames.com/game/windows/photographs/reviews/reviewerId,275288/"><img class="media-object center-block" alt="Front cover" border="0" src="/images/i/04/48/3351898.jpeg" height="28" width="60" ></a></div><div class="media-body"><h3 class="media-heading"><a href="https://www.mobygames.com/game/windows/photographs/reviews/reviewerId,275288/">Photographs</a></h3>
-<p>&quot;A very strong narrative concealed for a puzzle solving game.&quot;</p><small class="text-muted">by <a href="https://www.mobygames.com/user/sheet/userSheetId,275288/">Queen of Hell</a> on Dec&nbsp;05,&nbsp;2019</small></div></div></div><div class="col-md-6"><div class="media media-review"><div class="media-left"><a href="https://www.mobygames.com/game/windows/dead-rising/reviews/reviewerId,595954/"><img class="media-object center-block" alt="Front cover" border="0" src="/images/i/04/07/2413107.jpeg" height="28" width="60" ></a></div><div class="media-body"><h3 class="media-heading"><a href="https://www.mobygames.com/game/windows/dead-rising/reviews/reviewerId,595954/">Dead Rising</a></h3>
-<p>&quot;The best zombie game franchise (trilogy) &quot;</p><small class="text-muted">by <a href="https://www.mobygames.com/user/sheet/userSheetId,595954/">sinisterhippo</a> on Dec&nbsp;05,&nbsp;2019</small></div></div></div><div class="col-md-6"><div class="media media-review"><div class="media-left"><a href="https://www.mobygames.com/game/dos/secret-of-monkey-island/reviews/reviewerId,12364/"><img class="media-object center-block" alt="Front cover" border="0" src="/images/i/35/12/356412.jpeg" height="59" width="46" ></a></div><div class="media-body"><h3 class="media-heading"><a href="https://www.mobygames.com/game/dos/secret-of-monkey-island/reviews/reviewerId,12364/">The Secret of Monkey Island</a></h3>
-<p>&quot;An unforgettable tale in the Caribbean seas&quot;</p><small class="text-muted">by <a href="https://www.mobygames.com/user/sheet/userSheetId,12364/">Emepol</a> on Dec&nbsp;05,&nbsp;2019</small></div></div></div><div class="col-md-6"><div class="media media-review"><div class="media-left"><a href="https://www.mobygames.com/game/3ds/detective-pikachu/reviews/reviewerId,179990/"><img class="media-object center-block" alt="Front cover" border="0" src="/images/i/14/20/2949520.jpeg" height="55" width="60" ></a></div><div class="media-body"><h3 class="media-heading"><a href="https://www.mobygames.com/game/3ds/detective-pikachu/reviews/reviewerId,179990/">Detective Pikachu</a></h3>
-<p>&quot;A disappointing Pokemon point-and-click adventure&quot;</p><small class="text-muted">by <a href="https://www.mobygames.com/user/sheet/userSheetId,179990/">krisko6</a> on Nov&nbsp;30,&nbsp;2019</small></div></div></div></div></div><h3 id="news" class="sectionSeparator cleartop">MobyGames News</h3>
-        <div class="newsItem">
-          <div class="newsTitle">
-        Help needed: featured games
-          </div>
 
-          <div class="newsAbstract">
-        Our <a href="https://www.mobygames.com/featured_games/view">featured games</a> section of the site has showcased numerous games over the past two decades, and reasons why they are interesting. However, the list of games which are about to enter that section is getting depleted.<br><br>We would therefore like to ask you to <a href="https://www.mobygames.com/featured_game_wizard/">submit</a> featured games. Just pick a few games which you have found interesting for some reason or another, and make a short write-up about what makes them unique. Have a look at recent features to better see what we are looking for in these short texts.
-          </div>
-<div class="newsStatusBar">
-Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,180419/">Plokite_Wolf</a> (29264) on Sep 22, 2019<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,248411/">3 comments</a></span>
-</div>
-</div>
+<!DOCTYPE html><html lang="en-US"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>ghortem</title><meta name="author" content="ghortem"/><meta name="generator" content="Starfield Technologies; Go Daddy Website Builder 8.0.0000"/><link rel="manifest" href="/manifest.webmanifest"/><link rel="apple-touch-icon" sizes="57x57" href="//img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:57,h:57,m"/><link rel="apple-touch-icon" sizes="60x60" href="//img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:60,h:60,m"/><link rel="apple-touch-icon" sizes="72x72" href="//img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:72,h:72,m"/><link rel="apple-touch-icon" sizes="114x114" href="//img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:114,h:114,m"/><link rel="apple-touch-icon" sizes="120x120" href="//img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:120,h:120,m"/><link rel="apple-touch-icon" sizes="144x144" href="//img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:144,h:144,m"/><link rel="apple-touch-icon" sizes="152x152" href="//img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:152,h:152,m"/><link rel="apple-touch-icon" sizes="180x180" href="//img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:180,h:180,m"/><meta property="og:url" content="https://ghortem.godaddysites.com/"/>
+<meta property="og:site_name" content="ghortem"/>
+<meta property="og:title" content="A New Way to Use Your Phone"/>
+<meta property="og:description" content="Expertly-designed software, easy-to-use interface."/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="http://img1.wsimg.com/isteam/stock/jp1PnrG"/>
+<meta property="og:locale" content="en_US"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ghortem"/>
+<meta name="twitter:description" content="A New Way to Use Your Phone"/>
+<meta name="twitter:image" content="http://img1.wsimg.com/isteam/stock/jp1PnrG"/>
+<meta name="twitter:image:alt" content="ghortem"/>
+<meta name="theme-color" content="#bdc1bc"/><script type="text/javascript" src="https://img1.wsimg.com/poly/v2/polyfill.min.js?unknown=polyfill&amp;flags=gated&amp;features=default%2Cfetch%2CArray.prototype.%40%40iterator%2CArray.prototype.find%2CArray.prototype.findIndex%2CFunction.name%2CNumber.isFinite%2CPromise%2CString.prototype.repeat%2CMath.sign%2CMath.trunc%2CArray.prototype.includes%2CObject.entries%2CObject.values%2CIntersectionObserver%2CIntl.~locale.en-US" crossorigin></script>
+<script type="text/javascript" src="//img1.wsimg.com/blobby/go/gpub/e645c3e6fe995b50/script.js" crossorigin></script>
+<script type="text/javascript">"undefined"===typeof _trfq&&(window._trfq=[]);"undefined"==typeof _trfd&&(window._trfd=[]);</script>
+<script type="text/javascript">function logTcclEvent(){var t=this.getAttribute("data-tccl");if(window._trfq&&t)try{for(var e=t.split(","),r=e[0],d=e[1],n=e.splice(2),c=[],o=0;o<n.length;o+=2)c.push([n[o],n[o+1]]);window._trfq.push(["cmdLogEvent",d,r,c])}catch(e){window._trfq.push(["cmdLogEvent","gc_published_site_error","tccl.published.log",[["error",e.toString()],["data",t]]])}}"undefined"!=typeof window&&"undefined"!=typeof document&&window.addEventListener("DOMContentLoaded",function(){for(var t=document.querySelectorAll("[data-tccl]"),e=0;e<t.length;e++)try{var r=t[e].getAttribute("data-tccl").split(",");t[e].addEventListener(r[1],logTcclEvent)}catch(t){window._trfq.push(["cmdLogEvent","gc_published_site_error","tccl.published.add",[["error",t.toString()]]])}});</script>
+<script type="text/javascript">"use strict";
 
-        <div class="newsItem">
-          <div class="newsTitle">
-        Contributor appreciation: Danfer
-          </div>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('/sw.js').then(function () {
+      console.log('sw: registration complete');
+    }).catch(function (err) {
+      console.log(err);
+    });
+  });
+}</script>
+<style type="text/css">/*
+Copyright 2017 The Archivo Black Project Authors (https://github.com/Omnibus-Type/ArchivoBlack)
 
-          <div class="newsAbstract">
-        Another one of our amazing MobyGames contributors is <a href="https://www.mobygames.com/user/sheet/userSheetId,279871/">Danfer</a>. He has been building up a sizable PC game collection since 1997, and shows no sign of stopping!<br><br>Among over <a href="https://www.mobygames.com/user/sheet/view/contribution_rating/at,15/userSheetId,279871/">4400 cover images</a> that he has posted so far in just 2 years, comprised mainly of Italian releases, we've yet to see anything that isn't of high quality. For instance, the unique Italian cover for <a href="https://www.mobygames.com/game/dark-colony/cover-art/gameCoverId,456068/">Dark Colony</a>, a clean <a href="https://www.mobygames.com/game/dune-ii-the-building-of-a-dynasty/cover-art/gameCoverId,428539/">Dune II</a> cover set, a rare retail cover of the <a href="https://www.mobygames.com/game/total-annihilation-commander-pack/cover-art/gameCoverId,379685/">Total Annihilation: Commander Pack</a>, and, something which we'd been missing for a long time, a full cover set from the original prints of <a href="https://www.mobygames.com/game/windows/shogun-total-war-warlord-edition/cover-art/gameCoverId,577236/">Shogun: Total War - Warlord Edition</a>.<br><br>We'd like to thank him for his contributions so far, and encourage him to keep it up!
-          </div>
-<div class="newsStatusBar">
-Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,180419/">Plokite_Wolf</a> (29264) on Sep 21, 2019<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,248406/">6 comments</a></span>
-</div>
-</div>
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
 
-        <div class="newsItem">
-          <div class="newsTitle">
-        New MobyGoal: 2800 Arcade Games!
-          </div>
+—————————————————————————————-
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+—————————————————————————————-
+*/
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo Black';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Archivo Black Regular'), local('ArchivoBlack-Regular'), url(https://img1.wsimg.com/gfonts/s/archivoblack/v9/HTxqL289NzCGg4MzN6KJ7eW6CYKF_jzx13HOvQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo Black';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Archivo Black Regular'), local('ArchivoBlack-Regular'), url(https://img1.wsimg.com/gfonts/s/archivoblack/v9/HTxqL289NzCGg4MzN6KJ7eW6CYyF_jzx13E.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
-          <div class="newsAbstract">
-        We finally cleared the previous MobyGoal - adding all those iOS games took a lot longer than we expected - so it's time to move on to another platform that's been sadly neglected here: Arcades!<br><br>We currently have <a href="https://www.mobygames.com/browse/games/arcade/">2472 arcade games</a> catalogued on the site; we need your help get to 2800! We're missing a lot of early arcade games, and there's quite a few gaps in the 80s and 90s we need to fill in. And don't forget, a lot of the games we have on other platforms were originally Arcade games, so if you know of any classic game that's missing that platform, feel free to add it too!
-          </div>
-<div class="newsStatusBar">
-Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,33543/">Foxhack</a> (28959) on Aug 20, 2019<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,247930/">32 comments</a></span>
-</div>
-</div>
+/*
+Copyright 2011 The Montserrat Project Authors (https://github.com/JulietaUla/Montserrat)
 
-        <div class="newsItem">
-          <div class="newsTitle">
-        Contributor appreciation: CaesarZX.
-          </div>
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
 
-          <div class="newsAbstract">
-        Just wanted to point out - and thank - MobyGames contributor <a href="https://www.mobygames.com/user/sheet/userSheetId,95568/">CaesarZX</a>, who describes themselves as &quot;a big-box game collector, mostly Chinese version, of course.&quot;<br><br>They've been adding a <a href="https://www.mobygames.com/user/sheet/view/contribution_rating/at,15/userSheetId,95568/">lots of rare Chinese PC game box scans</a>, with highlights including <a href="https://www.mobygames.com/game/windows/anachronox/cover-art/gameCoverId,566974/">Anachronox</a> and <a href="https://www.mobygames.com/game/sid-meiers-civilization-ii/cover-art/gameCoverId,566193/">Civilization II</a>, to name just a couple. Much appreciated, and long may this continue!
-          </div>
-<div class="newsStatusBar">
-Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,245961/">Simon Carless</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-fire donator-flame"></span></a> (1857) on Jul 18, 2019<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,247477/">13 comments</a></span>
-</div>
-</div>
-
-        <div class="newsItem">
-          <div class="newsTitle">
-        MobyGames hits 200,000 games (&amp; add milestones here!)
-          </div>
-
-          <div class="newsAbstract">
-        So, if you go check out the <a href="https://www.mobygames.com/moby_stats">MobyGames database stats page</a>, you'll see that we reached an important milestone - 200,000 games documented in the MobyGames database!<br><br>Congrats to everyone who helped us get there - and with a good deal of accuracy and checking along the way! (Also, in the comments for this post, maybe people can point out other neat user milestones achieved recently!)
-          </div>
-<div class="newsStatusBar">
-Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,245961/">Simon Carless</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-fire donator-flame"></span></a> (1857) on May 18, 2019<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,246675/">13 comments</a></span>
-</div>
-</div>
-
-        <div class="newsItem">
-          <div class="newsTitle">
-        20 Years!
-          </div>
-
-          <div class="newsAbstract">
-        That’s an amazingly long time in the world wide web. There aren’t many sites that have managed to stay alive for 2 decades!<br><br>With the help of our wonderful contributors, we have meticulously documented almost 200,000 games from 266 platforms. Including 793,123 developers, 33,015 companies, 850,321 screenshots, 524,875 pieces of cover art and much more! And did you know we now have <a href="https://www.mobygames.com/info/api">an API</a> (in beta) that you can access for free?<br><br>Many, many thanks to all of our contributors and approvers! Without their tireless efforts, our database would be quite lonely. Also special thanks to <a href="https://twitter.com/simoncarless">Simon Carless</a> (who helps me, <a href="https://twitter.com/reedlake">Reed</a>, run the site in-between our day jobs), <a href="https://www.mobygames.com/user/sheet/userSheetId,10/">Brian Hirt</a> for helping with infrastructure emergencies and the intricacies of the codebase, and <a href="https://www.mobygames.com/user/sheet/userSheetId,82693/">Tracy</a> who helps with updates and built the API. And of course thanks to <a href="https://twitter.com/mobygamer">Jim Leonard</a> and <a href="https://www.mobygames.com/user/sheet/userSheetId,10/">Brian Hirt</a> who started this amazing project way back in 1999! Check out Jim’s <a href="https://trixter.oldskool.org/2019/02/28/20-years-of-mobygames/">excellent in-depth retrospective</a>.<br><br>What next?!
-We’re just beginning! We’ll always be documenting and growing the database. However, the MobyGames platform needs a lot of work and improvements. As you might imagine, things are getting a bit old in the tooth! Combined with the overall complexity of the site it makes for a daunting task with no full-time staff.<br><br>We want to improve the platform and ensure we’re around another 20 years! If you find MobyGames useful and are able to help us with this goal, <a href="https://www.patreon.com/mobygames ">please consider supporting our Patreon</a>. If even 1% of those reading this contributed, we’d be able to bring on help and make meaningful progress toward improving the platform.<br><br>Thank you everyone, here’s to another 20 years!
-          </div>
-<div class="newsStatusBar">
-Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,242748/">MobyReed</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-fire donator-flame"></span></a> (74) on Mar 01, 2019<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,245839/">28 comments</a></span>
-</div>
-</div>
-
-        <div class="newsItem">
-          <div class="newsTitle">
-        Top-line milestones (&amp; add your community ones here!)
-          </div>
-
-          <div class="newsAbstract">
-        Just checking out the <a href="https://www.mobygames.com/moby_stats">overall MobyGames stats page</a>, and looks like we got to 190,000 games (or DLC!) added overall - very impressive indeed.<br><br>Also a notable stat in there - we're now over 450,000 pieces of promo art, and we're VERY close to 850,000 screenshots, all taken by the community.<br><br>Good stuff - and I know there's been lots of user milestones too - please post them in the comments!
-          </div>
-<div class="newsStatusBar">
-Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,245961/">Simon Carless</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-fire donator-flame"></span></a> (1857) on Feb 19, 2019<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,245714/">7 comments</a></span>
-</div>
-</div>
-
-        <div class="newsItem">
-          <div class="newsTitle">
-        HELP NEEDED: Catch-up on Switch, PS4 releases.
-          </div>
-
-          <div class="newsAbstract">
-        Hey everyone - so we're looking for a contributor (or contributors) to help us catch up (using our Entry Helper!) on recent Nintendo Switch and PlayStation 4 releases.<br><br>Our regular helper on these ended up stepping out later in 2018, so although we're getting the major releases, we're missing a lot of the others. We'd really like to archive digital info from them for posterity - and <a href="https://www.nintendo.com/games/game-guide?pv=true#filter/switch|now|-|-|-|-|-|-|-|-|-|-|-|-|release|des|-">as you can see on Switch</a>, there's a lot of neat stuff coming out.<br><br>Your job - should you choose to accept it - is to enter the URLs of the recent game pages in our 'Entry Helper' after you hit Contribute, then add any other platforms for the game based on a little research, pick some genres, and... that's it. Not too complex! (Feel free to PM me with questions!)
-          </div>
-<div class="newsStatusBar">
-Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,245961/">Simon Carless</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-fire donator-flame"></span></a> (1857) on Jan 12, 2019<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,245178/">3 comments</a></span>
-</div>
-</div>
-
-        <div class="newsItem">
-          <div class="newsTitle">
-        MobyGames Stats - 2018 edition
-          </div>
-
-          <div class="newsAbstract">
-        As per tradition, I present to you the database visualization! Made possible by the MobyGames API.<br><br>Previous editions:<br>
-<a href="https://imgur.com/ubNuLhn.png">January 2018</a> -
-<a href="https://imgur.com/F7Q3gs5">June 2017</a> -
-<a href="https://i.imgur.com/tHCg84n.png">January 2017</a> -
-<a href="https://i.imgur.com/gHLFbaM.png">January 2016</a> -
-<a href="https://i.imgur.com/EZwSYXA.png">January 2015</a> -
-<a href="https://i.imgur.com/ylR6rer.png">January 2014</a> -
-<a href="https://i.imgur.com/choo4mf.png">January 2013</a> -
-<a href="https://i.imgur.com/y7WNN4q.png">January 2012</a> -
-<a href="https://i.imgur.com/9v3K2Qd.png">January 2011</a> -
-<a href="https://i.imgur.com/vs94g7T.png">January 2010</a> -
-<a href="https://i.imgur.com/4rmsa4b.png">January 2009</a><br><br>
-<a href="https://i.imgur.com/SX8Xwb4.png"><img src="https://i.imgur.com/SX8Xwb4l.png"></a><br><br>(Click to enlarge)<br><br>An explanation: each coloured shape in the graph represents a platform. The horizontal axis is time. The vertical axis represents the number of games released. So the height of a shape on a given point in time indicates the number of games released for that platform that year. The total height of the graph on a given point in time shows the total releases that year. The graph is meant to represent new game releases and thus excludes DLC, Special Edition and Compilation items. It does include each game for each platform it was released on.<br><br>Notable changes since last year:<br>
-- There are quite a lot of new platforms. In fact there are now so many that Excel refused to render the graph due to a hardcoded limit. I had to switch to LibreOffice to make the graph.<br>
-- Because I'm now excluding compilations, DLC and Special Edition releases, there are generally less releases per year visible. In particular 2017 ends up with 1000 games less than lass year's graph! My apologies to those who spent lots of time and effort to document DLC, but I just felt it was cluttering the graph!<br>
-- My pet project this year was documenting games from the late 60s and early 70s. Which shows as a tiny bump in an area of the graph that was previously almost flat.<br>
-- It looks like we didn't keep up with new releases as well as last year, judging from the drop-off in 2018.<br>
-- The coverage gap of 2016 has been filled it appears.<br>
-- Feel free to point out other interesting info in the graph!<br><br><br>[All data taken from MobyGames. Of course, the graph is only as complete as our database is. Come <a href="https://www.mobygames.com/info/contribute">help us</a> if you can!]
-          </div>
-<div class="newsStatusBar">
-Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,68871/">vedder</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-star donator-star"></span></a> (48213) on Jan 06, 2019<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,245062/">10 comments</a></span>
-</div>
-</div>
-
-        <div class="newsItem">
-          <div class="newsTitle">
-        What was the favorite game you played in 2018?
-          </div>
-
-          <div class="newsAbstract">
-        The year is almost over, so it is time to name your favorite games of the year! As it is MobyGames tradition, all games you have played are acceptable, not only 2018 ones.
-          </div>
-<div class="newsStatusBar">
-Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,136314/">Patrick Bregger</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-star donator-star"></span></a> (237766) on Dec 31, 2018<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,244898/">19 comments</a></span>
-</div>
-</div>
-
-        <div class="newsItem">
-          <div class="newsTitle">
-        Happy (upcoming!) Holidays from MobyGames!
-          </div>
-
-          <div class="newsAbstract">
-        Now the holiday season is approaching, MobyGames would just like to wish all of its contributors a very happy 2018, and a merry 2019, too!<br><br>As <a href="https://www.mobygames.com/moby_stats">our database stats</a> and daily requests for API access show, we continue to have the largest set of credits, screenshots and covers with open access anywhere online - and THANK YOU if you are a net contributors to it! Now, let's roll on, 2019...
-          </div>
-<div class="newsStatusBar">
-Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,245961/">Simon Carless</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-fire donator-flame"></span></a> (1857) on Dec 15, 2018<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,244660/">7 comments</a></span>
-</div>
-</div>
-
-        <div class="newsItem">
-          <div class="newsTitle">
-        New MobyGames DB addition: magazine advertisements!
-          </div>
-
-          <div class="newsAbstract">
-        As threatened for a while, contributors are now allowed to upload magazine ads that they've scanned onto MobyGames! We're really excited to build a database around these, since there's nowhere online that you can see them all in one place.<br><br>Some quick guidelines: Magazine Advertisement is now a promo image 'type'. So to add them, simply go to add 'promo images', create a new promo image group called Magazine Advertisements, and title each image with the magazine name, country, issue, and date. [Fabricated example: Sinclair User (United Kingdom), Issue 73 (September 1994).]<br><br>(If there are already some magazine ads uploaded for that game, then just add them to the existing promo image group. There are also a few edge cases, so feel free to discuss them in comments. And good luck!)
-          </div>
-<div class="newsStatusBar">
-Submitted by <a href="https://www.mobygames.com/user/sheet/userSheetId,245961/">Simon Carless</a> <a href="https://www.mobygames.com/info/patrons"><span class="glyphicon glyphicon-fire donator-flame"></span></a> (1857) on Oct 24, 2018<span class="fr"><a href="https://www.mobygames.com/forums/dga,2/dgb,3/dgm,244137/">25 comments</a></span>
-</div>
-</div>
-<p>View <a href="https://www.mobygames.com/news">past news</a>.</p><h3 class="sectionSeparator">Tip Of The Day</h4><div>Did you know that you can <a href="https://www.mobygames.com/poll_wizard">contribute a poll</a>?  If there is an idea that you have for a poll, please let us know.  We are always looking for new ideas. &nbsp;&nbsp;<a href="https://www.mobygames.com/tips/view">more tips</a></div></div>
-<div class="col-md-4 col-lg-4">  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h3 class="panel-title">Current MobyGoal</h3>
-    </div>
-    <div class="panel-body">
-      <h1 class="progressBarHeader">2800 Arcade Games <small>(36%)</small></h1>
-      <div class="progress progress-striped active">
-        <div class="progress-bar" role="progressbar" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100" style="width: 36%">
-          <span class="sr-only">36% Complete</span>
-        </div>
-      </div>
-      <p>We need 208 more <a href="https://www.mobygames.com/browse/games/arcade/">Arcade</a> games documented to complete this goal!</p>
-    </div>
-  </div>
-<div class="well" style="text-align:center; margin-bottom: 10px;"><div class="proper-ad-unit">
-    <div id="proper-ad-mobygames_side_1"> <script> propertag.cmd.push(function() { proper_display('mobygames_side_1'); }); </script> </div>
-</div></div><div class="sideBar">
-  <div class="sideBarTitle color4"><h2>Featured Game</h2></div>
-  <div class="sideBarContent color3"><h3 class="featured-title"><a href="https://www.mobygames.com/game/sheet/gameId=30287/">Vandal-Hearts II</a></h3><a href="https://www.mobygames.com/game/sheet/gameId,30287" class="featured-box"><img src="/images/covers/s/94577-vandal-hearts-ii-playstation-front-cover.jpg" width="120" height="120"></a>
-Vandal Hearts II turns the classic SRPG formula on its head by forcing you and your opponent to move and act at the same time. Many reviewers panned it because they didn't understand how to predict enemies' actions but once it clicks, it's incredibly rewarding stuff.
-            <div class="right">by <a href="https://www.mobygames.com/user/sheet/userSheetId,275810/">A.J. Maciejewski</a></div>
-            <div class="center"><a href="https://www.mobygames.com/featured_games/view">Past Weeks</a></div></div>
-</div><h2 class="sectionSeparator cleartop clearbot">This Day In Gaming</h2><table class="table table-striped table-condensed table-hover"><tr><td><b>1987</b><br /><a href="https://www.mobygames.com/game/nes/mega-man-">Mega Man</a><br />NES version released. (Japan)</td></tr><tr><td><b>1988</b><br /><a href="https://www.mobygames.com/game/nes/final-fantasy-ii">Final Fantasy II</a><br />NES version released. (Japan)</td></tr><tr><td><a href="https://www.mobygames.com/game/nes/top-rider">Top-Rider</a><br />NES version released. (Japan)</td></tr><tr><td><b>1989</b><br /><a href="https://www.mobygames.com/game/dos/harpoon">Harpoon</a><br />DOS version released. (United States)</td></tr><tr><td style="text-align: center;"><b>[ <a href="https://www.mobygames.com/stats/this-day">browse by date</a> ]</b></td></tr></table><div class="sideBar">
-  <div class="sideBarTitle color4"><h2>MobyGames Poll</h2></div>
-  <div class="sideBarContent color3"><form ACTION="/poll/vote" accept-charset="UTF-8" id="formaabe" method="POST"><div class="formContents"><p>Do you strive to get &quot;100% completion&quot; on the games you play (i.e. completing every single sidequest, finding every single secret, etc.)?</p><input type="hidden" name="pollId" value="2392">
-<table SUMMARY="Poll Choices" border=0 cellspacing=0 cellpadding=0>
-<tr valign="top">
-<td nowrap>&nbsp;&nbsp;<input type="radio"  id="poll-6730" name="pollChoiceId" value="6730">&nbsp;&nbsp;</td>
-<td width="100%"><label for="poll-6730">Yes, I do this with almost every game I play</label></td>
-</tr>
-<tr valign="top">
-<td nowrap>&nbsp;&nbsp;<input type="radio"  id="poll-6731" name="pollChoiceId" value="6731">&nbsp;&nbsp;</td>
-<td width="100%"><label for="poll-6731">Sometimes, if I particularly like the game</label></td>
-</tr>
-<tr valign="top">
-<td nowrap>&nbsp;&nbsp;<input type="radio"  id="poll-6732" name="pollChoiceId" value="6732">&nbsp;&nbsp;</td>
-<td width="100%"><label for="poll-6732">Rarely, for games I really enjoy</label></td>
-</tr>
-<tr valign="top">
-<td nowrap>&nbsp;&nbsp;<input type="radio"  id="poll-6733" name="pollChoiceId" value="6733">&nbsp;&nbsp;</td>
-<td width="100%"><label for="poll-6733">Never</label></td>
-</tr></table><div class="center"><a href="https://www.mobygames.com/poll/results/pollId,2392/">View Results</a>&nbsp;&nbsp;&nbsp;<input class="btn btn-primary btn-xs" type="submit" name="vote" value="Vote"></div></div></form></div>
-</div><a class="twitter-timeline" data-width="340" data-tweet-limit="5" data-chrome="transparent noheader nofooter" href="https://twitter.com/MobyGames">Tweets by MobyGames</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="lifesupport-footer-wrapper"><div class="container"><div class="lifesupport-footer"><center><div class="proper-ad-unit">
-    <div id="proper-ad-mobygames_footboard"> <script> propertag.cmd.push(function() { proper_display('mobygames_footboard'); }); </script> </div>
-</div></center></div></div></div>  <div id="footer-menu">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <div class="footer-header">MobyGames</div>
-          <ul class="footer-nav">
-            <li><a href="https://www.mobygames.com/">Home</a></li>
-            <li><a href="https://www.mobygames.com/info/faq">FAQ</a></li>
-            <li><a href="https://www.mobygames.com/info/standards">Standards</a></li>
-            <li><a href="https://www.mobygames.com/info/api">API</a></li>
-            <li><a href="https://www.mobygames.com/info/feedback">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <div class="footer-header">What's New</div>
-          <ul class="footer-nav">
-            <li><a href="https://www.mobygames.com/stats/recent_entries">New Games</a></li>
-            <li><a href="https://www.mobygames.com/stats/recent_modifications">Game Updates</a></li>
-            <li><a href="https://www.mobygames.com/stats/recent_reviews">New Reviews</a></li>
-            <li><a href="https://www.mobygames.com/stats/new_companies">New Companies</a></li>
-            <li><a href="https://www.mobygames.com/changelog">Changelog</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <div class="footer-header">Stats</div>
-          <ul class="footer-nav">
-            <li><a href="https://www.mobygames.com/stats/top_games">Top Games</a></li>
-            <li><a href="https://www.mobygames.com/stats/all_time_worst">Bottom Games</a></li>
-            <li><a href="https://www.mobygames.com/stats/contributors">Top Contributors</a></li>
-            <li><a href="https://www.mobygames.com/moby_stats">Database Stats</a></li>
-            <li><a href="https://www.mobygames.com/wanted/dead-or-alive">Most Wanted</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <div class="footer-header">
-            Community
-          </div>
-          <ul class="footer-nav">
-            <li><a href="https://www.mobygames.com/info/patrons">Patrons</a></li>
-            <li><a href="https://www.mobygames.com/forums">Forums</a></li>
-            <li><a href="https://discord.gg/8zWGTQp">Discord</a></li>
-            <li><a href="https://twitter.com/MobyGames">Twitter</a></li>
-            <li><a href="https://www.facebook.com/MobyGames">Facebook</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4">
-          <div class="footer-moby-logo">
-            <a href="https://www.mobygames.com/" class="add-margin-right hidden-xs"><img src="/images/mobygames-logo.png" width="109" height="50" alt="mobygames logo"></a>
-            <a href="https://www.patreon.com/mobygames" class="footer-moby-patreon">Become a Patron to help support the MobyGames project</a>
-          </div>
-          <div class="footer-moby-info">
-            <p>
-              The oldest, largest and most accurate video game database covering over 270 platforms from 1950 to date!
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="footer-bottom">
-    <div class="container">
-      <p class="copyright">
-        <a href="https://www.mobygames.com/">MobyGames</a>&trade; Copyright &copy; 1999-2019
-        <a href="http://blueflamelabs.com"><span class="glyphicon glyphicon-fire"></span> Blue Flame Labs</a>. All rights reserved.
-        <a href="https://www.mobygames.com/info/terms">Terms of Use</a>.
-        <a href="https://www.mobygames.com/info/privacy">Privacy Policy</a>.
-      </p>
-      <p class="mobyquote">
-        &quot;<a href="https://www.mobygames.com/game/castlevania-ii-simons-quest/trivia">What a horrible night to have a curse</a>&quot; <a href="https://www.mobygames.com/game/castlevania-ii-simons-quest/trivia"><span class="glyphicon glyphicon-info-sign"></span></a>
-      </p>
-    </div>
-  </div>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-258321-1', 'auto');
-  ga('send', 'pageview');
-
-</script></body>
-</html>
+—————————————————————————————-
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+—————————————————————————————-
+*/
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://img1.wsimg.com/gfonts/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://img1.wsimg.com/gfonts/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459W1hyyTh89ZNpQ.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://img1.wsimg.com/gfonts/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WZhyyTh89ZNpQ.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://img1.wsimg.com/gfonts/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WdhyyTh89ZNpQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://img1.wsimg.com/gfonts/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://img1.wsimg.com/gfonts/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gTD_vx3rCubqg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://img1.wsimg.com/gfonts/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3g3D_vx3rCubqg.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://img1.wsimg.com/gfonts/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gbD_vx3rCubqg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://img1.wsimg.com/gfonts/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gfD_vx3rCubqg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://img1.wsimg.com/gfonts/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gnD_vx3rCs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<link rel="stylesheet" href="//img1.wsimg.com/blobby/go/c560a15f-4d30-4d47-9128-99b344d0cdc8/gpub/4ce1a7c86682e5e8/styles.css"/>
+<link data-glamor="cxs-default-sheet" rel="stylesheet" href="//img1.wsimg.com/blobby/go/c560a15f-4d30-4d47-9128-99b344d0cdc8/gpub/972aa27f1a440d35/styles.css"/>
+<style data-glamor="cxs-media-sheet" type="text/css"></style>
+<link data-glamor="cxs-xs-sheet" rel="stylesheet" href="//img1.wsimg.com/blobby/go/c560a15f-4d30-4d47-9128-99b344d0cdc8/gpub/ca5171a9ee3d749b/styles.css"/>
+<link data-glamor="cxs-sm-sheet" rel="stylesheet" href="//img1.wsimg.com/blobby/go/c560a15f-4d30-4d47-9128-99b344d0cdc8/gpub/8fd5c601a8adf24a/styles.css"/>
+<link data-glamor="cxs-md-sheet" rel="stylesheet" href="//img1.wsimg.com/blobby/go/c560a15f-4d30-4d47-9128-99b344d0cdc8/gpub/4a00723805f74ed0/styles.css"/>
+<style data-glamor="cxs-lg-sheet" type="text/css">@media (min-width: 1280px){.x .c1-f{font-size:16px}}@media (min-width: 1280px){.x .c1-16{width:1160px}}@media (min-width: 1280px){.x .c1-2s{font-size:22px}}@media (min-width: 1280px){.x .c1-43{font-size:62px}}@media (min-width: 1280px){.x .c1-4x{font-size:14px}}@media (min-width: 1280px){.x .c1-55{font-size:44px}}@media (min-width: 1280px){.x .c1-6o{font-size:32px}}</style>
+<style data-glamor="cxs-xl-sheet" type="text/css">@media (min-width: 1536px){.x .c1-g{font-size:18px}}@media (min-width: 1536px){.x .c1-17{width:1280px}}@media (min-width: 1536px){.x .c1-2t{font-size:24px}}@media (min-width: 1536px){.x .c1-44{font-size:70px}}@media (min-width: 1536px){.x .c1-4y{font-size:16px}}@media (min-width: 1536px){.x .c1-56{font-size:48px}}@media (min-width: 1536px){.x .c1-6p{font-size:36px}}</style>
+<style type="text/css">.grecaptcha-badge { visibility: hidden; }</style>
+<style type="text/css">.page-inner { background-color: rgb(22, 22, 22); min-height: 100vh; }</style></head>
+<body class="x  x-fonts-archivo-black" context="[object Object]"><div id="layout-c-560-a-15-f-4-d-30-4-d-47-9128-99-b-344-d-0-cdc-8" class="layout layout-layout layout-layout-layout-10 locale-en-US lang-en"><div data-ux="Page" id="page-9013" class="x-el x-el-div x-el c1-1 c1-2 c1-3 c1-4 c1-5 c1-6 c1-7 c1-8 c1-9 c1-a c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="Block" class="x-el x-el-div page-inner c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><div id="0a1fc6c5-577c-474b-894a-21f0900e2821" class="widget widget-header widget-header-header-9"><div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-h c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="Header" data-aid="HEADER_WIDGET" class="x-el x-el-div x-el x-el widget-header-header-9 c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-aid x-d-ux c1-1 c1-2 c1-i c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux x-d-aid c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux x-d-aid"><div><section data-ux="Section" data-aid="HEADER_SECTION" class="x-el x-el-section c1-1 c1-2 c1-i c1-j c1-k c1-l c1-b c1-c c1-m c1-n c1-d c1-e c1-f c1-g x-d-ux x-d-aid"><div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-o c1-p c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-q c1-b c1-c c1-d c1-r c1-e c1-f c1-g x-d-ux"></div><div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-i c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><nav data-ux="Block" class="x-el x-el-nav c1-1 c1-2 c1-o c1-s c1-t c1-u c1-i c1-b c1-c c1-d c1-v c1-w c1-e c1-f c1-g x-d-ux"><div data-ux="Container" class="x-el x-el-div c1-1 c1-2 c1-x c1-y c1-z c1-10 c1-11 c1-12 c1-13 c1-b c1-c c1-14 c1-d c1-15 c1-e c1-16 c1-f c1-17 c1-g x-d-ux"><div data-ux="Grid" class="x-el x-el-div c1-1 c1-2 c1-18 c1-19 c1-1a c1-1b c1-1c c1-1d c1-1e c1-1f c1-1g c1-1h c1-b c1-c c1-1i c1-1j c1-1k c1-1l c1-d c1-1m c1-e c1-f c1-g x-d-ux"><div data-ux="GridCell" class="x-el x-el-div c1-1 c1-2 c1-19 c1-1n c1-1o c1-1p c1-11 c1-1q c1-1r c1-1s c1-1t c1-18 c1-1u c1-1v c1-b c1-c c1-1w c1-1x c1-1y c1-1z c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="Block" data-aid="HEADER_LOGO_RENDERED" class="x-el x-el-div c1-20 c1-21 c1-22 c1-11 c1-c c1-23 c1-24 c1-d c1-e c1-f c1-g x-d-ux x-d-aid"><a rel="" typography="LinkAlpha" data-ux="Link" data-page="32c08e75-bde9-4a32-9296-764fd1313ffa" title="ghortem" href="/" class="x-el x-el-a c1-25 c1-26 c1-27 c1-28 c1-29 c1-2a c1-2b c1-2c c1-2d c1-2e c1-2f c1-b c1-2g c1-c c1-2h c1-2i c1-2j c1-d c1-e c1-f c1-g x-d-ux x-d-page" data-tccl="ux2.HEADER.header9.Logo.Default.Link.Default.9018.click,click"><div id="bs-1"><h3 typography="HeadingEpsilon" data-ux="LogoHeading" id="logo-container-9019" logoText="ghortem" class="x-el x-el-h3 c1-1 c1-20 c1-28 c1-29 c1-2k c1-2l c1-2m c1-1c c1-1e c1-11 c1-22 c1-2n c1-2o c1-2p c1-2q c1-2r c1-2s c1-2t x-d-ux"><span data-ux="Element" data-aid="HEADER_LOGO_TEXT_RENDERED" data-route="logo/logoText" class="x-el x-el-span c1-20 c1-21 c1-4 c1-22 c1-2o c1-2q c1-2r c1-2s c1-2t x-d-ux x-d-aid x-d-route">ghortem</span></h3></div></a></div></div></div><div data-ux="Grid" id="n-90149021-navBarId" class="x-el x-el-div c1-1 c1-2 c1-2u c1-19 c1-1a c1-2v c1-1c c1-1d c1-1e c1-1f c1-b c1-c c1-1i c1-1j c1-1k c1-1l c1-d c1-2w c1-2x c1-2y c1-2z c1-30 c1-31 c1-e c1-f c1-g x-d-ux"><div data-ux="GridCell" class="x-el x-el-div c1-1 c1-2 c1-19 c1-32 c1-1o c1-33 c1-34 c1-1q c1-1r c1-1s c1-1t c1-18 c1-1h c1-1g c1-1u c1-b c1-c c1-1w c1-1x c1-1y c1-1z c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="Block" data-aid="HEADER_LOGO_RENDERED" class="x-el x-el-div c1-20 c1-21 c1-22 c1-11 c1-c c1-23 c1-24 c1-d c1-e c1-f c1-g x-d-ux x-d-aid"><a rel="" typography="LinkAlpha" data-ux="Link" data-page="32c08e75-bde9-4a32-9296-764fd1313ffa" title="ghortem" href="/" class="x-el x-el-a c1-25 c1-26 c1-27 c1-28 c1-29 c1-2a c1-2b c1-2c c1-2d c1-2e c1-2f c1-b c1-2g c1-c c1-2h c1-2i c1-2j c1-d c1-e c1-f c1-g x-d-ux x-d-page" data-tccl="ux2.HEADER.header9.Logo.Default.Link.Default.9022.click,click"><div id="bs-2"><h3 typography="HeadingEpsilon" data-ux="LogoHeading" id="logo-container-9023" logoText="ghortem" class="x-el x-el-h3 c1-1 c1-20 c1-28 c1-29 c1-2k c1-2l c1-2m c1-1c c1-1e c1-11 c1-22 c1-2n c1-2o c1-2p c1-2q c1-2r c1-2s c1-2t x-d-ux"><span data-ux="Element" data-aid="HEADER_LOGO_TEXT_RENDERED" data-route="logo/logoText" class="x-el x-el-span c1-20 c1-21 c1-4 c1-22 c1-2o c1-2q c1-2r c1-2s c1-2t x-d-ux x-d-aid x-d-route">ghortem</span></h3></div></a></div></div></div></div></nav></div><div data-ux="Block" id="header_parallax9024" class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><div id="bs-3"></div><div data-ux="HeaderMedia" class="x-el x-el-div c1-1 c1-2 c1-o c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><div id="guacBg9025" role="img" data-guac-image="loading" data-ux="Background" data-route="hasMedia:mediaData" data-aid="BACKGROUND_IMAGE_RENDERED" overlay="accent" treatment="Fill" data-ht="Fill" treatmentData="[object Object]" class="x-el x-el-div c1-1 c1-2 c1-35 c1-36 c1-37 c1-38 c1-39 c1-18 c1-3a c1-3b c1-3c c1-3d c1-1q c1-3e c1-3f c1-b c1-c c1-d c1-3g c1-3h c1-30 c1-e c1-f c1-g x-d-guac-image x-d-ux x-d-route x-d-aid x-d-ht"><div data-ux="Block" id="header_parallax9026" class="x-el x-el-div c1-1 c1-2 c1-4 c1-1n c1-18 c1-1h c1-3a c1-1g c1-1q c1-1s c1-b c1-c c1-d c1-30 c1-31 c1-3i c1-2x c1-e c1-f c1-g x-d-ux"><div id="bs-4"></div><div data-ux="Container" class="x-el x-el-div c1-1 c1-2 c1-2l c1-2m c1-z c1-10 c1-11 c1-b c1-c c1-14 c1-d c1-15 c1-2w c1-2x c1-3j c1-3k c1-3l c1-e c1-16 c1-f c1-17 c1-g x-d-ux"><div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-4 c1-18 c1-3a c1-1n c1-1o c1-33 c1-1g c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="Hero" class="x-el x-el-div c1-1 c1-2 c1-4 c1-3m c1-1u c1-3n c1-3o c1-b c1-c c1-d c1-3p c1-3q c1-3r c1-3s c1-e c1-f c1-g x-d-ux"><h1 typography="HeadingAlpha" data-ux="HeroHeading" data-aid="HEADER_TAGLINE_RENDERED" data-route="tagline" alignment="center" class="x-el x-el-h1 c1-1 c1-20 c1-28 c1-29 c1-2k c1-2l c1-2m c1-1c c1-1e c1-22 c1-2n c1-3t c1-2p c1-3u c1-3v c1-3w c1-3x c1-3y c1-3z c1-40 c1-41 c1-42 c1-43 c1-44 x-d-ux x-d-aid x-d-route">A New Way to Use Your Phone</h1><div typography="BodyBeta" data-ux="HeroText" data-aid="HEADER_TAGLINE2_RENDERED" data-route="tagline2" class="x-el x-el-p c1-1 c1-2 c1-28 c1-29 c1-45 c1-1c c1-1e c1-46 c1-47 c1-48 c1-49 c1-b c1-2n c1-2o c1-2p c1-2q c1-2r c1-2s c1-2t x-d-ux x-d-aid x-d-route x-rt"><p style="margin:0"><span>Expertly-designed software, easy-to-use interface.</span></p></div><div id="bs-5" style="max-width:100%"><a tcclTracking="click" typography="ButtonAlpha" data-ux="Button" data-aid="HEADER_CTA_BTN" href="/#888c3d04-cc41-46b4-ba8f-c1847158ad42" target="" data-tccl="ux2.header.cta_button.click,click" data-page="32c08e75-bde9-4a32-9296-764fd1313ffa" data-section-jump="888c3d04-cc41-46b4-ba8f-c1847158ad42" class="x-el x-el-a c1-4f c1-20 c1-4g c1-4h c1-4i c1-4j c1-4k c1-4l c1-21 c1-1u c1-27 c1-2b c1-29 c1-28 c1-11 c1-4 c1-4m c1-b c1-4n c1-4b c1-39 c1-4o c1-4p c1-4q c1-4r c1-4s c1-4t c1-v c1-w c1-4u c1-4v c1-4w c1-4x c1-4y x-d-ux x-d-aid x-d-tccl x-d-page x-d-section-jump">Contact Us</a></div></div></div></div></div><script>Number(window.vctElements)||(window.vctElements=0),window.vctElements++;new guacImage('//img1.wsimg.com/isteam/stock/jp1PnrG/:/rs=w:{width},h:{height},cg:true,m/cr=w:{width},h:{height},a:cc',document.getElementById('guacBg9025'),{"useTreatmentData":true,"backgroundLayers":["linear-gradient(to bottom, rgba(22, 22, 22, 0.25) 0%, rgba(22, 22, 22, 0.25) 100%)"],"shouldMarkVisuallyComplete":true})</script></div></div></div></div></section> </div></div></div></div><div id="5a147366-d67f-4c3a-97a5-bb1959d77843" class="widget widget-about widget-about-about-1"><div data-ux="Widget" class="x-el x-el-div x-el c1-1 c1-2 c1-i c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><div><section data-ux="Section" class="x-el x-el-section c1-1 c1-2 c1-i c1-j c1-k c1-b c1-c c1-m c1-n c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="Container" class="x-el x-el-div c1-1 c1-2 c1-x c1-y c1-z c1-10 c1-11 c1-b c1-c c1-14 c1-d c1-15 c1-e c1-16 c1-f c1-17 c1-g x-d-ux"><h2 typography="HeadingBeta" data-ux="SectionHeading" data-aid="ABOUT_SECTION_TITLE_RENDERED" data-route="sectionTitle" class="x-el x-el-h2 c1-1 c1-20 c1-28 c1-29 c1-4z c1-2l c1-2m c1-1c c1-50 c1-p c1-1u c1-22 c1-51 c1-2g c1-2p c1-52 c1-53 c1-54 c1-55 c1-56 x-d-ux x-d-aid x-d-route"><span data-ux="Element" class="">Our App</span></h2><div data-ux="ContentCards" class="x-el x-el-div x-el c1-1 c1-2 c1-1u c1-1g c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux c1-1 c1-2 c1-18 c1-19 c1-1a c1-2v c1-1c c1-1d c1-57 c1-1f c1-b c1-c c1-1i c1-1j c1-58 c1-1l c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="GridCell" class="x-el x-el-div c1-1 c1-2 c1-19 c1-1n c1-1o c1-59 c1-11 c1-1q c1-1r c1-u c1-1t c1-18 c1-b c1-c c1-5a c1-5b c1-1w c1-1x c1-5c c1-1z c1-d c1-5d c1-5e c1-e c1-f c1-g x-d-ux"><div data-ux="ContentCard" data-field-id="cards" data-field-route="/card/0" index="0" class="x-el x-el-div x-el c1-1 c1-2 c1-18 c1-3a c1-1h c1-1u c1-1g c1-4 c1-5f c1-5g c1-3o c1-1n c1-b c1-c c1-5h c1-5i c1-d c1-e c1-f c1-g x-d-ux x-d-field-id x-d-field-route c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux x-d-field-id x-d-field-route"><h4 typography="HeadingDelta" data-ux="ContentCardHeading" data-aid="ABOUT_HEADLINE_RENDERED0" data-route="cards.headline" data-field-route="/card/0" class="x-el x-el-h4 c1-1 c1-2 c1-28 c1-29 c1-5j c1-2l c1-2m c1-1c c1-1e c1-1u c1-5k c1-b c1-2n c1-2o c1-2p c1-2q c1-2r c1-2s c1-2t x-d-ux x-d-aid x-d-route x-d-field-route">Grab interest</h4><div typography="BodyAlpha" data-ux="ContentCardText" data-aid="ABOUT_DESCRIPTION_RENDERED0" data-route="cards.description" data-field-route="/card/0" class="x-el x-el-p c1-1 c1-2 c1-28 c1-29 c1-45 c1-1c c1-1e c1-5l c1-5m c1-5n c1-5o c1-5p c1-5q c1-5r c1-5s c1-5t c1-5u c1-5v c1-5w c1-5x c1-5y c1-5z c1-60 c1-61 c1-62 c1-63 c1-64 c1-65 c1-66 c1-67 c1-68 c1-69 c1-6a c1-6b c1-6c c1-1n c1-b c1-6d c1-c c1-2p c1-d c1-e c1-f c1-g x-d-ux x-d-aid x-d-route x-d-field-route x-rt"><p style="margin:0"><span>Say something interesting about your business here. What ways can people use your app?</span></p></div></div></div><div data-ux="GridCell" class="x-el x-el-div c1-1 c1-2 c1-19 c1-1n c1-1o c1-59 c1-11 c1-1q c1-1r c1-u c1-1t c1-18 c1-b c1-c c1-5a c1-5b c1-1w c1-1x c1-5c c1-1z c1-d c1-5d c1-5e c1-e c1-f c1-g x-d-ux"><div data-ux="ContentCard" data-field-id="cards" data-field-route="/card/1" index="1" class="x-el x-el-div x-el c1-1 c1-2 c1-18 c1-3a c1-1h c1-1u c1-1g c1-4 c1-5f c1-5g c1-3o c1-1n c1-b c1-c c1-5h c1-5i c1-d c1-e c1-f c1-g x-d-ux x-d-field-id x-d-field-route c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux x-d-field-id x-d-field-route"><h4 typography="HeadingDelta" data-ux="ContentCardHeading" data-aid="ABOUT_HEADLINE_RENDERED1" data-route="cards.headline" data-field-route="/card/1" class="x-el x-el-h4 c1-1 c1-2 c1-28 c1-29 c1-5j c1-2l c1-2m c1-1c c1-1e c1-1u c1-5k c1-b c1-2n c1-2o c1-2p c1-2q c1-2r c1-2s c1-2t x-d-ux x-d-aid x-d-route x-d-field-route">Generate excitement</h4><div typography="BodyAlpha" data-ux="ContentCardText" data-aid="ABOUT_DESCRIPTION_RENDERED1" data-route="cards.description" data-field-route="/card/1" class="x-el x-el-p c1-1 c1-2 c1-28 c1-29 c1-45 c1-1c c1-1e c1-5l c1-5m c1-5n c1-5o c1-5p c1-5q c1-5r c1-5s c1-5t c1-5u c1-5v c1-5w c1-5x c1-5y c1-5z c1-60 c1-61 c1-62 c1-63 c1-64 c1-65 c1-66 c1-67 c1-68 c1-69 c1-6a c1-6b c1-6c c1-1n c1-b c1-6d c1-c c1-2p c1-d c1-e c1-f c1-g x-d-ux x-d-aid x-d-route x-d-field-route x-rt"><p style="margin:0"><span>What's something exciting your business offers? Say it here. What separates your app or mobile game from the rest?</span></p></div></div></div><div data-ux="GridCell" class="x-el x-el-div c1-1 c1-2 c1-19 c1-1n c1-1o c1-59 c1-11 c1-1q c1-1r c1-u c1-1t c1-18 c1-b c1-c c1-5a c1-5b c1-1w c1-1x c1-5c c1-1z c1-d c1-5d c1-5e c1-e c1-f c1-g x-d-ux"><div data-ux="ContentCard" data-field-id="cards" data-field-route="/card/2" index="2" class="x-el x-el-div x-el c1-1 c1-2 c1-18 c1-3a c1-1h c1-1u c1-1g c1-4 c1-5f c1-5g c1-3o c1-1n c1-b c1-c c1-5h c1-5i c1-d c1-e c1-f c1-g x-d-ux x-d-field-id x-d-field-route c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux x-d-field-id x-d-field-route"><h4 typography="HeadingDelta" data-ux="ContentCardHeading" data-aid="ABOUT_HEADLINE_RENDERED2" data-route="cards.headline" data-field-route="/card/2" class="x-el x-el-h4 c1-1 c1-2 c1-28 c1-29 c1-5j c1-2l c1-2m c1-1c c1-1e c1-1u c1-5k c1-b c1-2n c1-2o c1-2p c1-2q c1-2r c1-2s c1-2t x-d-ux x-d-aid x-d-route x-d-field-route">Close the deal</h4><div typography="BodyAlpha" data-ux="ContentCardText" data-aid="ABOUT_DESCRIPTION_RENDERED2" data-route="cards.description" data-field-route="/card/2" class="x-el x-el-p c1-1 c1-2 c1-28 c1-29 c1-45 c1-1c c1-1e c1-5l c1-5m c1-5n c1-5o c1-5p c1-5q c1-5r c1-5s c1-5t c1-5u c1-5v c1-5w c1-5x c1-5y c1-5z c1-60 c1-61 c1-62 c1-63 c1-64 c1-65 c1-66 c1-67 c1-68 c1-69 c1-6a c1-6b c1-6c c1-1n c1-b c1-6d c1-c c1-2p c1-d c1-e c1-f c1-g x-d-ux x-d-aid x-d-route x-d-field-route x-rt"><p style="margin:0"><span>Give customers a reason to do business with you. Is your app updated regularly? Are there any discounts?</span></p></div></div></div></div></div></section> </div></div></div><div id="85d5592f-853e-42a1-9f2c-42a52b3d5bcb" class="widget widget-gallery widget-gallery-gallery-6"><div data-ux="WidgetBanner" class="x-el x-el-div x-el c1-1 c1-2 c1-3d c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><div><section data-ux="Section" class="x-el x-el-section c1-1 c1-2 c1-3d c1-j c1-k c1-b c1-c c1-m c1-n c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="Container" class="x-el x-el-div c1-1 c1-2 c1-x c1-y c1-z c1-10 c1-11 c1-b c1-c c1-14 c1-d c1-15 c1-e c1-16 c1-f c1-17 c1-g x-d-ux"><h2 typography="HeadingBeta" data-ux="SectionHeading" data-aid="GALLERY_SECTION_TITLE_RENDERED" data-route="title" class="x-el x-el-h2 c1-1 c1-20 c1-28 c1-29 c1-4z c1-2l c1-2m c1-1c c1-50 c1-p c1-1u c1-22 c1-51 c1-2g c1-2p c1-52 c1-53 c1-54 c1-55 c1-56 x-d-ux x-d-aid x-d-route"><span data-ux="Element" class="">Photo Gallery</span></h2><div id="bs-6"><div><div data-ux="Grid" class="x-el x-el-div c1-1 c1-2 c1-18 c1-19 c1-1a c1-2v c1-1c c1-1d c1-57 c1-1f c1-b c1-c c1-1i c1-1j c1-58 c1-1l c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="GridCell" class="x-el x-el-div c1-1 c1-2 c1-19 c1-1n c1-1o c1-6e c1-11 c1-1q c1-1r c1-u c1-1t c1-b c1-c c1-1w c1-1x c1-5c c1-1z c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-p c1-o c1-2b c1-6f c1-b c1-c c1-6g c1-6h c1-d c1-e c1-f c1-g x-d-ux"><img src="//img1.wsimg.com/isteam/stock/8020/:/" alt="image26" data-ux="Image" data-aid="GALLERY_IMAGE0_RENDERED" class="x-el x-el-img c1-1 c1-2 c1-11 c1-4 c1-x c1-y c1-1c c1-1e c1-6i c1-6j c1-6k c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux x-d-aid"/></div><div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-p c1-o c1-2b c1-6f c1-b c1-c c1-6g c1-6h c1-d c1-e c1-f c1-g x-d-ux"><img src="//img1.wsimg.com/isteam/stock/wA0k7GB/:/" alt="image27" data-ux="Image" data-aid="GALLERY_IMAGE1_RENDERED" class="x-el x-el-img c1-1 c1-2 c1-11 c1-4 c1-x c1-y c1-1c c1-1e c1-6i c1-6j c1-6k c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux x-d-aid"/></div><div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-p c1-o c1-2b c1-6f c1-b c1-c c1-6g c1-6h c1-d c1-e c1-f c1-g x-d-ux"><img src="//img1.wsimg.com/isteam/stock/1036/:/" alt="image28" data-ux="Image" data-aid="GALLERY_IMAGE2_RENDERED" class="x-el x-el-img c1-1 c1-2 c1-11 c1-4 c1-x c1-y c1-1c c1-1e c1-6i c1-6j c1-6k c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux x-d-aid"/></div></div></div></div></div></div></section> </div></div></div><div id="d9eebbce-d05d-490d-aa38-a4b7980dff7e" class="widget widget-logos widget-logos-logos-1"><div data-ux="Widget" class="x-el x-el-div x-el c1-1 c1-2 c1-i c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><div><section data-ux="Section" class="x-el x-el-section c1-1 c1-2 c1-i c1-j c1-k c1-b c1-c c1-m c1-n c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="Container" class="x-el x-el-div c1-1 c1-2 c1-x c1-y c1-z c1-10 c1-11 c1-b c1-c c1-14 c1-d c1-15 c1-e c1-16 c1-f c1-17 c1-g x-d-ux"><div data-ux="Group" class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><h3 typography="HeadingGamma" data-ux="HeadingMiddle" data-aid="LOGOS_SECTION_TITLE_RENDERED" data-route="title" class="x-el x-el-h3 c1-1 c1-2 c1-28 c1-29 c1-5j c1-2l c1-2m c1-1c c1-50 c1-1u c1-b c1-2g c1-6l c1-2p c1-6m c1-6n c1-6o c1-6p x-d-ux x-d-aid x-d-route">Download on Any Device</h3><div data-ux="Block" data-aid="LOGOS_GRID_RENDERED" class="x-el x-el-div c1-1 c1-2 c1-18 c1-1h c1-1g c1-57 c1-b c1-c c1-2v c1-6q c1-d c1-e c1-f c1-g x-d-ux x-d-aid"><div data-ux="Block" data-field-id="logoImages.image" class="x-el x-el-div c1-1 c1-2 c1-1u c1-z c1-10 c1-6r c1-b c1-c c1-d c1-6s c1-e c1-f c1-g x-d-ux x-d-field-id"><span data-ux="Element" data-aid="LOGOS_LINK0_RENDERED" class="x-el x-el-span c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux x-d-aid"><img src="//img1.wsimg.com/isteam/ip/static/icons/icon_placeholder.png/:/rs=h:100" srcSet="//img1.wsimg.com/isteam/ip/static/icons/icon_placeholder.png/:/rs=h:100,
+//img1.wsimg.com/isteam/ip/static/icons/icon_placeholder.png/:/rs=h:150 1.5x,
+//img1.wsimg.com/isteam/ip/static/icons/icon_placeholder.png/:/rs=h:200 2x,
+//img1.wsimg.com/isteam/ip/static/icons/icon_placeholder.png/:/rs=h:300 3x" alt="image29" data-ux="ImageLogo" data-aid="LOGOS_ZERO_STATE0_RENDERED" class="x-el x-el-img c1-1 c1-2 c1-11 c1-6t c1-x c1-y c1-1c c1-1e c1-6i c1-b c1-c c1-6u c1-6v c1-6w c1-6x c1-6y c1-3y c1-3z c1-40 c1-6z c1-70 c1-71 c1-72 c1-73 c1-74 c1-d c1-e c1-f c1-g x-d-ux x-d-aid"/></span></div><div data-ux="Block" data-field-id="logoImages.image" class="x-el x-el-div c1-1 c1-2 c1-1u c1-z c1-10 c1-6r c1-b c1-c c1-d c1-6s c1-e c1-f c1-g x-d-ux x-d-field-id"><span data-ux="Element" data-aid="LOGOS_LINK1_RENDERED" class="x-el x-el-span c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux x-d-aid"><img src="//img1.wsimg.com/isteam/ip/static/icons/icon_placeholder.png/:/rs=h:100" srcSet="//img1.wsimg.com/isteam/ip/static/icons/icon_placeholder.png/:/rs=h:100,
+//img1.wsimg.com/isteam/ip/static/icons/icon_placeholder.png/:/rs=h:150 1.5x,
+//img1.wsimg.com/isteam/ip/static/icons/icon_placeholder.png/:/rs=h:200 2x,
+//img1.wsimg.com/isteam/ip/static/icons/icon_placeholder.png/:/rs=h:300 3x" alt="image30" data-ux="ImageLogo" data-aid="LOGOS_ZERO_STATE1_RENDERED" class="x-el x-el-img c1-1 c1-2 c1-11 c1-6t c1-x c1-y c1-1c c1-1e c1-6i c1-b c1-c c1-6u c1-6v c1-6w c1-6x c1-6y c1-3y c1-3z c1-40 c1-6z c1-70 c1-71 c1-72 c1-73 c1-74 c1-d c1-e c1-f c1-g x-d-ux x-d-aid"/></span></div><div data-ux="Block" data-field-id="logoImages.image" class="x-el x-el-div c1-1 c1-2 c1-1u c1-z c1-10 c1-6r c1-b c1-c c1-d c1-6s c1-e c1-f c1-g x-d-ux x-d-field-id"><span data-ux="Element" data-aid="LOGOS_LINK2_RENDERED" class="x-el x-el-span c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux x-d-aid"><img src="//img1.wsimg.com/isteam/ip/static/icons/icon_placeholder.png/:/rs=h:100" srcSet="//img1.wsimg.com/isteam/ip/static/icons/icon_placeholder.png/:/rs=h:100,
+//img1.wsimg.com/isteam/ip/static/icons/icon_placeholder.png/:/rs=h:150 1.5x,
+//img1.wsimg.com/isteam/ip/static/icons/icon_placeholder.png/:/rs=h:200 2x,
+//img1.wsimg.com/isteam/ip/static/icons/icon_placeholder.png/:/rs=h:300 3x" alt="image31" data-ux="ImageLogo" data-aid="LOGOS_ZERO_STATE2_RENDERED" class="x-el x-el-img c1-1 c1-2 c1-11 c1-6t c1-x c1-y c1-1c c1-1e c1-6i c1-b c1-c c1-6u c1-6v c1-6w c1-6x c1-6y c1-3y c1-3z c1-40 c1-6z c1-70 c1-71 c1-72 c1-73 c1-74 c1-d c1-e c1-f c1-g x-d-ux x-d-aid"/></span></div><div data-ux="Block" data-field-id="logoImages.image" class="x-el x-el-div c1-1 c1-2 c1-1u c1-z c1-10 c1-6r c1-b c1-c c1-d c1-6s c1-e c1-f c1-g x-d-ux x-d-field-id"><span data-ux="Element" data-aid="LOGOS_LINK3_RENDERED" class="x-el x-el-span c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux x-d-aid"><img src="//img1.wsimg.com/isteam/ip/static/icons/icon_placeholder.png/:/rs=h:100" srcSet="//img1.wsimg.com/isteam/ip/static/icons/icon_placeholder.png/:/rs=h:100,
+//img1.wsimg.com/isteam/ip/static/icons/icon_placeholder.png/:/rs=h:150 1.5x,
+//img1.wsimg.com/isteam/ip/static/icons/icon_placeholder.png/:/rs=h:200 2x,
+//img1.wsimg.com/isteam/ip/static/icons/icon_placeholder.png/:/rs=h:300 3x" alt="image32" data-ux="ImageLogo" data-aid="LOGOS_ZERO_STATE3_RENDERED" class="x-el x-el-img c1-1 c1-2 c1-11 c1-6t c1-x c1-y c1-1c c1-1e c1-6i c1-b c1-c c1-6u c1-6v c1-6w c1-6x c1-6y c1-3y c1-3z c1-40 c1-6z c1-70 c1-71 c1-72 c1-73 c1-74 c1-d c1-e c1-f c1-g x-d-ux x-d-aid"/></span></div></div></div></div></section> </div></div></div><div id="beb74da8-70fc-4031-8748-06511a0240ab" class="widget widget-subscribe widget-subscribe-subscribe-3"><div data-ux="WidgetBanner" class="x-el x-el-div x-el c1-1 c1-2 c1-3d c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><div><div id="guacBg9027" role="img" data-ux="Background" data-aid="SECTION_BACKGROUND" treatmentData="[object Object]" class="x-el x-el-div c1-1 c1-2 c1-75 c1-76 c1-37 c1-38 c1-77 c1-3e c1-78 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux x-d-aid"><section data-ux="SectionBanner" class="x-el x-el-section c1-1 c1-2 c1-79 c1-j c1-k c1-b c1-c c1-m c1-n c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="Container" class="x-el x-el-div c1-1 c1-2 c1-x c1-y c1-z c1-10 c1-11 c1-b c1-c c1-14 c1-d c1-15 c1-e c1-16 c1-f c1-17 c1-g x-d-ux"><div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-7a c1-b c1-c c1-d c1-3l c1-e c1-f c1-g x-d-ux"><h2 typography="HeadingBeta" data-ux="SectionBannerHeading" data-aid="SECTION_TITLE_REND" data-route="sectionTitle" class="x-el x-el-h2 c1-1 c1-20 c1-28 c1-29 c1-5j c1-2l c1-2m c1-1c c1-7b c1-1u c1-22 c1-51 c1-7c c1-2p c1-52 c1-54 c1-55 c1-56 x-d-ux x-d-aid x-d-route">Subscribe</h2><div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><div id="beb74da8-70fc-4031-8748-06511a0240ab-bootstrap-container"><span data-ux="Element" class="x-el x-el-span c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="Grid" data-aid="SUBSCRIBE_INNER_FORM_REND" class="x-el x-el-div c1-1 c1-2 c1-18 c1-19 c1-1a c1-2v c1-1c c1-1d c1-1e c1-1f c1-b c1-c c1-1i c1-1j c1-1k c1-1l c1-d c1-e c1-f c1-g x-d-ux x-d-aid"><div data-ux="GridCell" class="x-el x-el-div c1-1 c1-2 c1-19 c1-1n c1-1o c1-6e c1-11 c1-1q c1-1r c1-1s c1-1t c1-b c1-c c1-7d c1-7e c1-7f c1-1w c1-1x c1-1y c1-1z c1-d c1-7g c1-7h c1-7i c1-e c1-f c1-g x-d-ux"><p typography="BodyAlpha" data-ux="Text" data-aid="FORM_DESC_REND" data-route="description" class="x-el x-el-p c1-1 c1-2 c1-28 c1-29 c1-45 c1-1c c1-6f c1-1u c1-b c1-7c c1-c c1-2p c1-d c1-e c1-f c1-g x-d-ux x-d-aid x-d-route">Sign up to hear from us about specials, sales, and events.</p><form data-ux="Form" class="x-el x-el-form c1-1 c1-2 c1-1e c1-18 c1-3a c1-1g c1-1h c1-1u c1-39 c1-b c1-c c1-d c1-7j c1-e c1-f c1-g x-d-ux"><div data-ux="Block" data-route="inputPlaceholder" class="x-el x-el-div c1-1 c1-2 c1-6r c1-4 c1-b c1-c c1-d c1-3i c1-6s c1-7k c1-7l c1-e c1-f c1-g x-d-ux x-d-route"><div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-o c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="InputFloatLabel" data-aid="d7s9fy9s-18hf-sdfh-9f94-d1ns893k83d3" class="x-el x-el-div c1-1 c1-2 c1-o c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux x-d-aid"><input type="text" typography="InputAlpha" data-ux="InputFloatLabel" id="input9028" value="" data-aid="d7s9fy9s-18hf-sdfh-9f94-d1ns893k83d3" class="x-el x-el-input c1-1 c1-2 c1-7m c1-7n c1-4 c1-7o c1-7p c1-7q c1-7r c1-7s c1-7t c1-7u c1-7v c1-7w c1-7x c1-b c1-7c c1-4o c1-2p c1-7y c1-4q c1-7z c1-80 c1-81 c1-82 c1-83 c1-84 c1-85 c1-86 c1-4t c1-4w c1-4x c1-4y x-d-ux x-d-aid"/><label typography="InputAlpha" data-ux="InputFloatLabelLabel" for="input9028" class="x-el x-el-label c1-1 c1-2 c1-28 c1-29 c1-87 c1-88 c1-89 c1-8a c1-8b c1-b c1-7c c1-4o c1-2p c1-4t c1-4w c1-4x c1-4y x-d-ux">Email Address</label></div></div></div><div data-ux="Block" data-route="subscribeButtonLabel" class="x-el x-el-div c1-1 c1-2 c1-4 c1-b c1-c c1-d c1-6s c1-e c1-f c1-g x-d-ux x-d-route"><div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-o c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><button tcclTracking="click" typography="ButtonAlpha" data-ux="Button" type="submit" data-tccl="ux2.gem-subscribe.submit_form.click,click" data-aid="SUBSCRIBE_SUBMIT_BUTTON_REND" class="x-el x-el-button c1-4f c1-20 c1-4g c1-4h c1-4i c1-4j c1-4k c1-4l c1-21 c1-1u c1-27 c1-2b c1-29 c1-28 c1-11 c1-4 c1-b c1-4n c1-4b c1-39 c1-4o c1-4p c1-4q c1-4r c1-4s c1-4t c1-v c1-w c1-4u c1-4v c1-4w c1-4x c1-4y x-d-ux x-d-tccl x-d-aid">Sign up</button></div></div></form></div></div></span></div></div></div></div></section><script>new guacImage('//img1.wsimg.com/isteam/stock/W1YKdjD/:/rs=w:{width},h:{height},cg:true,m/cr=w:{width},h:{height},a:cc',document.getElementById('guacBg9027'),{"useTreatmentData":true,"backgroundLayers":["linear-gradient(to bottom, rgba(22, 22, 22, 0.24) 0%, rgba(22, 22, 22, 0.24) 100%)"]})</script></div> </div></div></div><div id="6e41c7a7-546b-4df6-8ee4-60e9497ff876" class="widget widget-social widget-social-social-1"></div><div id="888c3d04-cc41-46b4-ba8f-c1847158ad42" class="widget widget-contact widget-contact-contact-5"><div data-ux="Widget" class="x-el x-el-div x-el c1-1 c1-2 c1-3d c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><div><section data-ux="Section" class="x-el x-el-section c1-1 c1-2 c1-3d c1-j c1-k c1-b c1-c c1-m c1-n c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="Container" class="x-el x-el-div c1-1 c1-2 c1-x c1-y c1-z c1-10 c1-11 c1-b c1-c c1-14 c1-d c1-15 c1-e c1-16 c1-f c1-17 c1-g x-d-ux"><div data-ux="Grid" class="x-el x-el-div c1-1 c1-2 c1-18 c1-19 c1-1a c1-2v c1-1c c1-1d c1-1e c1-1f c1-b c1-c c1-1i c1-1j c1-1k c1-1l c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="GridCell" class="x-el x-el-div c1-1 c1-2 c1-19 c1-1n c1-1o c1-59 c1-11 c1-1q c1-1r c1-1s c1-1t c1-b c1-c c1-1w c1-1x c1-1y c1-1z c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="Grid" class="x-el x-el-div c1-1 c1-2 c1-18 c1-19 c1-1a c1-2v c1-1c c1-1d c1-1e c1-1f c1-b c1-c c1-1i c1-1j c1-1k c1-1l c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="GridCell" class="x-el x-el-div c1-1 c1-2 c1-19 c1-1n c1-1o c1-6e c1-11 c1-1q c1-1r c1-1s c1-1t c1-b c1-c c1-1w c1-1x c1-1y c1-1z c1-d c1-e c1-f c1-g x-d-ux"><h2 typography="HeadingBeta" data-ux="SectionHeading" data-route="sectionTitle" data-aid="CONTACT_SECTION_TITLE_REND" class="x-el x-el-h2 c1-1 c1-20 c1-28 c1-29 c1-4z c1-2l c1-2m c1-1c c1-50 c1-p c1-1u c1-22 c1-51 c1-2g c1-2p c1-52 c1-53 c1-54 c1-55 c1-56 x-d-ux x-d-route x-d-aid"><span data-ux="Element" class="">Contact Us</span></h2></div></div></div></div><div data-ux="Content" class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="Grid" data-aid="CONTACT_INFO_CONTAINER_REND" class="x-el x-el-div c1-1 c1-2 c1-18 c1-19 c1-1a c1-2v c1-1c c1-1d c1-1e c1-1f c1-1u c1-b c1-c c1-1i c1-1j c1-1k c1-1l c1-d c1-e c1-f c1-g x-d-ux x-d-aid"><div data-ux="GridCell" class="x-el x-el-div c1-1 c1-2 c1-19 c1-1n c1-1o c1-6e c1-11 c1-1q c1-1r c1-1s c1-1t c1-b c1-c c1-7d c1-7e c1-7f c1-1w c1-1x c1-1y c1-1z c1-d c1-7g c1-7h c1-7i c1-e c1-f c1-g x-d-ux"><div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-50 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><h4 typography="HeadingDelta" data-ux="ContentHeading" data-aid="CONTACT_INTRO_HEADING_REND" data-route="infoTitle" class="x-el x-el-h4 c1-1 c1-2 c1-28 c1-29 c1-5j c1-2l c1-2m c1-1c c1-6r c1-b c1-8c c1-2o c1-2p c1-2q c1-2r c1-2s c1-2t x-d-ux x-d-aid x-d-route">Your Feedback is Appreciated</h4><div typography="BodyAlpha" data-ux="ContentText" data-aid="CONTACT_INTRO_DESC_REND" data-route="info" class="x-el x-el-p c1-1 c1-2 c1-28 c1-29 c1-45 c1-1c c1-6r c1-5l c1-5m c1-5n c1-5o c1-5p c1-5q c1-5r c1-5s c1-5t c1-5u c1-5v c1-5w c1-5x c1-5y c1-5z c1-60 c1-61 c1-62 c1-63 c1-64 c1-65 c1-66 c1-67 c1-68 c1-69 c1-6a c1-6b c1-6c c1-b c1-8d c1-c c1-2p c1-d c1-e c1-f c1-g x-d-ux x-d-aid x-d-route x-rt"><p style="margin:0"><span>Have a great experience with our app, and want to let us know? Is something missing? We love hearing from our users!</span></p></div></div><div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><h4 typography="HeadingDelta" data-ux="ContentHeading" data-aid="CONTACT_INFO_BIZ_NAME_REND" data-route="businessName" class="x-el x-el-h4 c1-1 c1-2 c1-28 c1-29 c1-5j c1-2l c1-2m c1-1c c1-6r c1-b c1-8c c1-2o c1-2p c1-2q c1-2r c1-2s c1-2t x-d-ux x-d-aid x-d-route">ghortem</h4></div></div></div><div data-ux="Grid" class="x-el x-el-div c1-1 c1-2 c1-18 c1-19 c1-1a c1-2v c1-1c c1-1d c1-1e c1-1f c1-1u c1-b c1-c c1-1i c1-1j c1-1k c1-1l c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="GridCell" class="x-el x-el-div c1-1 c1-2 c1-19 c1-1n c1-1o c1-6e c1-11 c1-1q c1-1r c1-1s c1-1t c1-b c1-c c1-7d c1-7e c1-7f c1-1w c1-1x c1-1y c1-1z c1-d c1-7g c1-7h c1-7i c1-e c1-f c1-g x-d-ux"><div><div id="888c3d04-cc41-46b4-ba8f-c1847158ad42-bootstrap-container"><div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><button typography="ButtonAlpha" data-ux="Button" data-aid="CONTACT_FORM_REVEAL_BUTTON_REND" data-route="formTitle" data-field-route="/form" class="x-el x-el-button c1-4f c1-20 c1-4g c1-4h c1-4i c1-4j c1-4k c1-4l c1-21 c1-1u c1-27 c1-2b c1-29 c1-28 c1-11 c1-4 c1-8e c1-b c1-4n c1-4b c1-39 c1-4o c1-4p c1-4q c1-4r c1-4s c1-4t c1-v c1-w c1-4u c1-4v c1-4w c1-4x c1-4y x-d-ux x-d-aid x-d-route x-d-field-route" data-tccl="ux2.CONTACT.contact5.Content.Default.Button.Default.9029.click,click">Drop us a line!</button><div data-ux="Block" data-aid="CONTACT_FORM_CONTAINER_REND" class="x-el x-el-div c1-1 c1-2 c1-8e c1-2u c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux x-d-aid"><h4 typography="HeadingDelta" data-ux="ContentHeading" data-aid="CONTACT_FORM_TITLE_REND" data-route="formTitle" data-field-route="/form" class="x-el x-el-h4 c1-1 c1-2 c1-28 c1-29 c1-5j c1-2l c1-2m c1-1c c1-6r c1-b c1-8c c1-2o c1-2p c1-2q c1-2r c1-2s c1-2t x-d-ux x-d-aid x-d-route x-d-field-route">Drop us a line!</h4><form data-ux="Form" formFieldVariationOptions="[object Object]" formTitle="Drop us a line!" formFields="[object Object],[object Object],[object Object],[object Object]" formSubmitHost="https://contact.apps-api.instantpage.secureserver.net" recaptchaType="V3" domainName="ghortem.godaddysites.com" formSuccessMessage="Thank you for your inquiry! We will get back to you within 48 hours." websiteId="c560a15f-4d30-4d47-9128-99b344d0cdc8" pageId="32c08e75-bde9-4a32-9296-764fd1313ffa" accountId="00b95b9f-226e-11ea-81af-3417ebe724ff" staticContent="[object Object]" emailOptInMessage="Sign up for our email list for updates, promotions, and more." emailConfirmationMessage="We&#x27;ve sent you a confirmation email, please click the link to verify your address." class="x-el x-el-form c1-1 c1-2 c1-1e c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><input type="text" name="_app_id" autoComplete="off" tabindex="-1" style="display:none" value=""/><div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-u c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="Block" data-field-id="formFields.label" data-field-route="/form/0" class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux x-d-field-id x-d-field-route"><div data-ux="InputFloatLabel" type="text" data-aid="CONTACT_FORM_NAME" class="x-el x-el-div c1-1 c1-2 c1-o c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux x-d-aid"><input type="text" typography="InputAlpha" data-ux="InputFloatLabel" id="input9030" value="" data-aid="CONTACT_FORM_NAME" class="x-el x-el-input c1-1 c1-2 c1-i c1-7n c1-4 c1-7o c1-7p c1-7q c1-7r c1-7s c1-7t c1-7u c1-7v c1-7w c1-7x c1-b c1-8f c1-4o c1-2p c1-7y c1-4q c1-7z c1-80 c1-8g c1-82 c1-83 c1-8h c1-85 c1-86 c1-4t c1-4w c1-4x c1-4y x-d-ux x-d-aid"/><label typography="InputAlpha" data-ux="InputFloatLabelLabel" for="input9030" class="x-el x-el-label c1-1 c1-2 c1-28 c1-29 c1-87 c1-88 c1-89 c1-8a c1-8b c1-b c1-8i c1-4o c1-2p c1-4t c1-4w c1-4x c1-4y x-d-ux">Name</label></div></div></div><div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-u c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="Block" data-field-id="formFields.label" data-field-route="/form/1" class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux x-d-field-id x-d-field-route"><div data-ux="InputFloatLabel" type="text" data-aid="CONTACT_FORM_EMAIL" class="x-el x-el-div c1-1 c1-2 c1-o c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux x-d-aid"><input type="text" typography="InputAlpha" data-ux="InputFloatLabel" id="input9031" value="" data-aid="CONTACT_FORM_EMAIL" class="x-el x-el-input c1-1 c1-2 c1-i c1-7n c1-4 c1-7o c1-7p c1-7q c1-7r c1-7s c1-7t c1-7u c1-7v c1-7w c1-7x c1-b c1-8f c1-4o c1-2p c1-7y c1-4q c1-7z c1-80 c1-8g c1-82 c1-83 c1-8h c1-85 c1-86 c1-4t c1-4w c1-4x c1-4y x-d-ux x-d-aid"/><label typography="InputAlpha" data-ux="InputFloatLabelLabel" for="input9031" class="x-el x-el-label c1-1 c1-2 c1-28 c1-29 c1-87 c1-88 c1-89 c1-8a c1-8b c1-b c1-8i c1-4o c1-2p c1-4t c1-4w c1-4x c1-4y x-d-ux">Email*</label></div></div></div><div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-u c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="Block" data-field-id="formFields.label" data-field-route="/form/2" class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux x-d-field-id x-d-field-route"><textarea typography="InputAlpha" rows="5" aria-label="Message" data-ux="InputTextArea" placeholder="Message" data-aid="CONTACT_FORM_MESSAGE" class="x-el x-el-textarea c1-1 c1-2 c1-i c1-7n c1-4 c1-7o c1-7p c1-7q c1-7r c1-4h c1-7t c1-7u c1-4g c1-7w c1-7x c1-8j c1-b c1-8f c1-4o c1-2p c1-7y c1-4q c1-85 c1-86 c1-4t c1-4w c1-4x c1-4y x-d-ux x-d-aid"></textarea></div></div><div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-u c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="Block" data-field-id="formFields.label" data-field-route="/form/3" class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux x-d-field-id x-d-field-route"><div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-1u c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><button tcclTracking="click" typography="ButtonAlpha" data-ux="ButtonFullWidth" type="submit" data-aid="CONTACT_SUBMIT_BUTTON_REND" data-tccl="ux2.contact.submit_form.click,click" state="default" class="x-el x-el-button c1-4f c1-20 c1-4g c1-4h c1-4i c1-4j c1-4k c1-4l c1-21 c1-1u c1-27 c1-2b c1-29 c1-28 c1-11 c1-4 c1-b c1-4n c1-4b c1-39 c1-4o c1-4p c1-4q c1-4r c1-14 c1-4t c1-v c1-w c1-4u c1-4v c1-4w c1-4x c1-4y x-d-ux x-d-aid x-d-traffic2 x-d-tccl">Send</button></div></div></div><div style="width:0;height:0;visibility:hidden"></div><div data-ux="Block" class="x-el x-el-div controls c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><p typography="BodyAlpha" data-ux="Text" data-aid="CONTACT_CANCEL_BUTTON_REND" class="x-el x-el-p c1-1 c1-2 c1-28 c1-29 c1-45 c1-1c c1-1e c1-8k c1-4e c1-2g c1-1u c1-y c1-x c1-b c1-c c1-2p c1-8l c1-d c1-e c1-f c1-g x-d-ux x-d-aid">Cancel</p></div></form></div></div></div></div></div></div></div></div></section> </div></div></div><div id="095254e8-2b5a-4d75-b717-cfdb5da18bb0" class="widget widget-footer widget-footer-footer-1"><div data-ux="Widget" class="x-el x-el-div x-el c1-1 c1-2 c1-i c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><div><section data-ux="Section" class="x-el x-el-section c1-1 c1-2 c1-i c1-j c1-k c1-b c1-c c1-m c1-n c1-d c1-e c1-f c1-g x-d-ux"><div data-ux="Container" class="x-el x-el-div c1-1 c1-2 c1-x c1-y c1-z c1-10 c1-11 c1-b c1-c c1-14 c1-d c1-15 c1-e c1-16 c1-f c1-17 c1-g x-d-ux"><div data-ux="Layout" class="x-el x-el-div c1-1 c1-2 c1-1u c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"><p typography="DetailsAlpha" data-ux="FooterDetails" data-aid="FOOTER_COPYRIGHT_RENDERED" data-route="copyright" class="x-el x-el-p c1-1 c1-2 c1-28 c1-29 c1-45 c1-1c c1-6r c1-b c1-8m c1-4o c1-2p c1-4t c1-4w c1-4x c1-4y x-d-ux x-d-aid x-d-route">Copyright © 2019 ghortem - All Rights Reserved.</p><div data-ux="Container" class="x-el x-el-div c1-1 c1-2 c1-x c1-y c1-z c1-10 c1-11 c1-1u c1-8n c1-b c1-c c1-14 c1-d c1-15 c1-e c1-16 c1-f c1-17 c1-g x-d-ux"><ul data-ux="NavFooter" class="x-el x-el-ul c1-1 c1-2 c1-8o c1-1q c1-8p c1-1s c1-8q c1-1c c1-2m c1-1e c1-2l c1-8r c1-b c1-c c1-8s c1-8t c1-d c1-e c1-f c1-g x-d-ux"></ul></div><hr data-ux="HR" class="x-el x-el-hr c1-1 c1-2 c1-8u c1-8v c1-7x c1-1c c1-6r c1-8w c1-x c1-y c1-8x c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux"/><p typography="DetailsAlpha" data-ux="FooterDetails" data-aid="FOOTER_POWERED_BY_RENDERED" data-route="poweredBy" class="x-el x-el-p c1-1 c1-2 c1-28 c1-29 c1-45 c1-1c c1-1e c1-b c1-8m c1-4o c1-2p c1-4t c1-4w c1-4x c1-4y x-d-ux x-d-aid x-d-route"><span>Powered by GoDaddy <a rel="nofollow noopener" typography="LinkAlpha" data-ux="Link" target="_blank" href="https://www.godaddy.com/websites/website-builder?isc=pwugc&amp;utm_source=wsb&amp;utm_medium=applications&amp;utm_campaign=en-us_corp_applications_base" class="x-el x-el-a c1-25 c1-26 c1-27 c1-28 c1-29 c1-2a c1-2b c1-b c1-2g c1-4o c1-2h c1-2i c1-2j c1-4t c1-4w c1-4x c1-4y x-d-ux" data-tccl="ux2.FOOTER.footer1.Layout.Default.Link.Default.9032.click,click">Website Builder</a></span></p></div></div></section> </div></div></div></div></div></div>
+<script type="text/javascript" src="//img1.wsimg.com/ceph-p3-01/website-builder-data-prod/static/widgets/UX.3.55.29.js" crossorigin></script>
+<script type="text/javascript">window.cxs && window.cxs.setOptions({ prefix: "c2-" });</script>
+<script type="text/javascript" src="//img1.wsimg.com/blobby/go/gpub/53f99140233df5dc/script.js" crossorigin></script>
+<script type="text/javascript" src="//img1.wsimg.com/blobby/go/gpub/70fa198bc69fb4f8/script.js" crossorigin></script>
+<script type="text/javascript">window.wsb['context-bs-1'] = {"renderMode":"PUBLISH","viewDevice":"TABLET_RENDER_DEVICE","fonts":["archivo-black","default",""],"colors":["#bdc1bc"],"fontScale":"medium","locale":"en-US","language":"en","internalLinks":{},"isHomepage":true,"navigationMap":{"32c08e75-bde9-4a32-9296-764fd1313ffa":{"isFlyoutMenu":false,"active":true,"pageId":"32c08e75-bde9-4a32-9296-764fd1313ffa","name":"Home","href":"\u002F","target":"","visible":true,"requiresAuth":false,"rel":"","type":"page","showInFooter":false}},"theme":"Theme10"};</script>
+<script type="text/javascript">(function(props,context) {
+  Core.utils.renderBootstrap({elId:'bs-1',componentName:'LogoText',props:props,context:context,contextKey:'context-bs-1'});
+})({"logo":{"logoText":"ghortem"},"fontPackLogoId":null,"widgetId":"0a1fc6c5-577c-474b-894a-21f0900e2821","section":"default","category":"accent","locale":"en-US","renderMode":"PUBLISH","viewDevice":"TABLET_RENDER_DEVICE"},{"widgetId":"0a1fc6c5-577c-474b-894a-21f0900e2821","widgetType":"HEADER","widgetPreset":"header9","section":"default","category":"accent","fontSize":"medium","fontFamily":"alternate","group":"Logo","groupType":"Default"});</script>
+<script type="text/javascript">(function(props,context) {
+  Core.utils.renderBootstrap({elId:'bs-2',componentName:'LogoText',props:props,context:context,contextKey:'context-bs-1'});
+})({"logo":{"logoText":"ghortem"},"fontPackLogoId":null,"widgetId":"0a1fc6c5-577c-474b-894a-21f0900e2821","section":"default","category":"accent","locale":"en-US","renderMode":"PUBLISH","viewDevice":"TABLET_RENDER_DEVICE"},{"widgetId":"0a1fc6c5-577c-474b-894a-21f0900e2821","widgetType":"HEADER","widgetPreset":"header9","section":"default","category":"accent","fontSize":"medium","fontFamily":"alternate","group":"Logo","groupType":"Default"});</script>
+<script type="text/javascript" src="//img1.wsimg.com/blobby/go/gpub/17d6eee626c9d02f/script.js" crossorigin></script>
+<script type="text/javascript">(function(props,context) {
+  Core.utils.renderBootstrap({elId:'bs-3',componentName:'Parallax',props:props,context:context,contextKey:'context-bs-1'});
+})({"speed":-1.5,"uniqueId":"header_parallax9024","noTransform":true,"excludedBreakpoints":[],"widgetId":"0a1fc6c5-577c-474b-894a-21f0900e2821","section":"default","category":"accent","locale":"en-US","renderMode":"PUBLISH","viewDevice":"TABLET_RENDER_DEVICE"},{"widgetId":"0a1fc6c5-577c-474b-894a-21f0900e2821","widgetType":"HEADER","widgetPreset":"header9","section":"default","category":"accent","fontSize":"medium","fontFamily":"alternate","group":"Section","groupType":"Default"});</script>
+<script type="text/javascript">(function(props,context) {
+  Core.utils.renderBootstrap({elId:'bs-4',componentName:'Parallax',props:props,context:context,contextKey:'context-bs-1'});
+})({"isBackground":false,"speed":-1.5,"oversizeSpeed":1.5,"uniqueId":"header_parallax9026","excludedBreakpoints":[],"widgetId":"0a1fc6c5-577c-474b-894a-21f0900e2821","section":"alt","category":"accent","locale":"en-US","renderMode":"PUBLISH","viewDevice":"TABLET_RENDER_DEVICE"},{"widgetId":"0a1fc6c5-577c-474b-894a-21f0900e2821","widgetType":"HEADER","widgetPreset":"header9","section":"alt","category":"accent","fontSize":"medium","fontFamily":"alternate","group":"HeaderMedia","groupType":"Fill"});</script>
+<script type="text/javascript">!function(n){var t={};function o(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return n[e].call(r.exports,r,r.exports,o),r.l=!0,r.exports}o.m=n,o.c=t,o.d=function(n,t,e){o.o(n,t)||Object.defineProperty(n,t,{configurable:!1,enumerable:!0,get:e})},o.n=function(n){var t=n&&n.__esModule?function(){return n.default}:function(){return n};return o.d(t,"a",t),t},o.o=function(n,t){return Object.prototype.hasOwnProperty.call(n,t)},o.p="",o(o.s=0)}([function(n,t,o){"use strict";window.wsb=window.wsb||{},window.wsb.CTAButton=window.wsb.CTAButton||o(1).components.CTAButton},function(n,t){n.exports=Core}]);</script>
+<script type="text/javascript">(function(props,context) {
+  Core.utils.renderBootstrap({elId:'bs-5',componentName:'CTAButton',props:props,context:context,contextKey:'context-bs-1'});
+})({"ctaButton":{"enabled":true,"label":"Contact Us","pageId":"32c08e75-bde9-4a32-9296-764fd1313ffa","widgetId":"888c3d04-cc41-46b4-ba8f-c1847158ad42"},"data-aid":"HEADER_CTA_BTN","style":{"marginTop":"xsmall"},"data-tccl":"ux2.header.cta_button.click,click","widgetId":"0a1fc6c5-577c-474b-894a-21f0900e2821","section":"default","category":"accent","locale":"en-US","renderMode":"PUBLISH","viewDevice":"TABLET_RENDER_DEVICE"},{"widgetId":"0a1fc6c5-577c-474b-894a-21f0900e2821","widgetType":"HEADER","widgetPreset":"header9","section":"default","category":"accent","fontSize":"medium","fontFamily":"alternate","group":"Hero","groupType":"Center"});</script>
+<script type="text/javascript">Number(window.vctElements)||(window.vctElements=0),window.vctElements++,window.markVisuallyComplete();</script>
+<script type="text/javascript" src="//img1.wsimg.com/blobby/go/gpub/f87df809b6167478/script.js" crossorigin></script>
+<script type="text/javascript">window.wsb['context-bs-6'] = {"renderMode":"PUBLISH","fonts":["archivo-black","default",""],"colors":["#bdc1bc"],"fontScale":"medium","locale":"en-US","language":"en","internalLinks":{},"isHomepage":true,"navigationMap":{"32c08e75-bde9-4a32-9296-764fd1313ffa":{"isFlyoutMenu":false,"active":true,"pageId":"32c08e75-bde9-4a32-9296-764fd1313ffa","name":"Home","href":"\u002F","target":"","visible":true,"requiresAuth":false,"rel":"","type":"page","showInFooter":false}},"theme":"Theme10"};</script>
+<script type="text/javascript" src="//img1.wsimg.com/blobby/go/c560a15f-4d30-4d47-9128-99b344d0cdc8/gpub/b97eeecc2bab4237/script.js" crossorigin></script>
+<script type="text/javascript" src="//img1.wsimg.com/blobby/go/gpub/a7ac51904ab82889/script.js" crossorigin></script>
+<script type="text/javascript" src="//img1.wsimg.com/blobby/go/c560a15f-4d30-4d47-9128-99b344d0cdc8/gpub/a661c0217306459a/script.js" crossorigin></script>
+<script type="text/javascript" src="//img1.wsimg.com/blobby/go/gpub/25c2de4bb68714e6/script.js" crossorigin></script>
+<script type="text/javascript" src="//img1.wsimg.com/blobby/go/c560a15f-4d30-4d47-9128-99b344d0cdc8/gpub/593dacbaa46323e4/script.js" crossorigin></script>
+<script type="text/javascript">document.getElementById('page-9013').addEventListener('click', function() {}, false);</script>
+<script type="text/javascript">function tccl_dpsid(){for(var t="dps_site_id=",i=document.cookie.split(";"),e=0;e<i.length;e++){for(var n=i[e];" "==n.charAt(0);)n=n.substring(1);if(0==n.indexOf(t))return n.substring(t.length,n.length)}return null}_trfd.push({"tccl.baseHost":"secureserver.net"}),_trfd.push({"websiteId":"c560a15f-4d30-4d47-9128-99b344d0cdc8"}),_trfd.push({"pd":"2019-12-19T14:44:35.524Z"}),_trfd.push({ap:"IPv2",ds:tccl_dpsid()||"-1"});function addTccl(){if(Number(window.vctElements)&&!window.VISUAL_COMPLETE)setTimeout(addTccl,500);else{var t=document.createElement("script");t.setAttribute("src","//img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js"),document.body.appendChild(t)}}addTccl();</script></body></html>
